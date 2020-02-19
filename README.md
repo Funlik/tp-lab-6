@@ -2,7 +2,7 @@
 
 <img src="img/green.png" width="50" height="50">
 
-# Cpp-lab-6
+# Cpp-lab-6 
 
 ## Практикум №6 (StaffDemo)
 
