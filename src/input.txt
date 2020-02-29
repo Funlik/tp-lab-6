@@ -1,0 +1,9 @@
+id name position base project worktime
+1 Bot1 1 1000 0 20
+2 Bot2 2 2000 0 20
+3 Bot3 3 3000 0 20
+4 Bot4 4 4000 0 20
+5 Bot5 5 5000 0 20
+6 Bot6 6 0 5 20
+7 Bot7 7 0 10 20
+8 Bot8 8 0 15 20
