@@ -18,7 +18,7 @@ TEST(testPersonal, name) {
 }
 
 TEST(testProgrammer, payment) {
-	Project project("project", 0.0003, 0.00034, 0.0006);
+	Project project(70000, "project", 0.0003, 0.00034, 0.0006);
 	Programmer programmer(12, "name", "Programmer", 25, &project);
 	programmer.AddDone();
 	EXPECT_EQ(48, programmer.CalcPay());
