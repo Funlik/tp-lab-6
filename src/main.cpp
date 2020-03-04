@@ -6,14 +6,11 @@
 
 using namespace std;
 
-#include "general.h"
-#include "personal.h"
-#include "engineer.h"
-#include "manager.h"
+#include "General.h"
 #include <vector>
 #include <string>
 #include <fstream>
-#include "workersFabric.h"
+#include "WorkersFabric.h"
 
 int main() {
 //    vector<Employee*> workers;
