@@ -1,6 +1,7 @@
 #include "gtest/gtest.h"
 #include "gtest/gtest.h"
 #include <iostream>
+#include <string>
 #include "Employee.h"
 #include "Personal.h"
 #include "WorkTime.h"
@@ -8,6 +9,8 @@
 #include "Manager.h"
 #include <cstdlib>
 #include "Project.h"
+
+using namespace std;
 
 TEST(testWorktime, init1) {
 Employee * temp = new Driver(50,1,"test testov testovic",0,"Driver");
@@ -46,7 +49,7 @@ EXPECT_EQ(3,NewProject1.Number_of_Managers()+NewProject1.Number_of_Engineers());
 }
 
 TEST(getterTest, initprofname) {
-Cleaner Cleantest(50,1,"test testov testovich",0,"Cleaner")
+Cleaner Cleantest(50,1,"test testov testovich",0,"Cleaner");
 EXPECT_EQ("Cleaner", Cleantest.Tell_me_your_profession());
 }
 
