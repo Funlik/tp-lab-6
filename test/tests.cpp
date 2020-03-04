@@ -31,7 +31,7 @@ Project NewProject1("TEST2",1000);
 TeamLeader Lead1(0.4,200,2,"TESTOVA VIKA TESTOVNA",0,"TeamLeader",2,100);
 Lead1.setWorktime(10);
 Lead1.Add_to_Project(&NewProject1);
-EXPECT_EQ(200*10+100*2+0.4*1000,Lead1.Calculate());
+EXPECT_EQ(2600,Lead1.Calculate());
 }
 
 TEST(testProject, init4) {
@@ -62,7 +62,7 @@ EXPECT_EQ(2000*0.25+2*500,Man1.Calculate());
 
 TEST(testOnlyProject, init7) {
 Project NewProject1("TEST4",10000);
-Manager newMan(0.7  ,0,"K",20,"Manager");
+Manager newMan(0.7 ,0,"K",20,"Manager");
 NewProject1.AddManager(&newMan);
-EXPECT_EQ(7000,newMan.Calculate());
+EXPECT_EQ(10000*0.7,newMan.Calculate());
 }
