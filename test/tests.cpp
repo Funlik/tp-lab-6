@@ -14,7 +14,7 @@ TEST(testPersonal, payment) {
 
 TEST(testPersonal, name) {
 	Driver driver(12, "name", "Driver", 15);
-	EXPECT_EQ("driver", driver.GetName());
+	EXPECT_EQ("name", driver.GetName());
 }
 
 TEST(testProgrammer, payment) {
