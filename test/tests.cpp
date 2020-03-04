@@ -1,11 +1,11 @@
 #include "gtest/gtest.h"
 
-#include "general.h"
-#include "engineer.h"
-#include "manager.h"
-#include "personal.h"
-#include "workersFabric.h"
-#include "interfaces.h"
+#include "General.h"
+#include "Engineer.h"
+#include "Manager.h"
+#include "Personal.h"
+#include "WorkersFabric.h"
+#include "Interfaces.h"
 
 #include <vector>
 #include <string>
