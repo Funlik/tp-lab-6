@@ -26,7 +26,9 @@ TEST(testProgrammer, payment) {
 }
 
 TEST(testSeniorManager, payment) {
-	SeniorManager manager(12, "name", "SeniorManager", 80, NULL, 14);
+	Project project("Main", 0, 0, 0);
+	project.SetBudget(0);
+	SeniorManager manager(12, "name", "SeniorManager", 80, &project, 14);
 	manager.AddDone();
 	EXPECT_EQ(224, manager.CalcPay());
 }
