@@ -21,11 +21,11 @@ TEST(testProgrammer, payment) {
 	Project project("project", 0.0003, 0.00034, 0.0006);
 	Programmer programmer(12, "name", "Programmer", 25, &project);
 	programmer.AddDone();
-	EXPECT_EQ(48, driver.CalcPay());
+	EXPECT_EQ(48, programmer.CalcPay());
 }
 
 TEST(testProgrammer, payment) {
 	SeniorManager manager(12, "name", "SeniorManager", 80, "Main", 14);
 	manager.AddDone();
-	EXPECT_EQ(224, driver.CalcPay());
+	EXPECT_EQ(224, manager.CalcPay());
 }
