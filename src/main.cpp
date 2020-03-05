@@ -37,6 +37,7 @@ int main() {
     map<string, Specific_project *> projects;
 
     if (!p.is_open()) {
+        cout << "не могу открыть файл projects.txt"<<endl;
         return 1;
     }
 
@@ -86,6 +87,9 @@ int main() {
                 tleaders.push_back(_tl);
             }
         }
+    }else{
+        cout << "не могу открыть файл ceos.txt"<<endl;
+        return 1;
     }
     ceos.close();
 
@@ -136,6 +140,9 @@ int main() {
                 employees.push_back(emp);
             }
         }
+    }else{
+        cout << "не могу открыть файл workers.txt"<<endl;
+        return 1;
     }
 
     workers_f.close();
