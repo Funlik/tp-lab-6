@@ -18,7 +18,7 @@ include_directories(${COMMON_INCLUDES})
 file(GLOB TEST_SRC_FILES ${PROJECT_SOURCE_DIR}/test/*.cpp)
 
 
-set(SRC_FILES ${PROJECT_SOURCE_DIR}/src/Cleaner.cpp
+set(SRC_FILES1 ${PROJECT_SOURCE_DIR}/src/Cleaner.cpp
               ${PROJECT_SOURCE_DIR}/src/Creator.cpp
               ${PROJECT_SOURCE_DIR}/src/Driver.cpp
               ${PROJECT_SOURCE_DIR}/src/Employee.cpp
