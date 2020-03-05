@@ -26,3 +26,9 @@
 //    ASSERT_NE(workers[0], nullptr);
 //    ASSERT_NE(workers[1], nullptr);
 //}
+
+
+TEST(Tests, TestFabric) {
+    ASSERT_EQ(0, 0);
+}
+
