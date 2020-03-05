@@ -1,4 +1,4 @@
-#include "Teamleader.h"
+#include "TeamLeader.h"
 
 TeamLeader::TeamLeader(int t_id, string t_name, int t_worktime, float t_rate, float t_pay_in_hour, float t_progect_participation,
 	int t_project_budget, int t_subordinates):
