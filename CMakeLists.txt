@@ -28,7 +28,7 @@ set(SRC_FILES1 ${PROJECT_SOURCE_DIR}/src/Cleaner.cpp
 			  ${PROJECT_SOURCE_DIR}/src/Programmer.cpp
 			  ${PROJECT_SOURCE_DIR}/src/ProjectManager.cpp
 			  ${PROJECT_SOURCE_DIR}/src/SeniorManager.cpp
-			  ${PROJECT_SOURCE_DIR}/src/TeamLeader.cpp
+			  ${PROJECT_SOURCE_DIR}/src/Teamleader.cpp
 			  ${PROJECT_SOURCE_DIR}/src/Tester.cpp
 			  ${PROJECT_SOURCE_DIR}/src/WorkProject.cpp)
 
