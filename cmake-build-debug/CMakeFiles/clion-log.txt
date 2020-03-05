@@ -1,0 +1,16 @@
+/home/araxal/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/193.6494.38/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/araxal/c++course/lab6
+-- Configuring done
+CMake Error at CMakeLists.txt:27 (add_library):
+  Cannot find source file:
+
+    /home/araxal/c++course/lab6/src/personal.cpp
+
+  Tried extensions .c .C .c++ .cc .cpp .cxx .cu .m .M .mm .h .hh .h++ .hm
+  .hpp .hxx .in .txx
+
+
+CMake Error at CMakeLists.txt:27 (add_library):
+  No SOURCES given to target: task1_lib
+
+
+CMake Generate step failed.  Build files cannot be regenerated correctly.
