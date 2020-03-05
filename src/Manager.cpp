@@ -21,6 +21,6 @@ const double &Manager::get_impact() const {
 }
 
 void Manager::get_salary() {
-    set_work_time(0);
     payment = get_payment_according_p_impact();
+    set_work_time(0);
 }

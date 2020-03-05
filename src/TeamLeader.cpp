@@ -10,5 +10,5 @@ void TeamLeader::add_assigned_programmer(Programmer *p) {
 }
 
 double TeamLeader::get_payment_according_belongs_staff() {
-    return (double) (1.5 * assigned_programmers.size());
+    return (double) (assigned_programmers.size());
 }

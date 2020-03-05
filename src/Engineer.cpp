@@ -17,8 +17,8 @@ double Engineer::get_payment_according_h_worked() {
 }
 
 void Engineer::get_salary() {
-    set_work_time(0);
     payment = get_payment_according_h_worked() + get_payment_according_p_impact();
+    set_work_time(0);
 }
 
 void Engineer::set_impact(unsigned int _impact) {

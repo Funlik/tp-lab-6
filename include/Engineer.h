@@ -8,7 +8,6 @@
 #include "Employee.h"
 #include "Project.h"
 #include "WorkTime.h"
-
 using namespace std;
 
 class Engineer : public Employee, public Project, public WorkTime {

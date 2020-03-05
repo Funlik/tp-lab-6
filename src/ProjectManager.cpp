@@ -12,6 +12,6 @@ void ProjectManager::change_project(Specific_project *p) {
 }
 
 void ProjectManager::get_salary() {
-    set_work_time(0);
     payment = get_payment_according_p_impact() + get_payment_according_belongs_staff();
+    set_work_time(0);
 }

@@ -11,17 +11,15 @@
 
 class TeamLeader : public Programmer, public Heading {
     vector<Programmer *> assigned_programmers;
-
     double get_payment_according_belongs_staff() final;
-
 public:
     using Programmer::Programmer;
 
     void get_salary() final {
-        set_work_time(0);
         payment = get_payment_according_belongs_staff() +
                   get_payment_according_h_worked() +
                   get_payment_according_p_impact();
+        set_work_time(0);
     }
 
     void add_assigned_programmer(Programmer *p);
