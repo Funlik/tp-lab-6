@@ -12,7 +12,7 @@
 
 TEST(Tests, TestCleaner) {
     Cleaner *cleaner = new Cleaner(1,"Ivanov Ivan Ivanovich", 5, 100)
-    EXPECT_EQ(cleaner->getPayment(), 500);
+    EXPECT_EQ(cleaner->getPayment(), 500.0);
 }
 
 
