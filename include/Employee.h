@@ -22,27 +22,13 @@ class Employee{
     double payment;
     string Prof;
 public:
-    Employee(int _id, string _FIO, int _worktime, string _Prof){
-        id=_id;
-        FIO = _FIO;
-        worktime=_worktime;
-        payment=0;
-        Prof=_Prof;
-    };
-    string Tell_me_your_profession(){
-        return Prof;
-    }
-    virtual void Payday(){
-        cout<<id<<". "<<FIO<<" worked time - "<<worktime<<"| salary - "<<payment<<" ";
-    };
-    virtual double getMoney(){
-        return payment;
-    };
-    void setWorktime(int time){
-        this->worktime=time;
-    }
+    Employee(int _id, string _FIO, int _worktime, string _Prof);
+    string Tell_me_your_profession();
+    virtual void Payday();
+    double getMoney();
+    void setWorktime(int time);
     //virtual void Add_to_Project(Project* tmp)=0;
-  //  virtual void SetSub(int _Subordinates)=0;
+    //virtual void SetSub(int _Subordinates)=0;
     virtual double Calculate()=0;
 
 };

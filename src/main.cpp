@@ -100,6 +100,8 @@ int main() {
         WORKERS[i]->Payday();
     }
 
+    cout<<"\nProject: "<<NewProject.getName()<<"\n";
+
     cout<<"\nManagers:\n";
     for(int i = 0; i<Managers.size();i++){
         Managers[i]->setWorktime(30);
@@ -113,7 +115,6 @@ int main() {
         Engineers[i]->Calculate();
         Engineers[i]->Payday();
     }
-
 
     return 0;
 }

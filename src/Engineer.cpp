@@ -10,20 +10,20 @@ Engineer::Engineer(float _BudgetProportion,float _payrate,int _id, string _FIO, 
     BudgetProportion=_BudgetProportion;
 }
 
-
-double Programmer::WorkTime_Payment(){
-  //  this->payment += worktime * payrate;
+double Engineer::WorkTime_Payment(){
+    //  this->payment += worktime * payrate;
     return worktime * payrate;
 }
 
-double Programmer::ProjectPayment() {
+double Engineer::ProjectPayment() {
     if(curProject==NULL){
         cout<<"This worker does not belong to any project";
         return 0;
     }
-  //  this->payment+=BudgetProportion*Prjct->GetBudget();
+    //  this->payment+=BudgetProportion*Prjct->GetBudget();
     return BudgetProportion * curProject->GetBudget();
 }
+
 
 void Programmer::Payday(){
     Employee::Payday();
@@ -58,20 +58,6 @@ double TeamLeader::Calculate() {
     this->payment += WorkTime_Payment();
     this->payment += Heading_Payment();
     return payment;
-}
-
-double Tester::WorkTime_Payment(){
-    //  this->payment += worktime * payrate;
-    return worktime * payrate;
-}
-
-double Tester::ProjectPayment() {
-    if(curProject==NULL){
-        cout<<"This worker does not belong to any project";
-        return 0;
-    }
-    //  this->payment+=BudgetProportion*Prjct->GetBudget();
-    return BudgetProportion * curProject->GetBudget();
 }
 
 void Tester::Payday(){

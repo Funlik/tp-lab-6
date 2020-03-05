@@ -15,7 +15,7 @@ Personal::Personal(float _payrate,int _id, string _FIO, int _worktime,string _Pr
 }
 
 double Driver::WorkTime_Payment(){
-    this->payment += worktime * payrate + 350;
+    this->payment += worktime * payrate;
     return worktime * payrate;
 }
 
@@ -27,9 +27,9 @@ void Driver::Payday(){
 
 double Driver::Calculate() {
        WorkTime_Payment();
+       payment+=350;
        return payment;
 }
-
 
 double Cleaner::WorkTime_Payment(){
     this->payment += worktime * payrate;

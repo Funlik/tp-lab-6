@@ -16,6 +16,8 @@ class Engineer : public Employee, public WorkTime, public Project_Payment{
 
 public:
     Engineer(float _BudgetProportion,float _payrate,int _id, string _FIO, int _worktime,string _Prof);
+    double WorkTime_Payment() override;
+    double ProjectPayment() override;
 };
 
 class Programmer : public Engineer {
@@ -23,8 +25,6 @@ public:
     Programmer(float _BudgetProportion,float _payrate,int _id, string _FIO, int _worktime, string _Prof):Engineer( _BudgetProportion, _payrate, _id,  _FIO,  _worktime, _Prof){};
     void Payday() override;
     double Calculate() override ;
-    double WorkTime_Payment() override;
-    double ProjectPayment() override;
 };
 
 class Tester : public Engineer {
@@ -32,8 +32,6 @@ public:
     Tester(float _BudgetProportion,float _payrate,int _id, string _FIO, int _worktime, string _Prof):Engineer( _BudgetProportion, _payrate, _id,  _FIO,  _worktime, _Prof){};
     void Payday() override;
     double Calculate() override ;
-    double WorkTime_Payment() override;
-    double ProjectPayment() override;
 };
 
 class TeamLeader : public Programmer, public Heading{

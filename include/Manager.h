@@ -15,7 +15,6 @@ class Project;
 class Manager : public Project_Payment, public Employee{
 
 public:
-
     Manager(float _BudgetProportion,int _id, string _FIO, int _worktime,string _Prof);
     void Payday() override;
     double Calculate() override ;
@@ -25,8 +24,6 @@ public:
 class ProjectManager : public Heading, public Manager{
 
 public:
-
-
     ProjectManager(float _BudgetProportion,int _id, string _FIO, int _worktime,string _Prof,int _Sub,float MRate);
     double Heading_Payment() override;
     void Payday() override;

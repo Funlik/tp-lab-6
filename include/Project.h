@@ -24,77 +24,14 @@ private:
     vector <Manager*> ProjectManagers;
 
 public:
-   Project(string _name, double _budget){
-        name=_name;
-        budget=_budget;
-
-    };
-
-    double GetBudget(){
-        return budget;
-    }
-/*
-    void Make_Team(vector<Employee*> &WORKERS){
-        int globalsize=WORKERS.size();
-
-        for(int i = 0; i<globalsize; i++){
-            if((WORKERS[i]->Tell_me_your_profession()=="Programmer")||(WORKERS[i]->Tell_me_your_profession()=="Tester")||(WORKERS[i]->Tell_me_your_profession()=="TeamLeader")){
-                AddEngineer(WORKERS[i]);
-            }
-            if((WORKERS[i]->Tell_me_your_profession()=="Manager")||(WORKERS[i]->Tell_me_your_profession()=="ProjectManager")||(WORKERS[i]->Tell_me_your_profession()=="SeniorManager")||(WORKERS[i]->Tell_me_your_profession()=="TeamLeader")){
-                AddManager(WORKERS[i]);
-            }
-        }
-    }
-    */
-     void Make_Team(vector<Engineer*> &ENGWORKERS, vector<Manager*> &MANWORKERS){
-       //  ProjectManagers=MANWORKERS;
-       //  ProjectEngineers=ENGWORKERS;
-
-        for(int i = 0; i<ENGWORKERS.size(); i++){
-                AddEngineer(ENGWORKERS[i]);
-            }
-
-        for(int i = 0; i<MANWORKERS.size(); i++){
-                AddManager(MANWORKERS[i]);
-            }
-        }
-
-/*
-    int CntSub(){
-      if(Number_of_Engineers()==0 || Number_of_Managers()==0) return 0;
-
-      for(int i=0;i<Number_of_Managers();i++){
-          if(ProjectManagers[i]->Tell_me_your_profession()=="TeamLeader"){
-             ProjectManagers[i]->SetSub(Number_of_Engineers());
-          }
-          if(ProjectManagers[i]->Tell_me_your_profession()=="ProjectManager"){
-              return (Number_of_Engineers()+Number_of_Managers()-1);
-          }
-          if(ProjectManagers[i]->Tell_me_your_profession()=="SeniorManager"){
-              return (Number_of_Engineers()+Number_of_Managers());
-          }
-      }
-     }*/
-
-    void AddEngineer(Engineer* tmp){
-       tmp->Add_to_Project(this);
-        ProjectEngineers.push_back(tmp);
-    }
-
-    void AddManager(Manager* tmp){
-        tmp->Add_to_Project(this);
-
-        ProjectManagers.push_back(tmp);
-    }
-    int Number_of_Engineers(){
-
-        return ProjectEngineers.size();
-    }
-    int Number_of_Managers(){
-
-       return ProjectManagers.size();
-    }
+    Project(string _name, double _budget);
+    double GetBudget();
+    void Make_Team(vector<Engineer*> &ENGWORKERS, vector<Manager*> &MANWORKERS);
+    void AddEngineer(Engineer* tmp);
+    void AddManager(Manager* tmp);
+    int Number_of_Engineers();
+    int Number_of_Managers();
+    string getName();
 };
 
 
