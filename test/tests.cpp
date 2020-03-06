@@ -104,7 +104,7 @@ TEST(SeniorManager, payment_8)
 
 TEST(Factory, factory_1)
 {
-	vector<string> data{ "7:1:SeniorManager:2:prj1:prj2:0.5:0.5:1000:2000:2" };
+	vector<string> data{ "7","1","SeniorManager","2","prj1","prj2","0.5","0.5","1000","2000","2" };
 	Employee * emp;
 	emp = Factory::createEmployee(data);
 	emp->calc();
