@@ -84,8 +84,7 @@ TEST(lab6, test9){
 
 TEST(lab6, test10){	
     SeniorManager seniorManager(1, "Doroshenko Nikita", 100, 50000, 28);
-    seniorManager.calculatePayment({50000, 100000});
-    std::cout << seniorManager.getPayment();        		
+    seniorManager.calculatePayment({50000, 100000});		
 	
 	int result = 1550000;
 	EXPECT_EQ(seniorManager.getPayment(), result);
