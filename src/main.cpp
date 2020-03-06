@@ -22,7 +22,6 @@ void setProjects(){
     ifstream fin("../projects.txt");
     string input;
     while(getline(fin, input)){
-        cout << input;
         vector <string> inputParts = split(input, ' ');
         projects[inputParts[0]] = atoi(inputParts[1].c_str());
     }
@@ -45,7 +44,13 @@ int main(){
     setProjects();
     //cout << projects[0];
     vector<Employee*> employees = createWorkers();
-    employees[1]->setTime(40);
-    employees[1]->calcPayment();
-    cout << employees[1]->getPayment();
+    cout << "Statement of workers: each employee works 40 hours\n";
+    int totalSalary = 0;
+    for(auto x: employees){
+        x->setTime(40);
+        x->calcPayment();
+        totalSalary += x->getPayment();
+        cout << x->getFio() << " " << x->getPayment() << endl;
+    }
+    cout << "Total salary: " << totalSalary;
 }
