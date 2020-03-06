@@ -72,30 +72,30 @@
     int ProjectTeam::getValue() const {
         return projectValue;
     }
-    void ProjectTeam::getDeclaration(std::ostream & stream) const{
-        stream << std::fixed << std::setprecision(0);
-        stream << "Declaration:" << std::endl;
-        stream << "ID: " << seniorManager.getId() << " " << seniorManager.getName()
+    void ProjectTeam::getDeclaration() const{
+        std::cout << std::fixed << std::setprecision(0);
+        std::cout << "Declaration:" << std::endl;
+        std::cout << "ID: " << seniorManager.getId() << " " << seniorManager.getName()
             << " Senior Manager" <<" Payment: " << int(seniorManager.getPayment()) << std::endl;
-        stream << "Project name: " << name << std::endl;
+        std::cout << "Project name: " << name << std::endl;
         for(auto & x : cleaners)
-            stream << "ID: " << x.getId() << " " << x.getName()
+            std::cout << "ID: " << x.getId() << " " << x.getName()
                 << " Cleaner" <<" Payment: " << x.getPayment() << std::endl;
         for(auto & x : drivers)
-            stream << "ID: " << x.getId() << " " << x.getName()
+            std::cout << "ID: " << x.getId() << " " << x.getName()
                 << " Driver" <<" Payment: " << x.getPayment() << std::endl;
         for(auto & x : programmers)
-            stream << "ID: " << x.getId() << " " << x.getName()
+            std::cout << "ID: " << x.getId() << " " << x.getName()
                 << " Programmer" <<" Payment: " << x.getPayment() << std::endl;
         for(auto & x : testers)
-            stream << "ID: " << x.getId() << " " << x.getName()
+            std::cout << "ID: " << x.getId() << " " << x.getName()
                 << " Tester" <<" Payment: " << x.getPayment() << std::endl;
         for(auto & x : managers)
-            stream << "ID: " << x.getId() << " " << x.getName()
+            std::cout << "ID: " << x.getId() << " " << x.getName()
                 << " Manager" <<" Payment: " << x.getPayment() << std::endl;
-        stream << "ID: " << teamLeader.getId() << " " << teamLeader.getName()
+        std::cout << "ID: " << teamLeader.getId() << " " << teamLeader.getName()
                << " Team Leader" <<" Payment: " << teamLeader.getPayment() << std::endl;
-        stream << "ID: " << projectManager.getId() << " " << projectManager.getName()
+        std::cout << "ID: " << projectManager.getId() << " " << projectManager.getName()
                << " Project Manager" <<" Payment: " << projectManager.getPayment() << std::endl;
 
     }

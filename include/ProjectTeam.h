@@ -5,6 +5,7 @@
 #ifndef PAYMENT_PROJECTTEAM_H
 #define PAYMENT_PROJECTTEAM_H
 
+#include <iostream>
 #include <vector>
 #include <iomanip>
 
@@ -45,6 +46,6 @@ public:
     void addSeniorManager(const SeniorManager& _seniorManager);
     std::string getName() const;
     int getValue() const;
-    void getDeclaration(std::ostream & stream) const;
+    void getDeclaration() const;
 };
 #endif //PAYMENT_PROJECTTEAM_H
