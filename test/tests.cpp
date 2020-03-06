@@ -5,7 +5,7 @@ TEST(Test, TestNum)
 {
   Factory f;
   f.readWorkers("workers.txt");
-  EXPECT_EQ(f..getNum(), 20);
+  EXPECT_EQ(f.getNum(), 20);
 }
 
 TEST(Test, TestGetID) 
