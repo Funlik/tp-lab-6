@@ -1,0 +1,20 @@
+Clr 1 Cleaner_1 10 150
+Clr 2 Cleaner_2 10 150
+Clr 3 Cleaner_3 10 150
+Dvr 4 Driver_1 12 200
+Dvr 5 Driver_2 12 200
+Pmr 6 Programmer_1 8 500 100000 6
+Pmr 7 Programmer_2 8 500 100000 6
+Pmr 8 Programmer_3 8 500 100000 6
+Pmr 9 Programmer_4 8 500 100000 6
+Pmr 10 Programmer_5 8 500 100000 6
+TLr 11 TeamLider_1 8 1000 100000 20 750
+Tsr 12 Tester_1 8 400 100000 5
+Tsr 13 Tester_2 8 400 100000 5
+Mgr 14 Manager_1 100000 2.5
+Mgr 15 Manager_2 100000 2.5
+Mgr 16 Manager_3 100000 2.5
+Mgr 17 Manager_4 100000 2.5
+PMr 18 PManager_1 100000 5 250
+PMr 19 PManager_2 100000 5 250
+SMr 20 Smanager_1 100000 20 600
