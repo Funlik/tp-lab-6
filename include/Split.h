@@ -15,11 +15,11 @@ std::vector<ProjectTeam> split(std::ifstream& file_people, std::ifstream& file_p
     std::vector<ProjectTeam> teams;
     while(std::getline(file_projects, line, ' ')){
         std::string name = line;
-        std::getline(file_projects, line, '\n');
+        std::getline(file_projects, line);
         int value = stoi(line);
         teams.emplace_back(value, name);
     }
-    while(std::getline(file_people, line, '\n')){
+    while(std::getline(file_people, line)){
         std::stringstream person_line(line);
         while(std::getline(person_line, line, ' ')) {
             person.push_back(line);
