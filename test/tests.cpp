@@ -14,7 +14,7 @@ TEST(Staff, task_2) {
 
 TEST(Staff, task_3) {
 	Cleaner employee(1, "Kolya", 100);
-	EXPECT_EQ("Petya", employee.getName());
+	EXPECT_EQ("Kolya", employee.getName());
 }
 
 TEST(Staff, task_4) {
