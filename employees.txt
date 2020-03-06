@@ -1,0 +1,17 @@
+1 Petrov Alexander Izmailovich Cleaner 200
+2 Safronova Gera Eliseevna Cleaner 200
+3 Maybonov Anton Vladlenovich Driver 300 0
+4 Saymanov Uriy Timurovich Driver 300 400
+5 Gujin Petr Adrianovich ProjectManager 0.1 PJCTName 6 500
+6 Gorbacheva Maria Vladlenovna ProjectManager 0.2 PJCTNameTwo 4 500
+7 Mezencev Mark Gerasimovich TeamLeader 400 0.3 PJCTNameTwo 2 400
+8 Tagirov Vladimir Mikheevich Tester 300 0.1 PJCTName
+9 Borodin Sergey Timurovich Tester 250 0.1 PJCTName
+10 Yakubova Alisa Markovna Tester 300 0.1 PJCTNameTwo
+11 Artemov Artem Atemovich Manager 0.1 PJCTNameTwo
+12 Pavlov Andrey Matveyevich TeamLeader 400 0.2 PJCTName 4 400
+13 Sorokin Vlad Mironovich SeniorManager 0.2 16 500
+14 Shurenova Anfisa Georgievna Manager 0.3 PJCTName
+15 Kolosov Fedor Sergeevich Programmer 400 0.1 PJCTName
+16 Melnikov Artur Konstantinovich Programmer 400 0.1 PJCTName
+17 Suchova Valerya Valerievna Programmer 350 0.1 PJCTNameTwo
