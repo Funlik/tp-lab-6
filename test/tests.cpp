@@ -19,5 +19,5 @@ TEST(Test, TestGetName)
 {
   Factory f;
   f.readWorkers("workers.txt");
-  EXPECT_EQ((f.getCleaners()[0]).getId(), "Cleaner_1");
+  EXPECT_EQ((f.getCleaners()[0]).getName(), "Cleaner_1");
 }
