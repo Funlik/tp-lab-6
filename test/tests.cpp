@@ -1,6 +1,6 @@
 #include "gtest/gtest.h"
 
-#include "Company"
+#include "Company.h"
 TEST(lab6, test1){
     ProjectTeam team(100, std::string("OPENCV"));
 	std::string result = "OPENCV";
