@@ -20,7 +20,7 @@ file(GLOB TEST_SRC_FILES ${PROJECT_SOURCE_DIR}/test/*.cpp)
 
 set(SRC_FILES ${PROJECT_SOURCE_DIR}/src/ProjectTeam.cpp)
 
-set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD 14)
 
 add_library(task1_lib ${SRC_FILES})
 add_executable(task1 ${PROJECT_SOURCE_DIR}/src/main.cpp)
