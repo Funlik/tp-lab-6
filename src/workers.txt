@@ -1,0 +1,9 @@
+vision_20000
+people 1_cleaner_20_100
+people 4_driver_30_100
+people 2 _programmer_29_250_20
+people 3_tester_34_250_40
+people 8_teamleader_40_250_5
+people 5_manager_20
+people 6_projectmanager_40_10
+people 7_seniormanager_1
