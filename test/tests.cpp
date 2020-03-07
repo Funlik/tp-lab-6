@@ -30,7 +30,6 @@ TEST(Testname, init3)
 }
 TEST(Testpayment, init4)
 {
-	Project myproject = { "Compute Vision", 20000 };
 	SeniorManager A(1, "Semen Ololoev", 9);
-	EXPECT_EQ(9000, A.CalcPayment());
+	EXPECT_EQ(90000, A.CalcPayment());
 }

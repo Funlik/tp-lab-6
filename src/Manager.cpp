@@ -69,7 +69,6 @@ SeniorManager::SeniorManager(int id1, string name1,int countofprojects1)
 	name = name1;
 	CountOfProjects = countofprojects1;
 	project = NULL;
-	CountOfProjects = 0;
 	profession = "seniormanager";
 }
 
