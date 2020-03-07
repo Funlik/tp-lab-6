@@ -1,6 +1,6 @@
 #include "gtest/gtest.h"
 
-#include "Creat.h"
+#include "Create.h"
 
 TEST(Cleaner, calc_payment)
 {
