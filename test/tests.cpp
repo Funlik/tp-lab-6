@@ -18,7 +18,7 @@ TEST(test1,task2)
     
     dean->calc();
     
-    EXPECT_EQ(2460, dean->Employee::getSal(););
+    EXPECT_EQ(2460, dean->Employee::getSal());
 }
 
 //engineer calc() test
@@ -30,7 +30,7 @@ TEST(test1,task3)
     
     dean->calc(10, 2000);
     
-    EXPECT_EQ(2660, dean->Employee::getSal(););
+    EXPECT_EQ(2660, dean->Employee::getSal());
 }
 
 //heading calc() test
@@ -43,6 +43,6 @@ TEST(test1,task4)
 
     dean->calc(10, 2000);
     
-    EXPECT_EQ(3460, dean->Employee::getSal(););
+    EXPECT_EQ(3460, dean->Employee::getSal());
 }
 
