@@ -38,8 +38,8 @@ TEST(Lab6Test5, TeamLeaderTest) {
 	Employee* teamleader = office->NewEmployee("TeamLeader", 5, "Joanna", 30, 600, 0);
 	Employee* programmer1 = office->NewEmployee("Programmer", 1, "Karl", 30, 500, 0);
 	Employee* programmer2 = office->NewEmployee("Programmer", 2, "Kat", 30, 500, 0);
-	teamleader.AddProgrammer(programmer1);
-	teamleader.AddProgrammer(programmer2);
+	teamleader->AddProgrammer(programmer1);
+	teamleade->AddProgrammer(programmer2);
 	teamleader->CalculatePayment(5, 30000, 300);
 	EXPECT_EQ(teamleader->GetPayment(), 20100);
 }
@@ -56,8 +56,8 @@ TEST(Lab6Test7, ProjectManagerTest) {
 	Employee* projectmanager = office->NewEmployee("ProjectManager", 7, "Loan", 30, 800, 20);
 	Employee* manager1 = office->NewEmployee("Manager", 1, "Ollson", 25, 700, 10);
 	Employee* manager2 = office->NewEmployee("Manager", 2, "Jacob", 25, 700, 10);
-	projectmanager.AddManager(manager1);
-	projectmanager.AddManager(manager2);
+	projectmanager->AddManager(manager1);
+	projectmanager->AddManager(manager2);
 	projectmanager->CalculatePayment(20, 30000, 350);
 	EXPECT_EQ(projectmanager->GetPayment(), 6700);
 }
@@ -67,8 +67,8 @@ TEST(Lab6Test8, SeniorManagerTest) {
 	Employee* seniormanager = office->NewEmployee("SeniorManager", 8, "Jake", 30, 800, 20);
 	Employee* prmanager1 = office->NewEmployee("ProjectManager", 1, "Kate", 30, 800, 15);
 	Employee* prmanager2 = office->NewEmployee("ProjectManager", 2, "Katrin", 30, 800, 15);
-	seniormanager.AddProjMan(prmanager1);
-	seniormanager.AddProjMan(prmanager2);
+	seniormanager->AddProjMan(prmanager1);
+	seniormanager->AddProjMan(prmanager2);
 	seniormanager->CalculatePayment(23, 30000, 400);
 	EXPECT_EQ(seniormanager->GetPayment(), 7700);
 }
