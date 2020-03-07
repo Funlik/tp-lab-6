@@ -1,0 +1,9 @@
+﻿0,Petrov,Driver,300,0.02,MSDK,0,0
+1,Ivanov,Cleaner,300,0.02,MSDK,0,0
+2,Smirnov,Cleaner,300,0.02,MSDK,0,0
+3,Sidorov,Programmer,400,0.03,MSDK,0,0
+4,Kozlov,Tester,300,0.01,Os_and_infra,0,0
+5,Bykov,TeamLeader,700,0.02,Os_and_infra,20,500
+6,Tinkov,Manager,0,0.02,Os_and_infra,15,400
+7,Ovechkin,ProjectManager,0,0.3,MSDK,15,1000
+8,Mikhalkov,SeniorManager,0,0.4,Os_and_infra,20,5000
