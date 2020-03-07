@@ -7,7 +7,6 @@
 #include "Personal.h"
 #include "Task.h"
 #include "Create.h"
-#include "Company.h"
 
 TEST(lab6, test1){
 	Task task("Project-47", 1000);
