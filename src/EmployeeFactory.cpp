@@ -36,7 +36,7 @@ vector<Employee*>* EmployeeFactory::getEmployees() {
 
     auto employees = new vector<Employee*>();
     fin.open(filename, std::ifstream::in);
-    string id, fio, spec, base, share, project, subord, rub_rep_subord;
+    string id, fio, spec, base, share, project, subord, rub_per_subord;
     while(getline(fin, id, ',')){
         getline(fin, fio, ',');
         getline(fin, spec, ',');
@@ -44,7 +44,7 @@ vector<Employee*>* EmployeeFactory::getEmployees() {
         getline(fin, share, ',');
         getline(fin, project, ',');
         getline(fin, subord, ',');
-        getline(fin, rub_rep_subord);
+        getline(fin, rub_per_subord);
         if (spec == "Cleaner"){
             employees->push_back(new Cleaner(atoi(id.c_str()), fio, 40, atof(base.c_str()), spec));
         }
@@ -61,18 +61,18 @@ vector<Employee*>* EmployeeFactory::getEmployees() {
         }
         else if (spec == "TeamLeader"){
             employees->push_back(new TeamLeader(atoi(id.c_str()), fio, 40, atof(share.c_str()),
-                    atoi(base.c_str()), budgets[project], atoi(subord.c_str()), atoi(rub_rep_subord.c_str()), spec));
+                                                atoi(base.c_str()), budgets[project], atoi(subord.c_str()), atoi(rub_per_subord.c_str()), spec));
         }
         else if (spec == "Manager"){
             employees->push_back(new Manager(atoi(id.c_str()), fio, 40, atof(share.c_str()), budgets[project], spec));
         }
         else if (spec == "ProjectManager"){
             employees->push_back(new ProjectManager(atoi(id.c_str()), fio, 40, atof(share.c_str()),
-                    budgets[project], atoi(subord.c_str()), atoi(rub_rep_subord.c_str()), spec));
+                                                    budgets[project], atoi(subord.c_str()), atoi(rub_per_subord.c_str()), spec));
         }
         else if (spec == "SeniorManager"){
             employees->push_back(new SeniorManager(atoi(id.c_str()), fio, 40, atof(share.c_str()),
-                                                    budgets[project], atoi(subord.c_str()), atoi(rub_rep_subord.c_str()), spec));
+                                                   budgets[project], atoi(subord.c_str()), atoi(rub_per_subord.c_str()), spec));
         }
 
     }
