@@ -23,7 +23,7 @@ public:
     void calc() override {
         payment = worktime_payment(worktime, base) +
                 heading_payment(number_subordinate) +
-                project_payment(project->getBudget(), share) + 20;
+                project_payment(project->getBudget(), share);
     }
     int heading_payment(int number_of_subordinate) override {
         return number_of_subordinate * payment_per_subordinate;
