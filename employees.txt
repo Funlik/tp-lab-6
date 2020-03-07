@@ -2,7 +2,7 @@
 2 Safronova Gera Eliseevna Cleaner 200
 3 Maybonov Anton Vladlenovich Driver 300 0
 4 Saymanov Uriy Timurovich Driver 300 400
-5 Gujin Petr Adrianovich ProjectManager 0.1 PJCTName 6 500
+5 Gujin Petr Adrianovich ProjectManager 0.2 PJCTName 6 500
 6 Gorbacheva Maria Vladlenovna ProjectManager 0.2 PJCTNameTwo 4 500
 7 Mezencev Mark Gerasimovich TeamLeader 400 0.3 PJCTNameTwo 2 400
 8 Tagirov Vladimir Mikheevich Tester 300 0.1 PJCTName
@@ -10,8 +10,22 @@
 10 Yakubova Alisa Markovna Tester 300 0.1 PJCTNameTwo
 11 Artemov Artem Atemovich Manager 0.1 PJCTNameTwo
 12 Pavlov Andrey Matveyevich TeamLeader 400 0.2 PJCTName 4 400
-13 Sorokin Vlad Mironovich SeniorManager 0.2 16 700
-14 Shurenova Anfisa Georgievna Manager 0.3 PJCTName
+13 Sorokin Vlad Mironovich SeniorManager 0.2 26 700
+14 Shurenova Anfisa Georgievna Manager 0.3 PJCTNameFour
 15 Kolosov Fedor Sergeevich Programmer 400 0.1 PJCTName
 16 Melnikov Artur Konstantinovich Programmer 400 0.1 PJCTName
 17 Suchova Valerya Valerievna Programmer 350 0.1 PJCTNameTwo
+18 Gorova Helga Georgievna Tester 350 0.1 PJCTNameFour
+19 Zuev Veloriy Bogdanovich Tester 250 0.1 PJCTNameFour
+20 Kozlov Zakhar Makarovich Tester 300 0.1 PJCTNameThree
+21 Kolobova Asida Eldarovna ProjectManager 0.2 PJCTNameThree 4 500
+22 Konovalov Ignatius Lvovich TeamLeader 400 0.2 PJCTNameThree 4 400
+23 Kornilova Magdalena Tikhonovna Manager 0.3 PJCTNameThree
+24 Krasilnikova Danna Gennadievna Programmer 400 0.1 PJCTNameTwo
+25 Molchanov Arkady Viktorovich Programmer 400 0.1 PJCTNameFour
+26 Myasnikova Yuzefa Maksimovna Manager 0.3 PJCTName
+27 Ovchinnikova Ulna Timofeevna Manager 0.3 PJCTNameFour
+28 Odintsov Varlam Romanovich Manager 0.3 PJCTNameThree
+29 Petrova Ariadna Vladlenovna Programmer 400 0.1 PJCTNameThree
+30 Potapov Leonid Timurovich ProjectManager 0.1 PJCTNameFour 4 400
+31 Rodionov Ignat Kupriyanovich TeamLeader 250 0.1 PJCTNameFour 4 500

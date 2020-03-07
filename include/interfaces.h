@@ -16,7 +16,7 @@ public:
 class Project {
 public:
     Project() {}
-    virtual int calcProjPay() = 0;
+    virtual float calcProjPay() = 0;
     ~Project() {}
 };
 //расчет зарплаты по руководству

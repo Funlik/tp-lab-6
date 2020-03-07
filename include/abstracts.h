@@ -43,7 +43,7 @@ public:
     Engineer(int id, string fio, int rate, float contribution, string project);
 
     int calcHourlyPay() override;
-    int calcProjPay() override;
+    float calcProjPay() override;
     void calcPayment()override;
 };
 #endif //TASK1_ABSTRACTS_H

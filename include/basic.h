@@ -50,7 +50,7 @@ protected:
     string project;
 public:
     Manager(int id, string fio, float contribution, string project);
-    int calcProjPay() override ;
+    float calcProjPay() override ;
     void calcPayment()override ;
 };
 
@@ -66,8 +66,7 @@ public:
 
 class SeniorManager : public ProjectManager {
 public:
-    SeniorManager(int id, string fio, float contribution, int subordinates, int headpay)
-    :ProjectManager(id, fio, contribution, "",  subordinates , headpay) {}
-    int calcProjPay() override ;
+    SeniorManager(int id, string fio, float contribution, int subordinates, int headpay);
+    float calcProjPay() override ;
 };
 #endif //TASK1_BASIC_H

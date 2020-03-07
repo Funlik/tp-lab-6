@@ -38,7 +38,7 @@ Manager::Manager(int id, string fio, float contribution, string project):Employe
     this->contribution = contribution;
     this->project = project;
 }
-int Manager::calcProjPay(){
+float Manager::calcProjPay(){
     return projects[this->project]*this->contribution;
 }
 void Manager::calcPayment(){
@@ -56,7 +56,9 @@ int ProjectManager::calcHeadPay(){
 void ProjectManager::calcPayment(){
     this->payment += this->calcProjPay() + this->calcHeadPay();
 }
- int SeniorManager::calcProjPay(){
+SeniorManager::SeniorManager(int id, string fio, float contribution, int subordinates, int headpay)
+        :ProjectManager(id, fio, contribution, "",  subordinates , headpay) {}
+float SeniorManager::calcProjPay(){
     int sum = 0;
     for (auto x: projects){
         sum += x.second;

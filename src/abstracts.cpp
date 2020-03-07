@@ -52,7 +52,7 @@ Engineer::Engineer(int id, string fio, int rate, float contribution, string proj
 int Engineer::calcHourlyPay(){
     return this->worktime * this->rate;
 }
-int Engineer::calcProjPay(){
+float Engineer::calcProjPay(){
     return projects[this->project]*this->contribution;
 }
 void Engineer::calcPayment(){

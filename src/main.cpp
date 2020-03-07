@@ -42,7 +42,6 @@ vector<Employee*> createWorkers(){
 int main(){
     //SetConsoleOutputCP(65001);
     setProjects();
-    //cout << projects[0];
     vector<Employee*> employees = createWorkers();
     cout << "Statement of workers: each employee works 40 hours\n";
     int totalSalary = 0;
