@@ -23,7 +23,7 @@ void setProjects(){
     string input;
     while(getline(fin, input)){
         vector <string> inputParts = split(input, ' ');
-        projects[inputParts[0]] = atoi(inputParts[1].c_str());
+        projects[inputParts[0]] = stoi(inputParts[1]);
     }
     fin.close();
 }
@@ -53,4 +53,6 @@ int main(){
         cout << x->getFio() << " " << x->getPayment() << endl;
     }
     cout << "Total salary: " << totalSalary;
+
+
 }

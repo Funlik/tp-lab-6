@@ -10,7 +10,7 @@
 10 Yakubova Alisa Markovna Tester 300 0.1 PJCTNameTwo
 11 Artemov Artem Atemovich Manager 0.1 PJCTNameTwo
 12 Pavlov Andrey Matveyevich TeamLeader 400 0.2 PJCTName 4 400
-13 Sorokin Vlad Mironovich SeniorManager 0.2 16 500
+13 Sorokin Vlad Mironovich SeniorManager 0.2 16 700
 14 Shurenova Anfisa Georgievna Manager 0.3 PJCTName
 15 Kolosov Fedor Sergeevich Programmer 400 0.1 PJCTName
 16 Melnikov Artur Konstantinovich Programmer 400 0.1 PJCTName
