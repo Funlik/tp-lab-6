@@ -34,7 +34,7 @@ TEST(test1,task3)
 }
 
 //heading calc() test
-TEST(test1,task3)
+TEST(test1,task4)
 {
     WFactory fact;
     TeamLeader* dean = fact.createTL("Test", 123);
