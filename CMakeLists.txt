@@ -19,10 +19,10 @@ file(GLOB TEST_SRC_FILES ${PROJECT_SOURCE_DIR}/test/*.cpp)
 
 
 set(SRC_FILES ${PROJECT_SOURCE_DIR}/src/Employee.cpp
-     SRC_FILES ${PROJECT_SOURCE_DIR}/src/Engineer.cpp
-     SRC_FILES ${PROJECT_SOURCE_DIR}/src/Personal.cpp
-     SRC_FILES ${PROJECT_SOURCE_DIR}/src/Source.cpp
-     SRC_FILES ${PROJECT_SOURCE_DIR}/src/Manager.cpp)
+     	        ${PROJECT_SOURCE_DIR}/src/Engineer.cpp
+                        ${PROJECT_SOURCE_DIR}/src/Personal.cpp
+    	        ${PROJECT_SOURCE_DIR}/src/Source.cpp
+	        ${PROJECT_SOURCE_DIR}/src/Manager.cpp)
 
 set(CMAKE_CXX_STANDARD 11)
 
