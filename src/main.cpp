@@ -10,7 +10,7 @@
 #include "basic.h"
 #include <string>
 #include <stdlib.h>
-#include <windows.h>
+//#include <windows.h>
 #include <vector>
 #include <map>
 
@@ -40,7 +40,7 @@ vector<Employee*> createWorkers(){
 }
 
 int main(){
-    SetConsoleOutputCP(65001);
+    //SetConsoleOutputCP(65001);
     setProjects();
     //cout << projects[0];
     vector<Employee*> employees = createWorkers();
