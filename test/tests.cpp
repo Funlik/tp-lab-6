@@ -41,7 +41,7 @@ TEST(Programmer, calc_payment)
 	project->per_programmer = 100;
 	inf.id = 1000;
 	inf.name = "Vokh Luz Ser";
-	inf.position = "Progremmer";
+	inf.position = "Programmer";
 	inf.base = 150;
 	inf.worktime = 100;
 	Employee* employee = factory->make_employee(inf);
