@@ -11,7 +11,7 @@ TEST(Testpayment, init1)
 {
 	Project myproject = { "Compute Vision", 20000 };
 	Programmer A(1,"people 1",50, 2500);
-	A.add_project($myproject, 20);
+	A.add_project(&myproject, 20);
 	EXPECT_EQ(129000, A.CalcPayment());
 }
 TEST(Testpayment, init2)
