@@ -110,6 +110,7 @@ TEST(ProjectManager, calc_payment)
 	Factory* factory = new Factory();
 	Information inf;
 	InfProject* project = new InfProject("Proj_1", 100000);
+	project->per_project_manger = 20;
 	project->num_manager = 2;
 	project->num_programmer = 5;
 	project->num_tester = 2;
