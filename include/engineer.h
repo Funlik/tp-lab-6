@@ -1,38 +1,74 @@
 #pragma once
-#include<iostream>
-#include<string>
-#include "employee.h"
-using namespace std;
-class Engineer :public Employee, public WorkTime, public Project{
+
+#include "Employee.h"
+#include "WorkTime.h"
+#include "Project.h"
+
+/* ==================== [Работник: инженер] ==================== */
+// * имеет ставку и оплату за час + бонусы от выполняемого проекта
+
+class Engineer : public Employee, public WorkTime, public Project
+{
 protected:
-	int rate;
-	double part;
-public:
-	Engineer(int id, string name, int worktime, int rate, double part,int fund);
-	int countByTime();
-	double countByProject();
-	int getPayment();
-}; // инженер.Имеет ставку и оплату за час + бонусы от выполняемого проекта.
+	/* ==================== [Переменные] ==================== */
+	int base;		// базовая ставка
+	double deposit;	// вклад
+	string project;	// проект
+	int budget;		// бюджет
 
-//third level
-class Programmer:public Engineer{
 public:
-	Programmer(int id, string name, int worktime, int rate, double part,int fund) :Engineer(id, name, worktime, rate, part, fund){};
-	int getPayment();
-}; // инженер - программист.
-class Tester: public Engineer{
-public:
-	Tester(int id, string name, int worktime, int rate, double part,int fund) :Engineer(id, name, worktime, rate, part, fund){};
-	int getPayment();
-}; //инженер по тестированию.
+	Engineer() : Employee() {}; // конструктор по умолчанию (наследуем у класса Employee)
 
-//forth level
-class TeamLeader:public Programmer,public Heading{
-private:
-	int people;
-	int rate_for_sub=tmp;
-public:
-	TeamLeader(int id, string name, int worktime, int rate, double part,int fund, int people);
-	int countByHeading();
-	int getPayment();
-}; // ведущий программист.
+	/* ========== [Метод: рассчитать зар.плату по отработанному времени] ========== */
+	int WorkTimePaymentMethod(int work_time, int base) override
+	{
+		int payment = work_time * base;
+		return payment;
+	}
+
+	/* ===== [Метод: рассчитать зар.плату с учетом бонуса от выполняемого проекта] ===== */
+	int ProjectPaymentMethod(int budget, double deposit) override
+	{
+		int bonus = budget * deposit;
+		return bonus;
+	}
+	
+	/* ========== [Метод: установить базовую ставку ] ========== */
+	void setBase(int base)
+	{
+		this->base = base;
+	}
+
+	/* ========== [Метод: получить базовую ставку ] ========== */
+	int getBase() const
+	{
+		return base;
+	}
+
+	/* ========== [Метод: установить вклад ] ========== */
+	void setDeposit(double depos)
+	{
+		this->deposit = depos;
+	}
+
+	/* ========== [Метод: получить текущий вклад ] ========== */
+	double getDeposit()
+	{
+		return deposit;
+	}
+
+	/* ========== [Метод: задать проект] ========== */
+	void setProject(string project_name)
+	{
+		this->project = project_name;
+	}
+
+	/* ========== [Метод: получить проект] ========== */
+	string getProject()
+	{
+		return project;
+	}
+
+	~Engineer() {}
+};
+
