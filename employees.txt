@@ -1,0 +1,25 @@
+1 Zhelezin Mikhail Mikhailovich Cleaner 300
+2 Zhelezin Mikhail Mikhailovich Cleaner 500
+3 Zhelezin Mikhail Mikhailovich Driver 500 400
+4 Zhelezin Mikhail Mikhailovich Driver 600 60
+5 Zhelezin Mikhail Mikhailovich Tester 300 0.1 Kek
+6 Zhelezin Mikhail Mikhailovich Tester 400 0.1 Kek2
+7 Zhelezin Mikhail Mikhailovich Tester 400 0.1 Kek3
+8 Zhelezin Mikhail Mikhailovich Tester 500 0.1 Kek4
+9 Zhelezin Mikhail Mikhailovich Programmer 500 0.1 Kek
+10 Zhelezin Mikhail Mikhailovich Programmer 600 0.1 Kek2
+11 Zhelezin Mikhail Mikhailovich Programmer 500 0.1 Kek3
+12 Zhelezin Mikhail Mikhailovich Programmer 500 0.1 Kek4
+13 Zhelezin Mikhail Mikhailovich TeamLeader 900 0.2 Kek 5 400
+14 Zhelezin Mikhail Mikhailovich TeamLeader 800 0.2 Kek2 1 400
+15 Zhelezin Mikhail Mikhailovich TeamLeader 900 0.2 Kek3 2 400
+16 Zhelezin Mikhail Mikhailovich TeamLeader 300 0.2 Kek4 1 300
+17 Zhelezin Mikhail Mikhailovich Manager 0.2 Kek
+18 Zhelezin Mikhail Mikhailovich Manager 0.2 Kek2
+19 Zhelezin Mikhail Mikhailovich Manager 0.2 Kek3
+20 Zhelezin Mikhail Mikhailovich Manager 0.2 Kek4
+21 Zhelezin Mikhail Mikhailovich ProjectManager 0.2 Kek 4 500
+22 Zhelezin Mikhail Mikhailovich ProjectManager 0.2 Kek2 3 300
+23 Zhelezin Mikhail Mikhailovich ProjectManager 0.2 Kek3 4 400
+24 Zhelezin Mikhail Mikhailovich ProjectManager 0.2 Kek4 3 400
+25 Zhelezin Mikhail Mikhailovich SeniorManager 0.2 19 900

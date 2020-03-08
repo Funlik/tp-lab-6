@@ -67,7 +67,7 @@ SeniorManager::SeniorManager(int id, string FIO, double contribution, int subs, 
 
 double SeniorManager::calcProject() {
     double fullPayment = 0;
-    for(auto x: projects)
+    for(const auto& x: projects)
         fullPayment += x.second;
     return fullPayment * contribution;
 }

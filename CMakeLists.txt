@@ -18,7 +18,7 @@ include_directories(${COMMON_INCLUDES})
 file(GLOB TEST_SRC_FILES ${PROJECT_SOURCE_DIR}/test/*.cpp)
 
 
-set(SRC_FILES ${PROJECT_SOURCE_DIR}/src/main.cpp include/Interfaces.h include/AbstractClasses.h include/MainClasses.h src/MainClasses.cpp src/AbstractClasses.cpp)
+set(SRC_FILES ${PROJECT_SOURCE_DIR}/src/main.cpp include/Interfaces.h include/AbstractClasses.h include/MainClasses.h src/MainClasses.cpp src/AbstractClasses.cpp include/Factory.h src/Factory.cpp include/Generators.h)
 
 set(CMAKE_CXX_STANDARD 11)
 

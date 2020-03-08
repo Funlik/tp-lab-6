@@ -62,6 +62,7 @@ protected:
 };
 
 class SeniorManager: public ProjectManager {
+public:
     SeniorManager(int, string, double, int, int);
     double calcProject() override;
 };
