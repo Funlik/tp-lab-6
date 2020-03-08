@@ -20,7 +20,7 @@ public:
 	int heads = 0;
 public:
 	Employee() {};
-	virtual double get_money() = 0
+	virtual double get_money()
 	{}
 	std::string get_name()
 	{
@@ -52,14 +52,14 @@ public:
 class WorkTime
 {
 public:
-	virtual int count() =0 {}
+	virtual int count() {}
 };
 
 class Project
 {
 	friend Factory;
 public:
-	virtual double pr_bonus() =0 {}
+	virtual double pr_bonus() {}
 };
 class Personal : public Employee, public WorkTime
 {
@@ -95,7 +95,7 @@ class Heading
 {
 	friend Factory;
 public:
-	virtual double h_bonus()=0 {}
+	virtual double h_bonus() {}
 };
 class Manager : public Employee, public Project
 {
