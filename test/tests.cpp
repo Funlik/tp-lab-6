@@ -66,7 +66,7 @@ TEST(lab6, task8)
 {
 	extern map<string, int> projects;
 	projects["Z"] = 10000;
-	SeniorManager* emp = new Manager("Alex", 3, "SeniorManager", "Z", 0.7, 10);
+	SeniorManager* emp = new SeniorManager("Alex", 3, "SeniorManager", "Z", 0.7, 10);
 	float res = emp->getPayment();
 	EXPECT_EQ(12000, res);
 }
@@ -75,7 +75,7 @@ TEST(lab6, task9)
 {
 	extern map<string, int> projects;
 	projects["Leader"] = 10000;
-	TeamLeader* emp = new Manager("Alex", 3, 1000, "TeamLeader", "Leader", 0.7, 3);
+	TeamLeader* emp = new TeamLeader("Alex", 3, 1000, "TeamLeader", "Leader", 0.7, 3);
 	emp->setWorkTime(10);
 	float res = emp->getPayment();
 	EXPECT_EQ(21500, res);
