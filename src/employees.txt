@@ -1,0 +1,20 @@
+102 Shelton Driver 120 200 500
+103 Dorsey Programmer 150 300 SERIOS 0.1
+104 Wells Programmer 170 300 SERIOS 0.12
+105 Alexander TeamLeader 180 350 SERIOS 0.2 5
+106 Gregory SeniorManager 200 SERIOS 0.08 2
+107 Lester ProjectManager 190 SERIOS 0.1 2
+108 Skinner ProjectManager 150 FIGURE 0.3 2
+109 Green Manager 180 SERIOS 0.15
+110 Parsons Manager 160 SERIOS 0.05
+111 Floyd Manager 170 FIGURE 0.13
+112 McKinney Manager 174 FIGURE 0.09
+113 Weaver Driver 100 200 0
+114 Morgan Tester 180 320 SERIOS 0.11
+115 Gaines Tester 150 320 FIGURE 0.18
+116 Burke Programmer 160 300 SERIOS 0.09
+117 Reynolds Programmer 160 300 FIGURE 0.16
+118 Davis Programmer 140 300 FIGURE 0.14
+119 Chambers Cleaner 120 150
+120 Smith Cleaner 160 150
+

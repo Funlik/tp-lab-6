@@ -1,33 +1,28 @@
 #pragma once
-
-#include "Employee.h"
-#include "WorkTime.h"
-
-/* ==================== [Работник по найму] ==================== */
-// * с оплатой за фактически отработанное время (имеет ставку за час)
-
-class Personal : public Employee, public WorkTime
-{
+#include<iostream>
+#include<string>
+#include "employee.h"
+using namespace std;
+class Personal :public Employee, public WorkTime{
 protected:
-	/* ==================== [Переменные] ==================== */
-	int base; // ставка
-
+	int rate;
 public:
-	/* ==================== [Методы] ==================== */
-	Personal() {} // конструктор по умолчанию
-
-	/* ========== [Метод: установить базовую ставку ] ========== */
-	void setBase(int base)
-	{
-		this->base = base; // руб./час
-	}
-
-	/* ========== [Метод: получить базовую ставку ] ========== */
-	int getBase() const
-	{
-		return base;
-	}
-
-	~Personal() {} // деструктор
-};
+	Personal(int id, string name, int worktime, int rate);
+	int countByTime();
+	int getPayment();
+}; //работник по найму с оплатой за фактически отработанное время.Имеет ставку за час.
+//third level
+class Cleaner:public Personal{
+public:
+	Cleaner(int id, string name, int worktime, int rate) :Personal(id, name, worktime, rate){};
+	int getPayment();
+	
+}; //уборщица.
+class Driver:public Personal{
+private:
+	int overtime;
+public:
+	Driver(int id, string name, int worktime, int rate, int overtime);
+	int getPayment();
+}; // водитель.
 
