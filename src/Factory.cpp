@@ -1,5 +1,6 @@
 #include "Factory.h"
 #include "Interfaces.h"
+#include <algorithm>
 
 std::vector<std::string> split(const std::string& s, char delimiter) {
 	std::stringstream ss(s);
