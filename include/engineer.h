@@ -1,4 +1,5 @@
 #pragma once
+#define tmp 30
 #include<iostream>
 #include<string>
 #include "employee.h"
