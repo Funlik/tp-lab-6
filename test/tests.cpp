@@ -26,3 +26,20 @@ TEST(Tests, TestFabric) {
     ASSERT_NE(workers[1], nullptr);
 }
 
+TEST(Tests, TestManager) {
+    Manager *manager = new Manager(1,"Ivanov Ivan Ivanovich", 10, 100, "proj1", 10000, 0.2);
+    EXPECT_EQ(cleaner->getPayment(), 3000.0);
+}
+
+
+TEST(Tests, TestTeamLeader) {
+    TeamLeader *teamLeader = new TeamLeader(2,"A A A",20,100,"proj",10000,0.3,100,100);
+    EXPECT_EQ(teamLeader ->getPayment();, 15000.0);
+}
+
+TEST(Tests, TestProgrammer) {
+    Programmer *programmer = new Programmer(3, "B B B", 10, 1000, "Proj", 10000, 0.2);
+    EXPECT_EQ(programmer ->getPayment();, 14400.0);
+}
+
+

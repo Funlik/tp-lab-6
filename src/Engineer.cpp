@@ -25,13 +25,13 @@ double Engineer::projectPayment() {
     return pay;
 }
 
-double Engineer::wordDaysPayment() {
+double Engineer::workDaysPayment() {
     double pay = paymentPerDay * workDays;
     return pay;
 }
 
 void Engineer::setPayment() {
-    payment = projectPayment() + wordDaysPayment();
+    payment = projectPayment() + workDaysPayment();
 }
 
 
@@ -47,7 +47,7 @@ Programmer::Programmer(int id, std::string name, int workDays, int paymentPerDay
 }
 
 void Programmer::setPayment() {
-    payment = (projectPayment() + wordDaysPayment()) * 1.2; //coefficient for programmer = 1.2
+    payment = (projectPayment() + workDaysPayment()) * 1.2; //coefficient for programmer = 1.2
 }
 
 //////////
@@ -62,7 +62,7 @@ Tester::Tester(int id, std::string name, int workDays, int paymentPerDay, std::s
 }
 
 void Tester::setPayment() {
-    payment = (projectPayment() + wordDaysPayment()) * 1.1; //coefficient for tester = 1.1
+    payment = (projectPayment() + workDaysPayment()) * 1.1; //coefficient for tester = 1.1
 }
 
 
@@ -80,7 +80,7 @@ TeamLeader::TeamLeader(int id, std::string name, int workDays, int paymentPerDay
     setPayment();
 }
 
-double TeamLeader::wordDaysPayment() {
+double TeamLeader::workDaysPayment() {
     return paymentPerDay * workDays;
 }
 
@@ -93,5 +93,5 @@ double TeamLeader::projectPayment() {
 }
 
 void TeamLeader::setPayment() {
-    payment = wordDaysPayment() + headingPayment() + projectPayment();
+    payment = workDaysPayment() + headingPayment() + projectPayment();
 }

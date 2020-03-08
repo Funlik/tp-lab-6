@@ -9,6 +9,7 @@
 
 Manager::Manager(int id, std::string name, int workDays, int paymentPerDay, std::string projectName, int budget,
                  double percentageOfWork) : Employee(id, name, workDays) {
+    this->paymentPerDay = paymentPerDay;
     this->percentageOfWork = percentageOfWork;
     this->projectName = projectName;
     this->budget = budget;
@@ -19,13 +20,12 @@ double Manager::projectPayment() {
     return percentageOfWork * budget;
 }
 
-double Manager::wordDaysPayment() {
-    double pay = paymentPerDay * workDays;
-    return pay;
+double Manager::workDaysPayment() {
+    return paymentPerDay * workDays;
 }
 
 void Manager::setPayment() {
-    payment = projectPayment();
+    payment = projectPayment() + workDaysPayment();
 }
 
 ///////////////////

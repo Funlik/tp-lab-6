@@ -14,13 +14,13 @@ Personal::Personal(int id, std::string name, int workDays, int paymentPerDay) : 
     this->paymentPerDay = paymentPerDay;
 }
 
-double Personal::wordDaysPayment() {
+double Personal::workDaysPayment() {
     double pay = workDays * paymentPerDay;
     return pay;
 }
 
 void Personal::setPayment() {
-    payment = wordDaysPayment();
+    payment = workDaysPayment();
 };
 
 
@@ -46,7 +46,7 @@ Driver::Driver(int id, std::string name, int workDays, int paymentPerDay) : Pers
     setPayment();
 }
 
-double Driver::wordDaysPayment() {
+double Driver::workDaysPayment() {
     double pay = workDays * paymentPerDay * 1.2; //coefficient for driver =1.2
     return pay;
 }

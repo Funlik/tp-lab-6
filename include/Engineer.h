@@ -27,7 +27,7 @@ public:
 
     double projectPayment() override;
 
-    double wordDaysPayment() override;
+    double workDaysPayment() override;
 
     void setPayment() override;
 };
@@ -69,7 +69,7 @@ public:
                double percentageOfWork,
                int people, int paymentPerPerson);
 
-    double wordDaysPayment() override;
+    double workDaysPayment();
 
     double headingPayment() override;
 

@@ -7,7 +7,7 @@
 
 class WorkTime {
 public:
-    virtual double wordDaysPayment() = 0;
+    virtual double workDaysPayment() = 0;
 };
 
 

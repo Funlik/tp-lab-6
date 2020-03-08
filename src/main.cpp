@@ -23,8 +23,8 @@ int main() {
 //        cout<< worker->getName()<<" "<<worker->getPayment()<<endl;
 //    }
 
-    ifstream in("../src/data.txt");
-    if (!in.is_open()) {
+    ifstream fin("../src/data.txt");
+    if (!fin.is_open()) {
         return 0;
     }
 
@@ -32,7 +32,7 @@ int main() {
 
 
     string line;
-    while (getline(in, line)) {
+    while (getline(fin, line)) {
         size_t prev = 0;
         size_t next;
         vector<string> *vectorLine = new vector<string>(0);
@@ -45,12 +45,17 @@ int main() {
         vectorLine->push_back(line.substr(prev, line.length() - prev));
         workers.push_back(createWorker(*vectorLine));
     }
-    in.close();
+    fin.close();
 
 
+    ofstream fout("../src/payments.txt");
     for (auto worker = workers.begin(); worker != workers.end(); worker++) {
-        cout << (*worker)->getWritingOut() << endl;
+        fout << (*worker)->getWritingOut() << endl;
     }
+    fout.close(); // закрываем файл
+
+
+    cout << programmer->getPayment();
 
 
     return 0;

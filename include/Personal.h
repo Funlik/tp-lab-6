@@ -21,7 +21,7 @@ public:
 
     Personal(int id, std::string name, int workDays, int paymentPerDay);
 
-    double wordDaysPayment() override;
+    double workDaysPayment() override;
 
     void setPayment() override;
 };
@@ -46,7 +46,7 @@ class Driver : public Personal {
 public:
     Driver(int id, std::string name, int workDays, int paymentPerDay);
 
-    double wordDaysPayment() override;
+    double workDaysPayment() override;
 };
 
 #endif //TASK1_PERSONAL_H

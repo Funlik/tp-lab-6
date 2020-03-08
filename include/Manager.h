@@ -24,7 +24,7 @@ public:
 
     double projectPayment() override;
 
-    double wordDaysPayment();
+    double workDaysPayment() override;
 
     void setPayment() override;
 };
