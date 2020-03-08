@@ -2,6 +2,9 @@
 #include "Abstracts.h"
 #include "Interfaces.h"
 
+#ifndef POSITIONS_H
+#define POSITIONS_H
+
 
 class Cleaner : public Personal
 {
@@ -81,3 +84,5 @@ public:
 	//float getPaymentbyHeading() override;
 	//float getPayment() override;
 };
+
+#endif

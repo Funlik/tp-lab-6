@@ -1,6 +1,8 @@
 #pragma once
 
 #include <iostream>
+#ifndef INTERFACES_H
+#define INTERFACES_H
 
 using namespace std;
 
@@ -18,3 +20,5 @@ class Heading {
 public:
 	virtual float getPaymentbyHeading() = 0;
 };
+
+#endif

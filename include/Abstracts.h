@@ -4,6 +4,10 @@
 #include <map>
 
 #include "Interfaces.h"
+
+#ifndef ABSTRACTS_H
+#define ABSTRACTS_H
+
 using namespace std;
 
 //map <string, int> project;
@@ -49,3 +53,4 @@ public:
 	float getPaymentbyProject() override;
 };
 
+#endif
