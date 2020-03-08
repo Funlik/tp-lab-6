@@ -55,8 +55,5 @@ int main() {
     fout.close(); // закрываем файл
 
 
-    cout << programmer->getPayment();
-
-
     return 0;
 }
