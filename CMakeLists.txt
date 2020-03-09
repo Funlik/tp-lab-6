@@ -23,7 +23,7 @@ file(GLOB TEST_SRC_FILES ${PROJECT_SOURCE_DIR}/test/*.cpp)
 set(CMAKE_CXX_STANDARD 11)
 
 add_library(task1_lib ${SRC_FILES})
-add_executable(task1 ${PROJECT_SOURCE_DIR}/src/main.cpp)
+add_executable(task1 ${PROJECT_SOURCE_DIR}/src/laba6.cpp)
 
 target_link_libraries(task1 task1_lib)
 
