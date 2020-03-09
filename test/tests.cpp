@@ -13,7 +13,7 @@ TEST(Personal, Cleaner) {
 }
 
 TEST(Personal, Driver) {
-	Driver* driver = new Cleaner(1, "Brad Pitt", 6.5, 166);
+	Driver* driver = new Driver(1, "Brad Pitt", 6.5, 166);
 	driver->set_payment();
 	EXPECT_EQ(driver->get_payment(), 1079);
 }
