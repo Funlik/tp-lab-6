@@ -14,19 +14,15 @@ protected:
 	int payment=0;
 
 public:
-	Employee() {
-		id = NULL;
-		name = "ERROR";
-		worktime = NULL;
-	}
+	
 
 	Employee(int ValueId, string ValueName, int ValueWorktime) {
 		this->id = ValueId;
 		this->name = ValueName;
 		this->worktime = ValueWorktime;
-	}//êîíñòðóêòîð 
+	}//ÃªÃ®Ã­Ã±Ã²Ã°Ã³ÃªÃ²Ã®Ã° 
 
-	~Employee() {};//äåñòðóêòîð 
+	~Employee() {};//Ã¤Ã¥Ã±Ã²Ã°Ã³ÃªÃ²Ã®Ã° 
 
 	void SetId(int NewId) {
 		this->id = NewId;
