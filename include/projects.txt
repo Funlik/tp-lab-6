@@ -1,0 +1,3 @@
+first 50000
+second 30000
+third 100000
