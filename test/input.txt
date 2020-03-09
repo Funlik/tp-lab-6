@@ -16,9 +16,9 @@ Cleaner;7;Grover Neville;20;3
 Cleaner;17;Danilo Jolanda;30;4
 Cleaner;18;Candidus Ousmane;20;4
 Cleaner;19;Solly Annette;15;4
-Driver;8;Barnaby Strickland;20;3
-Driver;16;Boadicea Radek;30;2
-Driver;20;Zavier Ailill;30;3
+Driver;8;Barnaby Strickland;20;3;1.5
+Driver;16;Boadicea Radek;30;2;1.4
+Driver;20;Zavier Ailill;30;3;1.3
 
 
 

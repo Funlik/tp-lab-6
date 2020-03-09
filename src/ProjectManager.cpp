@@ -34,3 +34,10 @@ void ProjectManager::calc() {
 int ProjectManager::calcHeading(int headingBase, int subordinatesNumber) {
 	return headingBase * subordinatesNumber;
 }
+int ProjectManager::getHeadingBase() {
+	return headingBase;
+}
+void ProjectManager::setHeadingBase(int headingBase) {
+	this->headingBase = headingBase;
+	calc();
+}

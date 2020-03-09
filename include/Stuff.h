@@ -27,8 +27,9 @@ struct Stuff
 	double percent = 0;
 	int projectBudget = 0;
 	int headingBase = 0;
+	double overtimeCorfficient = 0;
 	Stuff(std::string& baseString, std::string* valueType = nullptr);
-	Stuff(std::string type, int id, std::string name, int worktime, int base, std::string projectName, int projectBudget, double percent, int headingBase);
+	Stuff(std::string type, int id, std::string name, int worktime, int base, std::string projectName, int projectBudget, double percent, int headingBase, double overtimeCorfficient);
 };
 
 #endif // !STUFF_H

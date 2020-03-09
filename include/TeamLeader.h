@@ -19,6 +19,8 @@ public:
 	void addSubTester(Tester* tester);
 	virtual void calc() override;
 	virtual int calcHeading(int headingBase, int subordinatesNumber) override;
+	int getHeadingBase();
+	void setHeadingBase(int headingBase);
 };
 
 #endif // !TEAMLEADER_H

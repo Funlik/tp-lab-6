@@ -21,6 +21,9 @@ Stuff::Stuff(std::string& baseString, std::string* valueType) {
 	if (type == "Cleaner" || type == "Driver" || type == "Programmer" || type == "Tester" || type == "TeamLeader") {
 		worktime = stoi(parsed[3]);
 		base = stoi(parsed[4]);
+		if (type == "Driver") {
+			overtimeCorfficient = stod(parsed[5]);
+		}
 		if (type == "Programmer" || type == "Tester" || type == "TeamLeader") {
 			projectName = parsed[5];
 			projectBudget = stoi(parsed[6]);
@@ -40,7 +43,7 @@ Stuff::Stuff(std::string& baseString, std::string* valueType) {
 	}
 }
 
-Stuff::Stuff(std::string type, int id, std::string name, int worktime, int base, std::string projectName, int projectBudget, double percent, int headingBase) {
+Stuff::Stuff(std::string type, int id, std::string name, int worktime, int base, std::string projectName, int projectBudget, double percent, int headingBase, double overtimeCorfficient) {
 	this->type = type;
 	this->id = id;
 	this->name = name;
@@ -50,4 +53,5 @@ Stuff::Stuff(std::string type, int id, std::string name, int worktime, int base,
 	this->projectBudget = projectBudget;
 	this->percent = percent;
 	this->headingBase = headingBase;
+	this->overtimeCorfficient = overtimeCorfficient;
 }

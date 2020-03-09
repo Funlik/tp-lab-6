@@ -7,7 +7,7 @@ Employee* Factory::createEmployee(Stuff token) {
 		return new Cleaner(token.id, token.name, token.worktime, token.base);
 	}
 	else if (token.type == "Driver") {
-		return new Driver(token.id, token.name, token.worktime, token.base, 1.2);
+		return new Driver(token.id, token.name, token.worktime, token.base, token.overtimeCorfficient);
 	}
 	else if (token.type == "Programmer") {
 		return new Programmer(token.id, token.name, token.worktime, token.base, token.projectName, token.projectBudget, token.percent);
@@ -39,7 +39,7 @@ Employee* Factory::createEmployee(Stuff token, std::string& valueType) {
 	}
 	else if (token.type == "Driver") {
 		valueType = "Driver";
-		return new Driver(token.id, token.name, token.worktime, token.base, 1.2);
+		return new Driver(token.id, token.name, token.worktime, token.base, token.overtimeCorfficient);
 	}
 	else if (token.type == "Programmer") {
 		valueType = "Programmer";

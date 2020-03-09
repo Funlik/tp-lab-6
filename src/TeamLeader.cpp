@@ -28,3 +28,11 @@ void TeamLeander::calc()  {
 int TeamLeander::calcHeading(int headingBase, int subordinatesNumber) {
 	return headingBase * subordinatesNumber;
 }
+
+int TeamLeander::getHeadingBase() {
+	return headingBase;
+}
+void TeamLeander::setHeadingBase(int headingBase) {
+	this->headingBase = headingBase;
+	calc();
+}

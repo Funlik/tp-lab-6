@@ -21,6 +21,8 @@ public:
 	void addSubManager(Manager* manager);
 	std::vector<Tester*>getSubTesters();
 	void addSubTester(Tester* tester);
+	int getHeadingBase();
+	void setHeadingBase(int headingBase);
 	virtual void calc() override;
 	virtual int calcHeading(int headingBase, int subordinatesNumber) override;
 };
