@@ -3,13 +3,13 @@
 
 #include "StaffEmployee.h"
 
+constexpr int32_t DriverBase = 25;
+
 class Driver : public StaffEmployee
 {
 public:
-    static constexpr int32_t base = 25;
-
     Driver(int32_t id, std::string name, int32_t worktime)
-        : StaffEmployee(id, name, worktime, base) { }
+        : StaffEmployee(id, name, worktime, DriverBase) { }
 };
 
 #endif // DRIVER_H

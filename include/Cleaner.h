@@ -3,13 +3,13 @@
 
 #include "StaffEmployee.h"
 
+constexpr int32_t CleanerBase = 16;
+
 class Cleaner : public StaffEmployee
 {
 public:
-    static constexpr int32_t base = 16;
-
     Cleaner(int32_t id, std::string name, int32_t worktime)
-        : StaffEmployee(id, name, worktime, base) { }
+        : StaffEmployee(id, name, worktime, CleanerBase) { }
 };
 
 #endif // CLEANER_H

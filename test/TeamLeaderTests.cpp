@@ -8,7 +8,7 @@ TEST(CreateTeamLeader, TeamLeaderTests)
     EXPECT_EQ(0, teamLeader.GetId());
     EXPECT_EQ("TeamLeader Name", teamLeader.GetName());
     EXPECT_EQ(100, teamLeader.GetWorktime());
-    EXPECT_EQ(Programmer::base, teamLeader.GetBase());
+    EXPECT_EQ(ProgrammerBase, teamLeader.GetBase());
     EXPECT_EQ(10000, teamLeader.GetBudget());
     EXPECT_EQ(0.05, teamLeader.GetShare());
     EXPECT_EQ(10, teamLeader.GetSubordinates());
@@ -19,8 +19,8 @@ TEST(CalculateSalary, TeamLeaderTests)
 {
     TeamLeader teamLeader(0, "TeamLeader Name", 100, 10000, 0.05, 10, 20);
 
-    EXPECT_EQ(Programmer::base * 100, teamLeader.CalculateWorkTimeSalary());
+    EXPECT_EQ(ProgrammerBase * 100, teamLeader.CalculateWorkTimeSalary());
     EXPECT_EQ((int32_t)(10000 * 0.05), teamLeader.CalculateProjectSalary());
     EXPECT_EQ(20 * 10, teamLeader.CalculateHeadSalary());
-    EXPECT_EQ(Programmer::base * 100 + (int32_t)(10000 * 0.05) + 20 * 10, teamLeader.CalculateSalary());
+    EXPECT_EQ(ProgrammerBase * 100 + (int32_t)(10000 * 0.05) + 20 * 10, teamLeader.CalculateSalary());
 }
