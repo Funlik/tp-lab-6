@@ -1,0 +1,25 @@
+SeniorManager;0;Esme Davila;all;300;0.3;30
+ProjectManager;1;Coral Barry;hse;300;0.1;20
+ProjectManager;9;Butrus Stellan;nstu;200;0.1;20
+Manager;2;Keaton Rawlings;hse;300;0.15
+Manager;10;Giovanni Mārcis;nstu;200;0.15
+Manager;11;Viraja Markos;nstu;200;0.1
+TeamLeader;3;Lindsey Rowley;40;30;hse;300;0.1;20
+TeamLeader;12;Nsia Sarpedon;40;29;nstu;200;0.2;20
+Programmer;4;Lily-May Britton;40;20;hse;300;0.05
+Programmer;5;Mali Huynh;30;20;hse;300;0.05
+Programmer;13;Eliseo Sadaf;60;30;nstu;200;0.05
+Programmer;14;Yankel Kalina;20;20;nstu;200;0.05
+Tester;15;Marta Noémi;25;25;nstu;200;0.02
+Tester;6;Genevieve Daugherty;40;20;hse;300;0.05
+Cleaner;7;Grover Neville;20;3
+Cleaner;17;Danilo Jolanda;30;4
+Cleaner;18;Candidus Ousmane;20;4
+Cleaner;19;Solly Annette;15;4
+Driver;8;Barnaby Strickland;20;3
+Driver;16;Boadicea Radek;30;2
+Driver;20;Zavier Ailill;30;3
+
+
+
+
