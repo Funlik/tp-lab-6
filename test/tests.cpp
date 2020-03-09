@@ -11,7 +11,7 @@ TEST(tplab6, TeamLeader_1) {
 	EXPECT_EQ(Emp->getpayment(), 209000);
 }
 
-TEST(tplab6, Employee_1_get) {
+TEST(tplab6, Driver_1) {
 	Projects* project_1 = new Projects("project_1", 200000);
 	vector<Projects*> projects{ project_1 };
 	Factory EmpFactory(projects);
@@ -19,7 +19,6 @@ TEST(tplab6, Employee_1_get) {
 	Employee* Emp = EmpFactory.create(info);
 	Emp->calcpayment();
 	EXPECT_EQ(Emp->getpayment(), 17500);
-	EXPECT_EQ(Emp->getfio, "Deni Lee");
 }
 
 TEST(tplab6, SeniorManager_1) {
