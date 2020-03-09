@@ -38,5 +38,5 @@ TEST(Test4, TestOfTeamLeader) {
 TEST(Test5, TestOfManager) {
 	Manager* TManager = new Manager(4, "Viktor", 160, 2);
 	TManager->GetPayment();
-	EXPECT_EQ(TTeamLeader->GetPayment(), 20000);
+	EXPECT_EQ(TManager->GetPayment(), 20000);
 }
