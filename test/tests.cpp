@@ -23,21 +23,3 @@ TEST(test2, DriverIDTest)
 
 	EXPECT_EQ(driver->getID(), 2);
 }
-
-TEST(test3, TeamLeaderPaymentTest) 
-{
-	CompanyCreation* company = new CompanyCreation();
-	Employee* teamLeader = company->addEmployee(3,"TeamLeader", "Paul", 50, 800, 0);
-	
-	teamLeader->calcPayment(9, 40000, 300);
-	EXPECT_EQ(teamLeader->getPayment(), 43600);
-}
-
-TEST(test4, TesterPaymentTest) 
-{
-	CompanyCreation* company = new CompanyCreation();
-	Employee* tester = company->addEmployee(4, "Tester", "Cory", 40, 500, 0);
-
-	tester->calcPayment(5, 30000);
-	EXPECT_EQ(tester->getPayment(), 21500);
-}
