@@ -18,7 +18,7 @@ TEST(CalculateSalary, SeniorManagerTests)
 {
     SeniorManager seniorManager(0, "SeniorManager Name", 100, 10000, 0.05, 10, 20);
 
-    EXPECT_EQ((int32_t)(10000 * 0.5), seniorManager.CalculateProjectSalary());
+    EXPECT_EQ((int32_t)(10000 * 0.05), seniorManager.CalculateProjectSalary());
     EXPECT_EQ(20 * 10, seniorManager.CalculateHeadSalary());
-    EXPECT_EQ((int32_t)(10000 * 0.5) + 20 * 10, seniorManager.CalculateSalary());
+    EXPECT_EQ((int32_t)(10000 * 0.05) + 20 * 10, seniorManager.CalculateSalary());
 }

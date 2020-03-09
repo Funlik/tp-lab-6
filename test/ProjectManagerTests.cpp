@@ -18,7 +18,7 @@ TEST(CalculateSalary, ProjectManagerTests)
 {
     ProjectManager projectManager(0, "ProjectManager Name", 100, 10000, 0.05, 10, 20);
 
-    EXPECT_EQ((int32_t)(10000 * 0.5), projectManager.CalculateProjectSalary());
+    EXPECT_EQ((int32_t)(10000 * 0.05), projectManager.CalculateProjectSalary());
     EXPECT_EQ(20 * 10, projectManager.CalculateHeadSalary());
-    EXPECT_EQ((int32_t)(10000 * 0.5) + 20 * 10, projectManager.CalculateSalary());
+    EXPECT_EQ((int32_t)(10000 * 0.05) + 20 * 10, projectManager.CalculateSalary());
 }
