@@ -26,10 +26,10 @@ static ProjectStruct findProject(std::string projectName) {
 		}
 }
 
-class Factory {
+class Company {
 public:
 	std::vector <Employee*> employees;
-	void createFactory() {
+	void createCompany() {
 		std::ifstream file("randomPeople.txt");
 		std::string line;
 		if (file.is_open()) {
@@ -42,6 +42,7 @@ public:
 				}
 				if (std::find(rowData.begin(), rowData.end(), "Driver") != rowData.end()) {
 					Driver* driver = new Driver(std::stoi(rowData[0]), rowData[1], std::stoi(rowData[3]));
+					std::cout << "Driver   " << rowData[0] << " " << rowData[1] << " " << rowData[3] << std::endl;
 					employees.push_back(driver);
 				}
 				if (std::find(rowData.begin(), rowData.end(), "Programmer") != rowData.end()) {
