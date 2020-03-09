@@ -1,7 +1,7 @@
 #include "gtest/gtest.h"
 #include "Factory.h"
 
-TEST(tp-lab-6, TeamLeader_1) {
+TEST(tplab6, TeamLeader_1) {
 	Projects* project_1 = new Projects("project_1", 200000);
 	vector<Projects*> projects{ project_1 };
 	Factory EmpFactory(projects);
@@ -11,7 +11,7 @@ TEST(tp-lab-6, TeamLeader_1) {
 	EXPECT_EQ(Emp->getpayment(), 209000);
 }
 
-TEST(tp-lab-6, Employee_1_get) {
+TEST(tplab6, Employee_1_get) {
 	Projects* project_1 = new Projects("project_1", 200000);
 	vector<Projects*> projects{ project_1 };
 	Factory EmpFactory(projects);
@@ -22,7 +22,7 @@ TEST(tp-lab-6, Employee_1_get) {
 	EXPECT_EQ(Emp->getfio, "Deni Lee");
 }
 
-TEST(tp-lab-6, SeniorManager_1) {
+TEST(tplab6, SeniorManager_1) {
 	Projects* project_1 = new Projects("project_1", 200000);
 	Projects* project_2 = new Projects("project_2", 330000);
 	Projects* project_3 = new Projects("project_3", 120000);
