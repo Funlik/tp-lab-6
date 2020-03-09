@@ -60,7 +60,7 @@ TEST(lab6, task7)
 	ProjectManager mag(11, "Hutchinson_Mark", 40, 0.1, "Project1", 1000000, 7);
 
 
-	EXPECT_EQ(mag.getPayment(), 100000);
+	EXPECT_EQ(mag.getPayment(), 100350);
 }
 
 TEST(lab6, task8)
