@@ -10,7 +10,7 @@
 #include "Interfaces.h"
 #include "Managers.h"
 #include "Personals.h"
-TEST(task1, first cleaner) {
+/*TEST(task1, first cleaner) {
 	Cleaner me(1, "Kate Malysheva", 200);
 
 	me.setTime(40);
@@ -19,4 +19,4 @@ TEST(task1, first cleaner) {
 	
 	EXPECT_EQ(8000, me.getPayment());
 
-}
+}*/
