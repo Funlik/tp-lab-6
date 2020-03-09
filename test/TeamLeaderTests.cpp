@@ -10,7 +10,7 @@ TEST(CreateTeamLeader, TeamLeaderTests)
     EXPECT_EQ(100, teamLeader.GetWorktime());
     EXPECT_EQ(ProgrammerBase, teamLeader.GetBase());
     EXPECT_EQ(10000, teamLeader.GetBudget());
-    EXPECT_EQ(0.05, teamLeader.GetShare());
+    EXPECT_FLOAT_EQ(0.05, teamLeader.GetShare());
     EXPECT_EQ(10, teamLeader.GetSubordinates());
     EXPECT_EQ(20, teamLeader.GetSubordinateBase());
 }

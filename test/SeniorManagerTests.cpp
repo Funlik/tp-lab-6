@@ -9,7 +9,7 @@ TEST(CreateSeniorManager, SeniorManagerTests)
     EXPECT_EQ("SeniorManager Name", seniorManager.GetName());
     EXPECT_EQ(100, seniorManager.GetWorktime());
     EXPECT_EQ(10000, seniorManager.GetBudget());
-    EXPECT_EQ(0.05, seniorManager.GetShare());
+    EXPECT_FLOAT_EQ(0.05, seniorManager.GetShare());
     EXPECT_EQ(10, seniorManager.GetSubordinates());
     EXPECT_EQ(20, seniorManager.GetSubordinateBase());
 }

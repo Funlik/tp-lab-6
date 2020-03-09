@@ -9,7 +9,7 @@ TEST(CreateManager, ManagerTests)
     EXPECT_EQ("Manager Name", manager.GetName());
     EXPECT_EQ(100, manager.GetWorktime());
     EXPECT_EQ(10000, manager.GetBudget());
-    EXPECT_EQ(0.05, manager.GetShare());
+    EXPECT_FLOAT_EQ(0.05, manager.GetShare());
 }
 
 TEST(CalculateSalary, ManagerTests)

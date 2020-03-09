@@ -10,7 +10,7 @@ TEST(CreateTester, TesterTests)
     EXPECT_EQ(100, tester.GetWorktime());
     EXPECT_EQ(TesterBase, tester.GetBase());
     EXPECT_EQ(10000, tester.GetBudget());
-    EXPECT_EQ(0.05, tester.GetShare());
+    EXPECT_FLOAT_EQ(0.05, tester.GetShare());
 }
 
 TEST(CalculateSalary, TesterTests)

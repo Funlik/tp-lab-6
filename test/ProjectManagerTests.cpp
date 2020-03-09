@@ -9,7 +9,7 @@ TEST(CreateProjectManager, ProjectManagerTests)
     EXPECT_EQ("ProjectManager Name", projectManager.GetName());
     EXPECT_EQ(100, projectManager.GetWorktime());
     EXPECT_EQ(10000, projectManager.GetBudget());
-    EXPECT_EQ(0.05, projectManager.GetShare());
+    EXPECT_FLOAT_EQ(0.05, projectManager.GetShare());
     EXPECT_EQ(10, projectManager.GetSubordinates());
     EXPECT_EQ(20, projectManager.GetSubordinateBase());
 }
