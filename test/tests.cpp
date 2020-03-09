@@ -17,12 +17,12 @@
 
 TEST(Test1, TestOfClean) {
 	Cleaner* Tcleaner = new Cleaner(2, "Eva", 160, 150);
-	Tcleaner->GetPayment();
+	Tcleaner->SetPayment();
 	EXPECT_EQ(Tcleaner->GetPayment(), 24000);
 }
 TEST(Test2, TestofTester1) {
 	Tester* TTester1 = new Tester(3, "Adam", 160, 300, 30000, 2);
-	TTester1->GetPayment();
+	TTester1->SetPayment();
 	EXPECT_EQ(TTester1->GetPayment(), 50000);
 }
 TEST(Test3, TestOfTester2) {
@@ -32,11 +32,11 @@ TEST(Test3, TestOfTester2) {
 }
 TEST(Test4, TestOfTeamLeader) {
 	TeamLeader* TTeamLeader = new TeamLeader(4, "Viktor", 160,450,50000,6,2);
-	TTeamLeader->GetPayment();
+	TTeamLeader->SetPayment();
 	EXPECT_EQ(TTeamLeader->GetPayment(), 95000);
 }
 TEST(Test5, TestOfManager) {
 	Manager* TManager = new Manager(4, "Viktor", 160, 2);
-	TManager->GetPayment();
+	TManager->SetPayment();
 	EXPECT_EQ(TManager->GetPayment(), 20000);
 }
