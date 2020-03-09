@@ -9,13 +9,13 @@
 TEST(Personal, Cleaner) {
 	Cleaner* cleaner = new Cleaner(1, "Brad Pitt", 5, 200);
 	cleaner->set_payment();
-	EXPECT_EQ(cleaner.get_payment(), 1000);
+	EXPECT_EQ(cleaner->get_payment(), 1000);
 }
 
 TEST(Personal, Driver) {
 	Driver* driver = new Cleaner(1, "Brad Pitt", 6.5, 166);
 	driver->set_payment();
-	EXPECT_EQ(driver.get_payment(), 1079);
+	EXPECT_EQ(driver->get_payment(), 1079);
 }
 
 TEST(Engineer, engineers) {
