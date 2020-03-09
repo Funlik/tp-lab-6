@@ -13,14 +13,15 @@ TEST(Personal, Cleaner) {
 }
 
 TEST(Personal, Driver) {
-	Driver* driver = new Driver(1, "Brad Pitt", 6.5, 166);
+	Driver* driver = new Driver(1, "Brad Pitt", 6, 166);
 	driver->set_payment();
-	EXPECT_EQ(driver->get_payment(), 1079);
+	EXPECT_EQ(driver->get_payment(), 996);
 }
 
 TEST(Engineer, engineers) {
-	map <string,int> projects = {{ "Project1", 100000 },
-                                 { "Project2", 55555 }};
+	extern map<string, int> projects;
+	projects["Project1"] = 100000;
+        projects["Project2"] = 55555;
 								 
 	Tester* tester = new Tester(1, "Brad Pitt", 7, 2500, "Project1", 0.4);
 	Programmer* proger = new Programmer(2, "James Bond", 11, 3000, "Project2", 0.3);
@@ -37,9 +38,10 @@ TEST(Engineer, engineers) {
 }
 
 TEST(Manager, SeniorManager) {
-	map <string,int> projects = {{ "Project1", 100000 },
-                                 { "Project2", 55555 },
-								 { "Project3", 40000 }};
+	extern map<string, int> projects;
+	projects["Project1"] = 100000;
+        projects["Project2"] = 55555;
+	projects["Project3"] = 40000;
 								 
 	SeniorManager* senior = new SeniorManager(1, "Brad Pitt", "Project1", 0.5, 4);
 	senior->set_payment();		 
