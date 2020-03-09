@@ -1,6 +1,6 @@
 #include "gtest/gtest.h"
 #include "Factory.h"
-
+using namespace std;
 TEST(tplab6, TeamLeader_1) {
 	Projects* project_1 = new Projects("project_1", 200000);
 	vector<Projects*> projects{ project_1 };
