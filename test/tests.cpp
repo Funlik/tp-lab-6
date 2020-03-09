@@ -28,7 +28,7 @@ TEST(Engineer, engineers) {
 	TeamLeader* teamlid = new TeamLeader(3, "Lev Tolstoy", 5, 3500, "Project1", 0.25, 1);
 	
 	EXPECT_EQ(tester->project_salary(), 40000);
-	EXPECT_EQ(proger->worktime_salary(), 330000);
+	EXPECT_EQ(proger->worktime_salary(), 33000);
 	EXPECT_EQ(teamlid->heading_salary(), 100);
 	EXPECT_EQ(teamlid->project_salary(), 25000);
 	
