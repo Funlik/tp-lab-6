@@ -25,6 +25,8 @@ public:
 
 	void printWorkers();
 
+	Employee* getEmployeeByID(std::string id);
+
 	Factory();
 	~Factory();
 };

@@ -115,3 +115,8 @@ void Factory::printWorkers() {
 		std::cout << (it->second)->getID() << " " << (it->second)->getName() << " " << (it->second)->getPayment()<<std::endl;
 	}
 }
+
+
+Employee* Factory::getEmployeeByID(std::string id) {
+	return workers_[id];
+}
