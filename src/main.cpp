@@ -2,7 +2,7 @@
 
 
 int main() {
-	Factory factory;
-	factory.createFactory();
+	Company company;
+	company.createCompany();
 	return 0;
 }
