@@ -18,5 +18,5 @@ TEST(task1, first cleaner) {
 
 	
 	EXPECT_EQ(8000, me.getPayment());
-}
+
 }
