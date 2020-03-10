@@ -3,7 +3,6 @@
 #include <sstream>
 #include <fstream>
 #include "class.h"
-#include <conio.h>
 
 std::vector <std::string> projects = { "Proj1", "Proj2", "Proj3" };
 
@@ -88,7 +87,7 @@ int main()
 
 	int size = list.size();
 
-	printf("Итоговая зарплата за месяц:\n");
+	printf("ДЊЕ€Г®ДѓГ®ГўЕ•Л™ Г§Е•Д‘ДЏГ«Е•Е€Е• Г§Е• Д›ДєЕ„Л™Г¶:\n");
 	for (int i = 0; i < size; i++)
 	{
 		list[i]->Calc();
