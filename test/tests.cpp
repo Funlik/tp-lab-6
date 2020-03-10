@@ -16,7 +16,31 @@
 #include "TeamLeader.h"
 
 
-TEST(asd,asd){
-	EXPECT_TRUE(true);
+ TEST(CalculationTest, Test1) {
+	std::cout << "sdfxcv " << std::endl;
+	Job* j = new Job();
+	jobContainer container;
+	container.id = 1;
+	container.name = "1";
+	container.workerID = 1;
+	container.salary = 1000;
+	container.percent = 0;
+	container.worktime = 10;
+	Cleaner* cleaner = (Cleaner*)j->makeEmployee(container);
+	cleaner->calcPayment();
+	EXPECT_EQ(cleaner->getPayment(), 1000);  
 }
 
+TEST(CalculationTest, Test2) {	
+	Job* j = new Job();
+	jobContainer container;
+	container.id = 1;
+	container.name = "1";
+	container.workerID = 1;
+	container.salary = 10000;
+	container.percent = 0;
+	container.worktime = 10;
+	Driver* driver = (Driver*)j->makeEmployee(container);
+	driver->calcPayment();
+	EXPECT_EQ(driver->getPayment(), 10000);
+}
