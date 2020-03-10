@@ -1,0 +1,10 @@
+0 Ivanov Ivan0 Ivanovich Cleaner 160 500
+1 Ivanov Ivan1 Ivanovich Driver 161 500
+2 Ivanov Ivan2 Ivanovich Programmer 162 500
+3 Ivanov Ivan3 Ivanovich Tester 163 500
+4 Ivanov Ivan4 Ivanovich Manager 164 500
+5 Ivanov Ivan5 Ivanovich ProjectManager 165 500
+6 Ivanov Ivan6 Ivanovich TeamLeader 166 500
+7 Ivanov Ivan7 Ivanovich SeniorManager 167 500
+8 Ivanov Ivan8 Ivanovich Programmer 168 500
+9 Ivanov Ivan9 Ivanovich Manager 169 500
