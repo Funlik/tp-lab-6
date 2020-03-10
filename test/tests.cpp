@@ -42,7 +42,7 @@ TEST(CalculationTest, Test2) {
 	container.worktime = 10;
 	Driver* driver = (Driver*)j->makeEmployee(container);
 	driver->calcPayment();
-	EXPECT_EQ(driver->getPayment(), 1000);
+	EXPECT_EQ(driver->getPayment(), 10000);
 }
 TEST(CalculationTest, Test3) {
 	
