@@ -3,8 +3,8 @@
 
 Manager::Manager(int id, string fio, float project_participation, int project_budget) : Employee(id, fio, worktime)
 {
-	this->project_participation;
-	this->project_budget;
+	this->project_participation = project_participation;
+	this->project_budget = project_budget;
 }
 
 float Manager::calcprpayment()
@@ -14,5 +14,5 @@ float Manager::calcprpayment()
 
 void Manager::solary()
 {
-	float solary = calcprpayment();
+	payment = calcprpayment();
 }

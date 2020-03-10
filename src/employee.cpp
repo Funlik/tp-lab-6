@@ -3,9 +3,9 @@
 
 Employee::Employee(int id, string fio, int worktime)
 {
-	this->id;
-	this->fio;
-	this->worktime;
+	this->id = id;
+	this->fio = fio;
+	this->worktime = worktime;
 }
 
 /*int Employee::getid(int id)
@@ -13,7 +13,7 @@ Employee::Employee(int id, string fio, int worktime)
 	return id;
 }*/
 
-string getfio(string fio)
+string Employee::getfio()
 {
 	return fio;
 }
@@ -23,7 +23,7 @@ string getfio(string fio)
 	return worktime;
 }*/
 
-float getpayment(float payment)
+float Employee::getpayment()
 {
 	return payment;
 }

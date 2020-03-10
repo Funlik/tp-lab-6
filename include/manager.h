@@ -1,17 +1,10 @@
-
+#pragma once
 #ifndef MANAGER_H
 #define MANAGER_H
 
 #include "employee.h"
-//#include "workproject.h"
-
-#include <vector>
 
 using namespace std;
-
-/*class Employee;
-class Project;
-class Heading;*/
 
 class Manager : public Employee, public Project
 {

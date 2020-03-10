@@ -1,18 +1,12 @@
-
+#pragma once
 #ifndef ENGINEER_H
 #define ENGINEER_H
 
 #include "employee.h"
-//#include "workproject.h"
 
 //#include 
 
 using namespace std;
-
-/*class Employee;
-class WorkTime;
-class Project;
-class Heading;*/
 
 class Engineer : public Employee, public WorkTime, public Project
 {

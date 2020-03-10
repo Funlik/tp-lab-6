@@ -1,4 +1,4 @@
-
+#pragma once
 #ifndef PERSONAL_H
 #define PERSONAL_H
 
@@ -7,9 +7,6 @@
 //#include 
 
 using namespace std;
-
-/*class Employee;
-class WorkTime;*/
 
 class Personal : public Employee, public WorkTime
 {

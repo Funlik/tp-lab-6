@@ -3,7 +3,7 @@
 
 Personal::Personal(int id, string fio, int worktime, float base) : Employee(id, fio, worktime)
 {
-	this->base;
+	this->base = base;
 }
 
 float Personal::calcwtpayment()
@@ -14,5 +14,5 @@ float Personal::calcwtpayment()
 void Personal::solary()
 {
 	//float solary = calcwtpayment(base);
-	float solary = calcwtpayment();
+	payment = calcwtpayment();
 }

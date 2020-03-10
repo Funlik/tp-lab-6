@@ -6,7 +6,7 @@ Tester::Tester(int id, string fio, int worktime, float base, float pay_in_hour, 
 
 }
 
-float Engineer::calcwtpayment()
+float Tester::calcwtpayment()
 {
 	return pay_in_hour * worktime * 1.5;
 }

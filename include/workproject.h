@@ -1,4 +1,4 @@
-
+#pragma once
 #ifndef WORKPROJECT_H
 #define WORKPROJECT_H
 

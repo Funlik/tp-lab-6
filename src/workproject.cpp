@@ -5,7 +5,6 @@ WorkProject::WorkProject(string name, float budget)
 {
 	project_name = name;
 	project_budget=budget;
-	
 }
 
 //string WorkProject::get_project_name(string project_name)

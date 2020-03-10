@@ -3,7 +3,7 @@
 
 ProjManager::ProjManager(int id, string fio, float project_participation, int project_budget, int subordinates) : Manager(id, fio, project_participation, project_budget)
 {
-	this->subordinates;
+	this->subordinates = subordinates;
 }
 
 float ProjManager::calchepayment()
@@ -14,5 +14,5 @@ float ProjManager::calchepayment()
 void ProjManager::solary()
 {
 	//float solary = calcprpayment(project_participation, project_budget) + calchepayment(subordinates);
-	float solary = calcprpayment() + calchepayment();
+	payment = calcprpayment() + calchepayment();
 }

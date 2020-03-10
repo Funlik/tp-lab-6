@@ -2,12 +2,7 @@
 #include "fabrika.h"
 
 #include <fstream>
-#include <iostream>
-#include <string>
-#include <vector>
 #include <sstream>
-
-using namespace std;
 
 vector<string> split(const string& s, char delimiter)
 {
