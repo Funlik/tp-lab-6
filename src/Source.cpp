@@ -2,7 +2,7 @@
 #include "Headers.h"
 
 using namespace std;
-void main()
+int main()
 {
 	freopen("file.txt", "r", stdin);
 	string str = "";
@@ -60,14 +60,6 @@ void main()
 			employer->getWorktime() << " payment " << employer->getPayment() <<"\n";
 	}
 
-	
-	
-	
-	
-
-	
-
-	
-	
+	return 0;
 	
 }
