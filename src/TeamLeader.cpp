@@ -1,6 +1,10 @@
 #include "TeamLeader.h"
 
-TeamLeader::TeamLeader(int id, string name, int worktime, ProjectBudget* project) :	Programmer(id, name, worktime, project) {}
+TeamLeader::TeamLeader(int id, string name, int worktime, ProjectBudget* project) :	Programmer(id, name, worktime, project) {
+	if (project) {
+		project->data->decProgrammers();
+	}
+}
 
 int TeamLeader::paymentWorkTime() {
 	return worktime * 420;

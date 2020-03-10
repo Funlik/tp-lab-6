@@ -48,6 +48,7 @@ private:
 
 	friend class Engineer;
 	friend class Programmer;
+	friend class TeamLeader;
 	friend class Manager;
 	friend class ProjectManager;
 };
