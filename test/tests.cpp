@@ -5,6 +5,7 @@ TEST(CompanyTests, CompanyTest1)
 {
     auto* test_cleaner = new Cleaner(1000, "Natan", 40, 50);
     EXPECT_EQ("Natan", test_cleaner->getName());
+}
 
 TEST(CompanyTests, CompanyTest2)
 {
