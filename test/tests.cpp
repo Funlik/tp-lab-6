@@ -76,6 +76,10 @@ TEST(projectmanager, task7) {
 }
 TEST(seniormanager, task7) {
 	Projects["FirstProject"] = 50000;
+	Projects["SecondProject"] = 30000;
+	Projects["ThirdProject"] = 100000;
+	Projects["FourthProject"] = 500000;
+
 	SeniorManager me(1, "Kate Malysheva", 0.1, 1000, 29);
 	me.setTime(40);
 	me.CalcPayment();
