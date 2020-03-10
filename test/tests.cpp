@@ -10,7 +10,7 @@
 #include "Interfaces.h"
 #include "Managers.h"
 #include "Personals.h"
-
+extern map <string, int> Projects;
 TEST(cleaner, task1) {
 	Cleaner me(1, "Kate Malysheva", 200);
 
@@ -26,14 +26,13 @@ TEST(driver, task2) {
 
 	me.setTime(50);
 	me.CalcPayment();
-
+	Projects["FirstProject"] = 50000;
 
 	EXPECT_EQ(7500, me.getPayment());
 
 }
 TEST(tester, task3) {
-	map <string, int> Projects;
-	setProjects();
+	Projects["FirstProject"] = 50000;
 	Tester me(1, "Kate Malysheva", 350, 0.1, "FirstProject");
 
 	me.setTime(40);
@@ -42,8 +41,7 @@ TEST(tester, task3) {
 
 }
 TEST(programmer, task4){
-	map <string, int> Projects;
-	setProjects();
+	Projects["FirstProject"] = 50000;
 	Programmer me(1, "Kate Malysheva", 500, 0.1, "FirstProject");
 
 	me.setTime(40);
@@ -52,8 +50,7 @@ TEST(programmer, task4){
 
 }
 TEST(teamleader, task5) {
-	map <string, int> Projects;
-	setProjects();
+	Projects["FirstProject"] = 50000;
 	TeamLeader me(1, "Kate Malysheva", 500, 0.2, "FirstProject", 1000, 2);
 
 	me.setTime(40);
@@ -63,8 +60,7 @@ TEST(teamleader, task5) {
 
 }
 TEST(manager, task6) {
-	map <string, int> Projects;
-	setProjects();
+	Projects["FirstProject"] = 50000;
 	Manager me(1, "Kate Malysheva", 0.2, "FirstProject");
 
 	me.setTime(40);
@@ -72,16 +68,14 @@ TEST(manager, task6) {
 	EXPECT_EQ(10000, me.getPayment());
 }
 TEST(projectmanager, task7) {
-	map <string, int> Projects;
-	setProjects();
+	Projects["FirstProject"] = 50000;
 	ProjectManager me(1, "Kate Malysheva", 0.2, "FirstProject", 1000, 2);
 	me.setTime(40);
 	me.CalcPayment();
 	EXPECT_EQ(12000, me.getPayment());
 }
 TEST(seniormanager, task7) {
-	map <string, int> Projects;
-	setProjects();
+	Projects["FirstProject"] = 50000;
 	SeniorManager me(1, "Kate Malysheva", 0.1, 1000, 29);
 	me.setTime(40);
 	me.CalcPayment();
