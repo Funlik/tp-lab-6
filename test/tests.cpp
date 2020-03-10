@@ -16,5 +16,5 @@ TEST(CompanyTests, CompanyTest2)
 TEST(CompanyTests, CompanyTest3)
 {
     auto* test_tester = new Tester(5000, "Roland", 50, 60, 100);
-    EXPECT_EQ(100, test_cleaner->getBonus());
+    EXPECT_EQ(100, test_tester->getBonus());
 }
