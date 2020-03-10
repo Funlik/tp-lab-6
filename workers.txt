@@ -1,0 +1,20 @@
+1 Marcos Weaver Tester 8 20 Hydra 100000 0.1
+2 Terry Olson Driver 8 20
+3 Ian Porter SeniorManager 1 0.2 1 
+4 Gerald Potter Tester 8 20 RAMP 200000 0.1
+5 Alice Bishop Programmer 8 50 RAMP 200000 0.1
+6 Lloyd Patrick Cleaner 8 10
+7 Woodrow Houston Programmer 8 50 Hydra 100000 0.1
+8 Julia Peterson Programmer 8 50 RAMP 200000 0.1
+9 Jane Fox Driver 8 20
+10 Gayle Elliott Manager RAMP 200000 0.1
+11 Alyssa Patterson ProjectManager RAMP 200000 0.2 3
+12 Bennie Casey ProjectManager Hydra 100000 0.1 3
+13 Pat Cole Manager Hydra 100000 0.3
+14 Christy Brooks SeniorManager 1 0.2 1
+15 Salvatore Williams TeamLeader 8 50 RAMP 200000 0.3 6
+16 Sara Murphy Tester 8 20 RAMP 200000 0.1
+17 Christopher Rice Cleaner 8 10
+18 Leo Farmer Programmer 8 50 Hydra 100000 0.1
+19 Freddie Lowe TeamLeader 8 50 Hydra 100000 0.2 6
+20 Ann Bowers Tester 8 20 Hydra 100000 0.1
