@@ -10,7 +10,7 @@ double Personal::calcWorkTimePayment()
 	return this->payment * this->worktime;
 }
 
-void Personal::calc()
+void Personal::calcPayment()
 {
 	this->payment = calcWorkTimePayment();
 }

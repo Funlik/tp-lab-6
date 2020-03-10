@@ -4,5 +4,5 @@ Driver::Driver(int id, std::string name, double worktime, double payment) : Pers
 
 //void Driver::calcPayment()
 //{
-//	this->payment = calculateWorkTimePayment();
+//	this->payment = calcWorkTimePayment();
 //}

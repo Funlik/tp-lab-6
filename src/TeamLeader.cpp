@@ -67,7 +67,7 @@ double TeamLeader::calculateChiefPayment(double chiefPayment)
 	return (this->testersList.size() + this->programmersList.size()) * chiefPayment;
 }
 
-void TeamLeader::calculatePayment(double percent, double budget, double chiefPayment)
+void TeamLeader::calcPayment(double percent, double budget, double chiefPayment)
 {
 	this->payment = calcWorkTimePayment() + calculateChiefPayment(chiefPayment) + calcProjectPayment(percent, budget);
 }

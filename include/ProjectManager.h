@@ -13,5 +13,5 @@ public:
 	void managerOnDelete(Manager* person);
 	void deleteAll();
 	virtual double calculateChiefPayment(double chiefPaymant);
-	void calc(double payment, double budget, double chiefPayment);
+	void calcPayment(double payment, double budget, double chiefPayment);
 };

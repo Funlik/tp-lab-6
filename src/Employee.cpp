@@ -35,8 +35,7 @@ int Employee::getWorktime()
 
 void Employee::setWorktime(double worktime)
 {
-	this->worktime = worktime;
-	
+	this->worktime = worktime;	
 }
 
 int Employee::getPayment()

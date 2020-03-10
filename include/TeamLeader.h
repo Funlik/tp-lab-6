@@ -17,5 +17,5 @@ public:
 	void deleteProgrammer(Programmer* person);
 	void deleteAll();
 	double calculateChiefPayment(double chiefPayment);
-	void calculatePayment(double percent, double budget, double chiefPayment);	
+	void calcPayment(double percent, double budget, double chiefPayment);	
 };

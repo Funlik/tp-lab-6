@@ -17,5 +17,8 @@ double Engineer::calcProjectPayment(double percent, double payment)
 
 void Engineer::calcPayment(double percent, double payment)
 {
+	double som = calcWorkTimePayment();
+	double asd = calcProjectPayment(percent, payment);
 	this->payment = calcWorkTimePayment() + calcProjectPayment(percent, payment);
+	
 }

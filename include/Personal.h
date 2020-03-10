@@ -11,5 +11,5 @@ public:
 	double calcWorkTimePayment();
 	double getPayment();
 	void setPayment(double payment); 
-	virtual void calc();
+	virtual void calcPayment();
 };

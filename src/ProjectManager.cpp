@@ -39,7 +39,7 @@ double ProjectManager::calculateChiefPayment(double payment)
 	return payment * this->managerList.size();
 }
 
-void ProjectManager::calc(double percent, double budjet, double chiefPayment)
+void ProjectManager::calcPayment(double percent, double budjet, double chiefPayment)
 {
 	this->payment = calculateProjectPayment(percent, budjet) + calculateChiefPayment(chiefPayment);
 }

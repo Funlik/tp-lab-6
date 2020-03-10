@@ -10,54 +10,54 @@ void main()
 	vector <Employee*> emp(8);
 	vector <int> id(8);
 	Job* job = new Job();
-	for (int i = 0; i < 8; i++)
+	for (int i = 1; i < 8; i++)
 	{
 		jobContainer person;
 		person.id = i;
 		person.name = to_string(i);
 		person.workerID = i;
 		person.salary = i * 1000;
-		person.percent = 0;
+		person.percent = 1;
 		person.worktime = 20;
 		id[i] = person.workerID;
 		emp[i] = job->makeEmployee(person);
 	}
 
 	cout << "id   name   post   worktime   payment\n";
-	for (int i = 0; i < 8; i++)
+	for (int i = 1; i < 8; i++)
 	{
 		Employee* employer = emp[i];
 		switch (id[i])
 		{
 		case 1: 
-			employer->calcPayment();
+			employer->calcPayment();			
 			break;
-
 		case 2:
 			employer->calcPayment();
 			break;
 		case 3:
-			employer->calcPayment();
+			((Programmer*)employer)->calcPayment(15, 10000);
 			break;
 		case 4:
-			employer->calcPayment();
+			((Tester*)employer)->calcPayment(10, 10000);
 			break;
 		case 5:
-			employer->calcPayment();
+			//((TeamLeader*)employer)->calcPayment(10, 10000, 500);
 			break;
 		case 6:
-			employer->calcPayment();
+			((Manager*)employer)->calcPayment(12, 10000);
 			break;
 		case 7:
-			employer->calcPayment();
+			((ProjectManager*)employer)->calcPayment(12, 10000, 300);
 			break;
 		case 8:
-			employer->calcPayment();
+			((SeniorManager*)employer)->calcPayment(12, 10000, 300);
 			break;
 		default:
 			break;
 		}
-		cout << employer->getID() << " " << employer->getName() << " " << employer->getWorktime() << " " << employer->getPayment();
+		cout <<" id "<< employer->getID() << " name " << employer->getName() << " Worktime " << 
+			employer->getWorktime() << " payment " << employer->getPayment() <<"\n";
 	}
 
 	
