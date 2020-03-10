@@ -1,24 +1,26 @@
+cmake_minimum_required(VERSION 2.8)
+
+# Make PROJECT_SOURCE_DIR, PROJECT_BINARY_DIR, and PROJECT_NAME available.
+set(PROJECT_NAME task1) 
 project(${PROJECT_NAME})
 
-
 set(CMAKE_CXX_FLAGS "-g -Wall")
-set(CMAKE_CXX_FLAGS "-g -Wall")
-set(CMAKE_CXX_FLAGS "-fpermissive -std=c++0x")
-
 
 # If you want your own include/ directory, set this, and then you can do
-# If you want your own include/ directory, set this, and then you can do
 # include_directories(${COMMON_INCLUDES}) in other CMakeLists.txt files.
-# include_directories(${COMMON_INCLUDES}) in other CMakeLists.txt files.
-@@ -18,9 +19,7 @@ include_directories(${COMMON_INCLUDES})
-file(GLOB TEST_SRC_FILES ${PROJECT_SOURCE_DIR}/test/*.cpp)
-file(GLOB TEST_SRC_FILES ${PROJECT_SOURCE_DIR}/test/*.cpp)
+# set(COMMON_INCLUDES ${PROJECT_SOURCE_DIR}/include)
 
+#----------------------------------------------------------------------------
+# Define project sources and includes
+#----------------------------------------------------------------------------
+set(COMMON_INCLUDES ${PROJECT_SOURCE_DIR}/include)
+include_directories(${COMMON_INCLUDES})
+file(GLOB TEST_SRC_FILES ${PROJECT_SOURCE_DIR}/test/*.cpp)
 
 
 
 set(SRC_FILES ${PROJECT_SOURCE_DIR}/src/Cleaner.cpp
-set(SRC_FILES ${PROJECT_SOURCE_DIR}/src/Driver.cpp)
+		PROJECT_SOURCE_DIR}/src/Driver.cpp
 		${PROJECT_SOURCE_DIR}/src/Engineer.cpp
 		${PROJECT_SOURCE_DIR}/src/Programmer.cpp
 		${PROJECT_SOURCE_DIR}/src/Tester.cpp
@@ -28,24 +30,56 @@ set(SRC_FILES ${PROJECT_SOURCE_DIR}/src/Driver.cpp)
 		${PROJECT_SOURCE_DIR}/src/SeniorManager.cpp
 		${PROJECT_SOURCE_DIR}/src/Company.cpp
 		${PROJECT_SOURCE_DIR}/src/Employee.cpp
-		${PROJECT_SOURCE_DIR}/src/Personal.cpp)
-
+		${PROJECT_SOURCE_DIR}/src/Personal.cpp
+		${PROJECT_SOURCE_DIR}/src/main.cpp)
 
 set(CMAKE_CXX_STANDARD 11)
-set(CMAKE_CXX_STANDARD 11)
 
+add_library(task1_lib ${SRC_FILES})
+add_executable(task1 ${PROJECT_SOURCE_DIR}/src/main.cpp)
 
-@@ -69,6 +68,7 @@ if (BUILD_TESTS)
+target_link_libraries(task1 task1_lib)
 
+################################
+# Testing
+################################
+
+# Options. Turn on with 'cmake -Dmyvarname=ON'.
+option(BUILD_TESTS "Build all tests." OFF) # Makes boolean 'test' available.
+
+if (BUILD_TESTS)
+  # This adds another subdirectory, which has 'project(gtest)'.
+  add_subdirectory(ext/gtest-1.8.0)
+
+  enable_testing()
+
+  # Include the gtest library. gtest_SOURCE_DIR is available due to
+  # 'project(gtest)' above.
+  include_directories(${gtest_SOURCE_DIR}/include ${gtest_SOURCE_DIR})
+
+  ##############
+  # Unit Tests
+  ##############
+  add_executable(runUnitTests ${TEST_SRC_FILES})
+
+  # Standard linking to gtest stuff.
+  target_link_libraries(runUnitTests gtest gtest_main)
+
+  # Extra linking for the project.
+  target_link_libraries(runUnitTests task1_lib)
+
+  # This is so you can do 'make test' to see all your tests run, instead of
+  # manually running the executable runUnitTests to see those specific tests.
+  add_test(UnitTests runUnitTests)
+
+  set(CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/.travis/cmake)
+
+  if (CMAKE_BUILD_TYPE STREQUAL "Coverage")
+    include(CodeCoverage)
+    setup_target_for_coverage(${PROJECT_NAME}_coverage runUnitTests coverage)
 
     SET(CMAKE_CXX_FLAGS "-g -O0 -fprofile-arcs -ftest-coverage")
-    SET(CMAKE_CXX_FLAGS "-g -O0 -fprofile-arcs -ftest-coverage")
     SET(CMAKE_C_FLAGS "-g -O0 -fprofile-arcs -ftest-coverage")
-    SET(CMAKE_C_FLAGS "-g -O0 -fprofile-arcs -ftest-coverage")
-    SET(CMAKE_CXX_FLAGS "-fpermissive -std=c++0x")
-  endif() #CMAKE_BUILD_TYPE STREQUAL "Coverage"
   endif() #CMAKE_BUILD_TYPE STREQUAL "Coverage"
 
-
-endif()
 endif()
