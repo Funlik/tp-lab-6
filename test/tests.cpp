@@ -16,8 +16,22 @@
 #include "TeamLeader.h"
 
 
-TEST(TestCaseName, TestName) {
-  EXPECT_EQ(1, 1);
+ TEST(CalculationTest, Test1) {
+	std::cout << "sdfxcv " << std::endl;
+	Job* j = new Job();
+	jobContainer container;
+	container.id = 1;
+	container.name = "1";
+	container.workerID = 1;
+	container.salary = 1000;
+	container.percent = 0;
+	container.worktime = 20;
+	Cleaner* cleaner = (Cleaner*)j->makeEmployee(container);
+	cleaner->calcPayment();
+	EXPECT_EQ(cleaner.getPayment(), 0);
+
   
 }
+  
+
 
