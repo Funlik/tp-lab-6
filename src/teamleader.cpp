@@ -13,6 +13,5 @@ float TeamLeader::calchepayment()
 
 void TeamLeader::solary()
 {
-	//float solary = calcwtpayment(pay_in_hour) + calcprpayment(project_participation, project_budget) + calchepayment(subordinates) + base;
 	payment = calcwtpayment() + calcprpayment() + calchepayment() + base;
 }

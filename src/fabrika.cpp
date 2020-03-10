@@ -2,8 +2,6 @@
 #include "fabrika.h"
 
 int id = 0, worktime = 100;
-//string project_name;
-//float project_budget;
 
 EmployeeFactory::EmployeeFactory(vector<WorkProject*> proj)
 {
@@ -23,8 +21,6 @@ Employee* EmployeeFactory::create(vector<string> data)
 		int sum_budget = 0;
 		for (auto proj : projects)
 		{
-			//if (proj->get_project_name(project_name) == data[5])
-				//sum_budget = proj->get_project_budget(project_budget);
 			if (proj->get_project_name() == data[5])
 				sum_budget = proj->get_project_budget();
 		}

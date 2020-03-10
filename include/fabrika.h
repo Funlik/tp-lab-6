@@ -1,5 +1,7 @@
 // создает каждого работника или в виде функции или в виде класса
+
 #pragma once
+
 #ifndef FABRIKA_H
 #define FABRIKA_H
 

@@ -13,6 +13,5 @@ float Personal::calcwtpayment()
 
 void Personal::solary()
 {
-	//float solary = calcwtpayment(base);
 	payment = calcwtpayment();
 }

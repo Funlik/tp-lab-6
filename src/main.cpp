@@ -16,8 +16,6 @@ vector<string> split(const string& s, char delimiter)
 
 int main()
 {
-	//string fio;
-	//float payment;
 	system("chcp 1251");
 	WorkProject* project1 = new WorkProject("project_1", 150000);
 	WorkProject* project2 = new WorkProject("project_2", 200000);
@@ -36,10 +34,7 @@ int main()
 	for (auto employee : staff)
 	{
 		employee->solary();
-		//cout << "FIO: " << employee->getfio(fio) << "   PAYMENT: " << employee->getpayment(payment) << endl;
 		cout << "FIO: " << employee->getfio() << "   PAYMENT: " << employee->getpayment() << endl;
 	}
 	return 0;
 }
-
-// цикл обработки файла

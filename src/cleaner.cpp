@@ -5,15 +5,3 @@ Cleaner::Cleaner(int id, string fio, int worktime, float base) : Personal(id, fi
 {
 
 }
-
-/*
-float Cleaner::calcwtpayment(int base)
-{
-	return base * worktime;
-}
-
-void Personal::solary()
-{
-	float solary = calcwtpayment(base);
-}
-*/

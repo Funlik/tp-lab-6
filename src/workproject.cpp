@@ -7,13 +7,11 @@ WorkProject::WorkProject(string name, float budget)
 	project_budget=budget;
 }
 
-//string WorkProject::get_project_name(string project_name)
 string WorkProject::get_project_name()
 {
 	return project_name;
 }
 
-//float WorkProject::get_project_budget(float project_budget)
 float WorkProject::get_project_budget()
 {
 	return project_budget;

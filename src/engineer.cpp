@@ -14,7 +14,6 @@ float Engineer::calcwtpayment()
 	return pay_in_hour * worktime;
 }
 
-//float Engineer::calcprpayment(float percent, int budget)
 float Engineer::calcprpayment()
 {
 	return project_participation * project_budget;
@@ -22,6 +21,5 @@ float Engineer::calcprpayment()
 
 void Engineer::solary()
 {
-	//float solary = calcwtpayment(pay_in_hour) + calcprpayment(project_participation, project_budget) + base;
 	payment = calcwtpayment() + calcprpayment() + base;
 }

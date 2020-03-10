@@ -13,6 +13,5 @@ float ProjManager::calchepayment()
 
 void ProjManager::solary()
 {
-	//float solary = calcprpayment(project_participation, project_budget) + calchepayment(subordinates);
 	payment = calcprpayment() + calchepayment();
 }
