@@ -1,5 +1,18 @@
 #include "gtest/gtest.h"
 #include "CompanyCreator.h"
+#include "Driver.h"
+#include "Cleaner.h"
+#include "Tester.h"
+#include "Programmer.h"
+#include "TeamLeader.h"
+#include "Manager.h"
+#include "ProjectManager.h"
+#include "SeniorManager.h"
+#include "Employee.h"
+#include "Project.h"
+#include "WorkTime.h"
+#include "Projects.h"
+#include "Heading.h"
 
 TEST(CompanyTests, CompanyTest1)
 {
