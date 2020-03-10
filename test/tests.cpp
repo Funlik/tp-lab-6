@@ -35,7 +35,7 @@ TEST(payment_test3, init3)
 Cleaner cleaner_1(1,"name_1","Cleaner", 500);
 cleaner_1.set_worktime(100);
 cleaner_1.calc_payment();
-EXPECT_EQ("112500", cleaner_1.get_payment());
+EXPECT_EQ(112500, cleaner_1.get_payment());
 }
 TEST(payment_test4, init4)
 {
@@ -43,5 +43,5 @@ auto *project1 = new Project("project1_title", 1048576);
 Programmer programmer_4(4,"name_4","Programmer",4000, 10,project1);
 programmer_4.set_worktime(100);
 programmer_4.calc_payment();
-EXPECT_EQ("1004850", programmer_4.get_payment());
+EXPECT_EQ(1004850, programmer_4.get_payment());
 }
