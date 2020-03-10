@@ -1,44 +1,19 @@
 #include "gtest/gtest.h"
 #include "CompanyCreator.h"
-#include "Driver.h"
-#include "Cleaner.h"
-#include "Tester.h"
-#include "Programmer.h"
-#include "TeamLeader.h"
-#include "Manager.h"
-#include "ProjectManager.h"
-#include "SeniorManager.h"
-#include "Employee.h"
-#include "Project.h"
-#include "WorkTime.h"
-#include "Projects.h"
-#include "Heading.h"
 
 TEST(CompanyTests, CompanyTest1)
 {
-    auto* compCreator = new CompanyCreator();
-    std::string test_worker = "101;Alex;Team Leader;40;10;10;20";
-    compCreator->createWorker(test_worker);
-    compCreator->calculatePaymentForWorkers();
-    Employee* worker = compCreator->getWorkerByID("101");
-    EXPECT_EQ(25460, worker->getPayment());
-}
+    auto* test_cleaner = new Cleaner(1000, "Natan", 40, 50);
+    EXPECT_EQ("Natan", test_cleaner->getName());
 
 TEST(CompanyTests, CompanyTest2)
 {
-    auto* compCreator = new CompanyCreator();
-    std::string test_worker = "201;Mike;Programmer;40;20;10;0";
-    compCreator->createWorker(test_worker);
-    compCreator->calculatePaymentForWorkers();
-    Employee* worker = compCreator->getWorkerByID("201");
-    EXPECT_EQ(40, worker->getWorkTime());
+    auto* test_driver = new Driver(256, "Antony", 20, 10);
+    EXPECT_EQ(20, test_driver->getWorkTime());
 }
 
 TEST(CompanyTests, CompanyTest3)
 {
-    auto* compCreator = new CompanyCreator();
-    std::string test_worker = "303;Kortney;Tester;20;20;10;0";
-    compCreator->createWorker(test_worker);
-    Employee* worker = compCreator->getWorkerByID("303");
-    EXPECT_EQ("Kortney", worker->getName());
+    auto* test_tester = new Tester(5000, "Roland", 50, 60, 100);
+    EXPECT_EQ(100, test_cleaner->getBonus());
 }
