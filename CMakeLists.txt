@@ -66,6 +66,7 @@ if (BUILD_TESTS)
 
     SET(CMAKE_CXX_FLAGS "-g -O0 -fprofile-arcs -ftest-coverage")
     SET(CMAKE_C_FLAGS "-g -O0 -fprofile-arcs -ftest-coverage")
+    SET(CMAKE_CXX_FLAGS "-fpermissive -std=c++0x")
   endif() #CMAKE_BUILD_TYPE STREQUAL "Coverage"
 
 endif()
