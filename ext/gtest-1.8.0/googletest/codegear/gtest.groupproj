@@ -1,4 +1,4 @@
-﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+﻿<ProjectSalary xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <ProjectGuid>{c1d923e0-6cba-4332-9b6f-3420acbf5091}</ProjectGuid>
   </PropertyGroup>
@@ -50,5 +50,5 @@
   <Target Name="Make">
     <CallTarget Targets="gtest:Make;gtest_main:Make;gtest_unittest:Make" />
   </Target>
-  <Import Condition="Exists('$(MSBuildBinPath)\Borland.Group.Targets')" Project="$(MSBuildBinPath)\Borland.Group.Targets" />
-</Project>
+  <Import Condition="Exists('$(MSBuildBinPath)\Borland.Group.Targets')" ProjectSalary="$(MSBuildBinPath)\Borland.Group.Targets" />
+</ProjectSalary>

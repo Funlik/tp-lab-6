@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 2.8)
 
 # Make PROJECT_SOURCE_DIR, PROJECT_BINARY_DIR, and PROJECT_NAME available.
-set(PROJECT_NAME task1) 
+set(PROJECT_NAME Stuff)
 project(${PROJECT_NAME})
 
 set(CMAKE_CXX_FLAGS "-g -Wall")
@@ -15,19 +15,53 @@ set(CMAKE_CXX_FLAGS "-g -Wall")
 #----------------------------------------------------------------------------
 set(COMMON_INCLUDES ${PROJECT_SOURCE_DIR}/include)
 include_directories(${COMMON_INCLUDES})
+
+add_subdirectory(ext/gtest-1.8.0)
+
+include_directories(${COMMON_INCLUDES})
+include_directories(${gtest_SOURCE_DIR}/include ${gtest_SOURCE_DIR})
+
+set(TEST_SRC_FILES_LOCAL ${PROJECT_SOURCE_DIR}/test/)
 file(GLOB TEST_SRC_FILES ${PROJECT_SOURCE_DIR}/test/*.cpp)
 
-
-set(SRC_FILES ${PROJECT_SOURCE_DIR}/src/personal.cpp
-              ${PROJECT_SOURCE_DIR}/src/engineer.cpp
-              ${PROJECT_SOURCE_DIR}/src/manager.cpp)
+set(SRC_FILES src/Classes/Common/Cleaner.cpp
+        src/Classes/Common/Driver.cpp
+        src/Classes/Abstract/Engineer.cpp
+        src/Classes/Abstract/Personal.cpp
+        src/Classes/Common/Programmer.cpp
+        src/Classes/Common/Manager.cpp
+        src/Classes/Common/ProjectManager.cpp
+        src/Classes/Common/SeniorManager.cpp
+        src/Classes/Common/TeamLeader.cpp
+        src/Classes/Common/Tester.cpp
+        src/Classes/Abstract/Employee.cpp
+        src/Interfaces/Heading.cpp
+        src/Interfaces/Projects.cpp
+        src/Interfaces/WorkTime.cpp
+        src/Factory/Factory.cpp
+        src/Classes/Common/Project.cpp
+        src/Factory/DriverFactory.cpp include/Factory/DriverFactory.h
+        src/Factory/CleanerFactory.cpp include/Factory/CleanerFactory.h
+        src/Factory/ProgrammerFactory.cpp include/Factory/ProgrammerFactory.h
+        src/Factory/TesterFactory.cpp include/Factory/TesterFactory.h
+        src/Factory/TeamLeaderFactory.cpp include/Factory/TeamLeaderFactory.h
+        src/Factory/ManagerFactory.cpp include/Factory/ManagerFactory.h
+        src/Factory/ProjectManagerFactory.cpp include/Factory/ProjectManagerFactory.h
+        src/Factory/SeniorManagerFactory.cpp include/Factory/SeniorManagerFactory.h
+        src/Extra/Helper.cpp include/Extra/Helper.h)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_library(task1_lib ${SRC_FILES})
-add_executable(task1 ${PROJECT_SOURCE_DIR}/src/main.cpp)
+add_library(stuff_lib ${SRC_FILES})
+add_executable(stuff_run ${PROJECT_SOURCE_DIR}/src/main.cpp)
 
-target_link_libraries(task1 task1_lib)
+add_executable(runUnitTests test/ProjectStuffTests.cpp
+        test/PersonalTests.cpp)
+
+target_link_libraries(stuff_run stuff_lib)
+
+target_link_libraries(runUnitTests gtest gtest_main)
+target_link_libraries(runUnitTests stuff_lib)
 
 ################################
 # Testing
@@ -38,7 +72,6 @@ option(BUILD_TESTS "Build all tests." OFF) # Makes boolean 'test' available.
 
 if (BUILD_TESTS)
   # This adds another subdirectory, which has 'project(gtest)'.
-  add_subdirectory(ext/gtest-1.8.0)
 
   enable_testing()
 
@@ -49,13 +82,6 @@ if (BUILD_TESTS)
   ##############
   # Unit Tests
   ##############
-  add_executable(runUnitTests ${TEST_SRC_FILES})
-
-  # Standard linking to gtest stuff.
-  target_link_libraries(runUnitTests gtest gtest_main)
-
-  # Extra linking for the project.
-  target_link_libraries(runUnitTests task1_lib)
 
   # This is so you can do 'make test' to see all your tests run, instead of
   # manually running the executable runUnitTests to see those specific tests.

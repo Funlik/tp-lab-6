@@ -210,7 +210,7 @@ have to configure it to use the `gmock_config` propety sheet.  For that:
  * Open the Property Manager window (View | Other Windows | Property Manager)
  * Right-click on your project and select "Add Existing Property Sheet..."
  * Navigate to `gmock_config.vsprops` or `gmock_config.props` and select it.
- * In Project Properties | Configuration Properties | General | Additional
+ * In ProjectSalary Properties | Configuration Properties | General | Additional
    Include Directories, type <path to Google Mock>/include.
 
 ### Tweaking Google Mock ###

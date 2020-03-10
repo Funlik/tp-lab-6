@@ -1,0 +1,13 @@
+1,Alex,TeamLeader,10000,project1
+2,Alex1,SeniorManager, ,project1
+3,Alex2,ProjectManager, ,project1
+4,Alex3,Programmer,1000,project1
+5,Alex4,Tester,500,project1
+6,John1,TeamLeader,8000,project2
+7,John2,Manager, ,project2
+8,John3,ProjectManager, ,project2
+9,John4,Programmer,5000,project2
+10,John5,Tester,1000,project2
+11,Alex5,Driver,150,null
+12,Alex6,Cleaner,100,null
+13,Alex7,Manager, ,project1
