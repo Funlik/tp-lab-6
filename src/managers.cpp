@@ -41,9 +41,9 @@ void ProjectManager::CalcPayment() {
 SeniorManager::SeniorManager(int ID, string FIO, float INTERACTION, int PAYMFORHEAD, int NUMSUB) : ProjectManager(ID, FIO, INTERACTION, "", PAYMFORHEAD, NUMSUB) {}
 
 float SeniorManager::CalcProjPaym() {
-	int tmp_payment=0;
-	for (unsigned int i = 0; i < Projects.size(); i++) {
-		tmp_payment +=  Projects[this->project];
-	 }
-	return tmp_payment* this->interaction;
+	int tmp_payment = 0;
+	for (auto item : Projects) {
+		tmp_payment += item.second;
+	}
+	return tmp_payment * this->interaction;
 }
