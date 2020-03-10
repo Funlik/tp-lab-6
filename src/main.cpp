@@ -1,8 +1,7 @@
 #include "Company.h"
 
-
 int main() {
-	Company company;
-	company.createCompany();
-	return 0;
+    Company Company;
+    Company.countCompany();
+    return 0;
 }

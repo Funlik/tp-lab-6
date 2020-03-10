@@ -1,30 +1,30 @@
-1,Gerald of Rivia,Cleaner,250
-2,Mne Len Dumat,Cleaner,250
-3,Tom and Jerry,Driver,500
-4,Dab Dab Dab,Driver,500
-5,Clim Sanich Zukov,Programmer,DumbName,0.05,1000
-6,Maloletnii Debil I,Programmer,DumbName,0.05,1000
-7,Maloletnii Debil General,Programmer,DumbName,0.05,1000
-8,Kakai voobshe Raznica,Programmer,DumbName,0.05,1000
-9,Kakie Tut Imena,Programmer,SmartName,0.1,800
-10,Vladimir Putin Molodec,Programmer,SmartName,0.1,800
-11,Politic Lider Borec,Programmer,SmartName,0.1,800
-12,Rossiu Putin NePredal,Programmer,ExpertName,0.05,600
-13,Anrei Andreev Andreevich,Programmer,ExpertName,0.05,600
-14,Ivan Ivanov Ivanovich,Programmer,ExpertName,0.05,600
-15,Ian Ianich Ianovich,TeamLeader,DumbName,0.05,1000,4
-16,Holly Molly Polly,TeamLeader,SmartName,0.1,800,3
-17,Stepan Stepanov Stepanovich,TeamLeader,ExpertName,0.05,600,3
-18,Chester Kak Chipsi,Tester,DumbName,0.05,800
-19,Picca s Ananasami,Tester,SmartName,0.1,500
-20,Name Name Name,Tester,ExpertName,0.05,600
-21,Leopard Kak Zivotnoe,Tester,ExpertName,0.05,60
-22,Ian of Nizegorodia,Manager,DumbName,0.1
-23,Ian Pervii Romanov,Manager,DumbName,0.1
-24,Nikolai Pervii Romanov,Manager,DumbName,0.1
-25,Ian Vtoroi Romanov,Manager,SmartName,0.15
-26,Tommygun Kak Gun,Manager,ExpertName,0.15
-27,Ian Dumb Romanov,ProjectManager,DumbName,0.15,3
-28,Ian Smart Romanov,ProjectManager,SmartName,0.1,1
-29,Ian Expert Romanov,ProjectManager,ExpertName,0.3,1
-30,Ian ian Ian,SeniorManager,0.25,3
+1 GeraldofRivia Cleaner 250
+2 Mne_Len_Dumat Cleaner 250
+3 Tom_and_Jerry Driver 500
+4 Dab_Deb_Dib Driver 500
+5 Clim_Sanich_Zukov Programmer DumbName 0.05 1000
+6 Maloletnii_Debil_I Programmer DumbName 0.05 1000
+7 Maloletnii_Debil_General Programmer DumbName 0.05 1000
+8 Kakai_voobshe_Raznica Programmer DumbName 0.05 1000
+9 Kakie_Tut_Imena Programmer SmartName 0.1 800
+10 Vladimir_Putin_Molodec Programmer SmartName 0.1 800
+11 Politic_Lider_Borec Programmer SmartName 0.1 800
+12 Rossiu_Putin_NePredal Programmer ExpertName 0.05 600
+13 Anrei_Andreev_Andreevich Programmer ExpertName 0.05 600
+14 Ivan_Ivanov_Ivanovich Programmer ExpertName 0.05 600
+15 Ian_Ianich_Ianovich TeamLeader DumbName 0.05 1000 4
+16 Holly_Molly_Polly TeamLeader SmartName 0.1 800 3
+17 Stepan_Stepanov_Stepanovich TeamLeader ExpertName 0.05 600 3
+18 Chester_Kak_Chipsi Tester DumbName 0.05 800
+19 Picca_s_Ananasami Tester SmartName 0.1 500
+20 Name_Name_Name Tester ExpertName 0.05 600
+21 Leopard_Kak_Zivotnoe Tester ExpertName 0.05 60
+22 Ian_of_Nizegorodia Manager DumbName 0.1
+23 Ian_Pervii_Romanov Manager DumbName 0.1
+24 Nikolai_Pervii_Romanov Manager DumbName 0.1
+25 Ian_Vtoroi_Romanov Manager SmartName 0.15
+26 Tommygun_Kak_Gun Manager ExpertName 0.15
+27 Ian_Dumb_Romanov ProjectManager DumbName 0.15 3
+28 Ian_Smart_Romanov ProjectManager SmartName 0.1 1
+29 Ian_Expert_Romanov ProjectManager ExpertName 0.3 1
+30 Ian_ian_Ian SeniorManager 0.25 3

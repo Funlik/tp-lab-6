@@ -1,89 +1,94 @@
 #pragma once
-#include "Employee.h"
-#include "Manager.h"
-#include "Engineer.h"
-#include "Personal.h"
-#include "Interfaces.h"
-#include <fstream>
+#include <iostream>
+#include <vector>
 #include <sstream>
-#include <ostream>
-#include <algorithm>
+#include <fstream>
+#include "Employee.h"
+#include "Engineer.h"
+#include "Manager.h"
+#include "Personal.h"
 
-std::vector<std::string> split(const std::string& s, char delimiter) {
-	std::stringstream ss(s);
-	std::string buf;
-	std::vector<std::string> rowData;
-	while (std::getline(ss, buf, delimiter)) {
-		rowData.push_back(buf);
-	}
-	return rowData;
-}
-
-static ProjectStruct findProject(std::string projectName) {
-	for (auto project : PROJECTS)
-		if (project.projectName == projectName) {
-			return project;
-		}
-}
 
 class Company {
 public:
-	std::vector <Employee*> employees;
-	void createCompany() {
-		std::ifstream file("randomPeople.txt");
-		std::string line;
-		if (file.is_open()) {
-			while (getline(file, line)) {
-				std::vector<std::string> rowData;
-				rowData = split(line, ',');
-				if (std::find(rowData.begin(), rowData.end(), "Cleaner") != rowData.end()) {
-					Cleaner* cleaner = new Cleaner(std::stof(rowData[0]), rowData[1], std::stoi(rowData[3]));
-					employees.push_back(cleaner);
-				}
-				if (std::find(rowData.begin(), rowData.end(), "Driver") != rowData.end()) {
-					Driver* driver = new Driver(std::stoi(rowData[0]), rowData[1], std::stoi(rowData[3]));
-					std::cout << "Driver   " << rowData[0] << " " << rowData[1] << " " << rowData[3] << std::endl;
-					employees.push_back(driver);
-				}
-				if (std::find(rowData.begin(), rowData.end(), "Programmer") != rowData.end()) {
-					Programmer* programmer = new Programmer(std::stoi(rowData[0]), rowData[1], std::stoi(rowData[5]), std::stof(rowData[4]), &(findProject(rowData[3])));
-					employees.push_back(programmer);
-				}
-				if (std::find(rowData.begin(), rowData.end(), "Tester") != rowData.end()) {
-					Tester* tester = new Tester(std::stoi(rowData[0]), rowData[1], std::stoi(rowData[5]), std::stof(rowData[4]), &findProject(rowData[3]));
-					employees.push_back(tester);
-				}
-				if (std::find(rowData.begin(), rowData.end(), "TeamLeader") != rowData.end()) {
-					TeamLeader* team_leader = new TeamLeader(std::stoi(rowData[0]), rowData[1], std::stoi(rowData[5]), std::stof(rowData[4]), &findProject(rowData[3]), std::stoi(rowData[6]));
-					employees.push_back(team_leader);
-				}
-				if (std::find(rowData.begin(), rowData.end(), "Manager") != rowData.end()) {
-					Manager* manager = new Manager(stoi(rowData[0]), rowData[1], stof(rowData[4]), &findProject(rowData[3]));
-					employees.push_back(manager);
-				}
-				if (std::find(rowData.begin(), rowData.end(), "ProjectManager") != rowData.end()) {
-					ProjectManager* project_manager = new ProjectManager(std::stoi(rowData[0]), rowData[1], std::stof(rowData[4]), &findProject(rowData[3]), std::stoi(rowData[5]));
-					employees.push_back(project_manager);
-				}
-				if (std::find(rowData.begin(), rowData.end(), "SeniorManager") != rowData.end()) {
-					SeniorManager* senior_manager = new SeniorManager(std::stoi(rowData[0]), rowData[1], std::stof(rowData[3]), &findProject("ExpertName"), std::stoi(rowData[4]));
-					employees.push_back(senior_manager);
-				}
-			}
-		}
+    std::vector<std::string> projects = { "DumbName", "SmartName", "ExpertName" };
 
-		for (auto employee : employees) {
-			std::cout << employee->get_id() << " " << employee->get_FIO() << " " << employee->get_salary() << std::endl;
-		}
+    int Search(std::string name_project) {
+        for (int i = 0; i < 3; i++) {
+            if (name_project == projects[i])
+                return i;
+        }
+        return -1;
+    }
 
-		std::ofstream out;
-		out.open("out.txt", std::ios::app);
-		if (out.is_open())
-		{
-			for (auto employee : employees) {
-				out << employee->get_id() << " " << employee->get_FIO() << " " << employee->get_salary() << std::endl;
-			}
-		}
-		out.close();
-	}
+    void countCompany() {
+        std::ifstream file;
+        file.open("randomPeople.txt");
+        std::vector<int> money_project = { 500000, 750000, 100000 };
+        std::vector<Employee *> list;
+        int id;
+        std::string fio;
+        int worktime = 31;
+        int base;
+        int bonus;
+        double procent;
+        std::string project;
+        std::string post;
+        int number_people;
+        int money_for_people = 1000;
+        while (file) {
+            file >> id >> fio >> post;
+            if (post == "Cleaner") {
+                file >> base;
+                list.push_back(new Cleaner(id, fio, worktime, base));
+            }
+            else if (post == "Driver") {
+                file >> base >> bonus;
+                list.push_back(new Driver(id, fio, worktime, base, bonus));
+            }
+            else if (post == "Enginer") {
+                file >> project >> procent >> base;
+                list.push_back(new Enginer(id, fio, worktime, base, project, procent, money_project[Search(project)]));
+            }
+            else if (post == "Programmer") {
+                file >> project >> procent >> base;
+                list.push_back(
+                        new Programmer(id, fio, worktime, base, project, procent, money_project[Search(project)]));
+            }
+            else if (post == "Tester") {
+                file >> project >> procent >> base;
+                list.push_back(new Tester(id, fio, worktime, base, project, procent, money_project[Search(project)]));
+            }
+            else if (post == "TeamLeader") {
+                file >> project >> procent >> base >> number_people;
+                list.push_back(new TeamLeader(id, fio, worktime, base, project, procent, money_project[Search(project)],
+                                              number_people, money_for_people));
+            }
+            else if (post == "Manager") {
+                file >> project >> procent;
+                list.push_back(new Manager(id, fio, worktime, project, procent, money_project[Search(project)]));
+            }
+            else if (post == "ProjectManager") {
+                file >> project >> procent >> number_people;
+                list.push_back(new ProjectManager(id, fio, worktime, project, procent, money_project[Search(project)],
+                                                  number_people, money_for_people));
+            }
+            else if (post == "SeniorManager") {
+                file >> project >> procent >> number_people;
+                list.push_back(new SeniorManager(id, fio, worktime, project, procent,
+                                                 money_project[0] + money_project[1] + money_project[2], number_people,
+                                                 money_for_people));
+            }
+            std::string str;
+            std::getline(file, str);
+        }
+
+        int size = list.size();
+
+        printf("Employeeees of sis Company:\n");
+        for (int i = 0; i < size; i++) {
+            list[i]->Calc();
+            printf("ID %d %s = %f\n", list[i]->ID(), list[i]->FIO().c_str(), list[i]->PAYMENT());
+        }
+    }
 };

@@ -1,52 +1,44 @@
 #pragma once
 #include "Employee.h"
+#include "Interfaces.h"
 
 class Personal : public Employee, public WorkTime {
 protected:
-	long long rate;
+    int base;
+
 public:
-	Personal(int id, std::string FIO, long long rate) : Employee(id, FIO), rate(rate) {
-	}
+    Personal(int id, std::string fio, int worktime, int base) : Employee(id, fio, worktime) {
+        this->base = base;
+    }
 
-	void set_rate(long long rate) {
-		this->rate = rate;
-	}
+    double work_time() override {
+        return (this->worktime * this->base);
+    }
+
+    void Calc() override {
+        this->payment = work_time();
+    }
+
 };
-
 
 
 class Cleaner : public Personal {
 public:
-
-	Cleaner(int id, std::string FIO, long long rate) : Personal(id, FIO, rate) {
-		setSalary();
-	}
-
-	float getWorktimeSalary(long long rate) override {
-		this->salary = WORKTIME * rate;
-		return salary;
-	}
-
-	void setSalary() override {
-		this->salary = getWorktimeSalary(this->rate);
-	}
+    Cleaner(int id, std::string fio, int worktime, int base) : Personal(id, fio, worktime, base)
+    {}
 };
 
-
-
 class Driver : public Personal {
+protected:
+    int bonus;
 
 public:
-	Driver(int id, std::string FIO, long long rate) : Personal(id, FIO, rate) {
-		setSalary();
-	}
+    Driver(int id, std::string fio, int worktime, int base, int bonus) : Personal(id, fio, worktime, base) {
+        this->bonus = bonus;
+    }
 
-	float getWorktimeSalary(long long rate) override {
-		this->salary = WORKTIME * rate;
-		return salary;
-	}
+    void Calc() override {
+        this->payment = this->work_time() + bonus;
+    }
 
-	void setSalary() override {
-		this->salary = getWorktimeSalary(this->rate);
-	}
 };

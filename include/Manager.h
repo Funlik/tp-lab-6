@@ -1,70 +1,53 @@
 #pragma once
 #include "Employee.h"
+#include "Interfaces.h"
 
-class Manager : public Employee, public virtual Project {
+class Manager : public Employee, public Project {
 protected:
-	float share;
-	ProjectStruct *project;
+    std::string project;
+    double procent;
+    int money_project;
+
 public:
+    Manager(int id, std::string fio, int worktime, std::string project, double procent, int money_project) : Employee(id, fio, worktime) {
+        this->project = project;
+        this->procent = procent;
+        this->money_project = money_project;
+    }
 
-	Manager(int id, std::string FIO, float share, ProjectStruct* project) : Employee(id, FIO), project(project), share(share) {
-		setSalary();
-	}
+    double pay_project() {
+        return(this->money_project * this->procent);
+    }
 
-	float getProjectSalary(ProjectStruct *project, float share) override {
-		return project->projectMoney * share;
-	}
-
-	void setSalary() override {
-		this->salary = getProjectSalary(this->project, this->share);
-	}
+    void Calc() override {
+        this->payment = this->pay_project();
+    }
 
 };
-
-
 
 class ProjectManager : public Manager, public Heading {
 protected:
-	int numberOfSubordinates;
+    int number_people;
+    int money_for_people;
+
 public:
+    ProjectManager(int id, std::string fio, int worktime, std::string project, double procent, int money_project, int number_people, int money_for_people) : Manager(id, fio, worktime, project, procent, money_project) {
+        this->number_people = number_people;
+        this->money_for_people = money_for_people;
+    }
 
-	ProjectManager(int id, std::string FIO, float share, ProjectStruct *project, int numberOfSubordinates) : Manager(id, FIO, share, project), numberOfSubordinates(numberOfSubordinates) {
-		setSalary();
-	}
+    double pay_head() override {
+        return (this->number_people * this->money_for_people);
+    }
 
-	int bonus(int numberOfSubordinates) override {
-		return numberOfSubordinates * 1000;
-	}
-
-	void setSalary() override {
-		this->salary = bonus(this->numberOfSubordinates) + getProjectSalary(this->project, this->share);
-	}
+    void Calc() override {
+        this->payment = this->pay_project() + this->pay_head();
+    }
 
 };
 
-
-
 class SeniorManager : public ProjectManager {
 public:
-	SeniorManager(int id, std::string FIO, float share, ProjectStruct *project, int numberOfSubordinates) : ProjectManager(id, FIO, share, project, numberOfSubordinates) {
-		setSalary();
-		project = nullptr;
-	}
-
-	int bonus(int numberOfSubordinates) override {
-		return numberOfSubordinates * 1000;
-	}
-
-	float getLeaderIncome(float involvment) {
-		float sum = 0;
-		for (auto project : PROJECTS) {
-			sum += project.projectMoney * share;
-		}
-		return sum;
-	}
-
-	void setSalary() override {
-		project = nullptr;
-		this->salary = getLeaderIncome(this->share) + bonus(this->numberOfSubordinates);
-	}
+    SeniorManager(int id, std::string fio, int worktime, std::string project, double procent, int money_project, int number_people, int money_for_people) : ProjectManager(id, fio, worktime, project, procent, money_project, number_people, money_for_people)
+    {}
 };

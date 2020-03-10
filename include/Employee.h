@@ -1,31 +1,36 @@
 #pragma once
-#include <string>
-#include "Interfaces.h"
-#include <vector>
 #include <iostream>
+#include <string>
+#include <vector>
+#include <fstream>
+#include <algorithm>
 
 
 class Employee {
 protected:
-	int id;
-	std::string FIO;
-	float salary;
+    int id;
+    std::string fio;
+    int	worktime;
+    double payment;
 public:
-	Employee(int id, std::string FIO) : id(id), FIO(FIO) {}
+    Employee(int id, std::string fio, int worktime) {
+        this->id = id;
+        this->fio = fio;
+        this->worktime = worktime;
+    }
 
-	virtual void setSalary() = 0;
+    virtual void Calc() = 0;
 
-	std::string get_FIO() {
-		return this->FIO;
-	}
+    int ID() {
+        return id;
+    }
 
-	float get_salary() {
-		return this->salary;
-	}
+    std::string FIO() {
+        return fio;
+    }
 
-	int get_id() {
-		return this->id;
-	}
+    double PAYMENT() {
+        return payment;
+    }
+
 };
-
-

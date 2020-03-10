@@ -3,11 +3,13 @@
 #include "Company.h"
 
 TEST(lab6, task1) {
-	Cleaner* cleaner = new Cleaner(2,"Mne Len Dumat", 250);
-	EXPECT_EQ(cleaner->getSalary(), 10000);
+    Cleaner cleaner(2, "Mne Len Dumat", 31, 250);
+    cleaner.Calc();
+	EXPECT_EQ(cleaner.PAYMENT(), 7750);
 }
 
 TEST(lab6, task2) {
-	TeamLeader* team_leader = new TeamLeader(17, "Stepan Stepanov Stepanovich", 600, 0.05 , &findProject("ExpertName"), 3);
-	EXPECT_EQ(cleaner->getSalary(), 77000);
+    ProjectManager projectmanager(27, "Ian_Dumb_Romanov", 31, "DumbName", 0.1, 1000000, 2, 1000);
+    projectmanager.Calc();
+	EXPECT_EQ(projectmanager.PAYMENT(), 102000);
 }

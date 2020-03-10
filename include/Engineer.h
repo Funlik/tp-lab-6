@@ -1,66 +1,68 @@
 #pragma once
 #include "Employee.h"
+#include "Interfaces.h"
 
-class Engineer : public Employee, public Project, public WorkTime {
+class Enginer : public Employee, public WorkTime, public Project {
 protected:
-	long long rate;
-	ProjectStruct *project;
-	float share;
+    std::string project;
+    double procent;
+    int base;
+    int money_project;
+
 public:
+    Enginer(int id, std::string fio, int worktime, int base, std::string project, double procent, int money_project) : Employee(id, fio, worktime) {
+        this->base = base;
+        this->procent = procent;
+        this->project = project;
+        this->money_project = money_project;
+    }
 
-	Engineer(int id, std::string FIO, long long rate, float share, ProjectStruct *project) : Employee(id, FIO), project(project), rate(rate), share(share) {
-	}
+    double work_time() override {
+        return (this->worktime * this->base);
+    }
 
-	float getProjectSalary(ProjectStruct *project, float share) override {
-		return project->projectMoney * share;
-	}
-	float getWorktimeSalary(long long rate) override {
-		return WORKTIME * rate;
-	}
+    double pay_project() override {
+        return (this->money_project * this->procent);
+    }
+
+    void Calc() override {
+        this->payment = this->work_time() + this->pay_project();
+    }
+
+};
+
+class Programmer : public Enginer {
+public:
+    Programmer(int id, std::string fio, int worktime, int base, std::string project, double procent, int money_project) : Enginer(id, fio, worktime, base, project, procent, money_project)
+    {}
+
 };
 
 
-
-class Programmer : public Engineer {
+class Tester : public Enginer {
 public:
-	Programmer(int id, std::string FIO, long long rate, float share, ProjectStruct *project) : Engineer(id, FIO, rate, share, project) {
-		setSalary();
-	}
+    Tester(int id, std::string fio, int worktime, int base, std::string project, double procent, int money_project) : Enginer(id, fio, worktime, base, project, procent, money_project)
+    {}
 
-	void setSalary() override {
-		this->salary = getProjectSalary(this->project, this->share) + getWorktimeSalary(this->rate);
-	}
-};
-
-
-
-class Tester : public Engineer {
-public:
-	Tester(int id, std::string FIO, long long rate, float share, ProjectStruct *project) : Engineer(id, FIO, rate, share, project) {
-		setSalary();
-	}
-
-	void setSalary() override {
-		this->salary = getProjectSalary(this->project, this->share) + getWorktimeSalary(this->rate);
-	}
 };
 
 class TeamLeader : public Programmer, public Heading {
-private:
-	int numberOfSubordinates;
+protected:
+    int number_people;
+    int money_for_people;
+
 public:
+    TeamLeader(int id, std::string fio, int worktime, int base, std::string project, double procent, int money_project, int number_people, int money_for_people) : Programmer(id, fio, worktime, base, project, procent, money_project) {
+        this->number_people = number_people;
+        this->money_for_people = money_for_people;
+    }
 
-	TeamLeader(int id, std::string FIO, long long rate, float share, ProjectStruct *project, int numberOfSubordinates) : Programmer(id, FIO, rate, share, project), numberOfSubordinates(numberOfSubordinates) {
-		setSalary();
-	}
+    double pay_head() override {
+        return (this->number_people * this->money_for_people);
+    }
 
-
-	int bonus(int numberOfSubordinates) override {
-		return numberOfSubordinates * 1000;
-	}
-
-	void setSalary() override {
-		this->salary = bonus(this->numberOfSubordinates) + getProjectSalary(this->project, this->share) + getWorktimeSalary(this->rate);
-	}
+    void Calc() override {
+        this->payment = this->pay_head() + this->pay_project() + this->work_time();
+    }
 
 };
