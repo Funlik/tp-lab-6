@@ -20,7 +20,7 @@ file(GLOB TEST_SRC_FILES ${PROJECT_SOURCE_DIR}/test/*.cpp)
 
 
 set(SRC_FILES ${PROJECT_SOURCE_DIR}/src/Cleaner.cpp
-		PROJECT_SOURCE_DIR}/src/Driver.cpp
+		$PROJECT_SOURCE_DIR}/src/Driver.cpp
 		${PROJECT_SOURCE_DIR}/src/Engineer.cpp
 		${PROJECT_SOURCE_DIR}/src/Programmer.cpp
 		${PROJECT_SOURCE_DIR}/src/Tester.cpp
