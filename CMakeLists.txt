@@ -18,7 +18,7 @@ include_directories(${COMMON_INCLUDES})
 file(GLOB TEST_SRC_FILES ${PROJECT_SOURCE_DIR}/test/*.cpp)
 
 
-set(SRC_FILES ${PROJECT_SOURCE_DIR}/src/Cleaner.cpp
+set(SRC_FILES1 ${PROJECT_SOURCE_DIR}/src/Cleaner.cpp
               ${PROJECT_SOURCE_DIR}/src/Driver.cpp
               ${PROJECT_SOURCE_DIR}/src/Manager.cpp
 	      ${PROJECT_SOURCE_DIR}/src/Employee.cpp
@@ -33,8 +33,8 @@ set(SRC_FILES ${PROJECT_SOURCE_DIR}/src/Cleaner.cpp
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_library(task_lib ${SRC_FILES})
-add_executable(task ${PROJECT_SOURCE_DIR}/src/Source.cpp)
+add_library(task1_lib ${SRC_FILES1})
+add_executable(task1 ${PROJECT_SOURCE_DIR}/src/Source.cpp)
 
 target_link_libraries(task1 task1_lib)
 
