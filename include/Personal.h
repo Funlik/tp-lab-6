@@ -14,6 +14,8 @@ using namespace std;
 #define LAB6_PERSONAL_H
 
 class Personal : public Employee, public WorkTime{
+protected:
+    float payrate;
 public:
     Personal(float payrate,int _id, string _FIO, int _worktime,string _Prof);
 

@@ -29,9 +29,18 @@ void Manager::Payday(){
     cout<<"\n";
 }
 
+void Manager::Add_to_Project(Project* tmp){
+    curProject=tmp;
+}
+
 ProjectManager ::ProjectManager(float _BudgetProportion,int _id, string _FIO, int _worktime,string _Prof,int _Sub,float MRate):Manager(_BudgetProportion, _id, _FIO, _worktime, _Prof) {
     Subordinates=_Sub;
     Manager_rate=MRate;
+}
+
+void ProjectManager::SetSub(int _Subordinates){
+    Subordinates=_Subordinates;
+    return;
 }
 
 double ProjectManager ::Heading_Payment() {

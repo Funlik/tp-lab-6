@@ -9,16 +9,8 @@
 #define LAB6_HEADING_H
 
 class Heading {
-
-protected:
-    int Subordinates;
-    float Manager_rate;
 public:
     virtual double Heading_Payment()=0;
-    void SetSub(int _Subordinates){
-        Subordinates=_Subordinates;
-        return;
-    }
 };
 
 #endif //LAB6_HEADING_H

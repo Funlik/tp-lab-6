@@ -6,8 +6,6 @@
 #define LAB6_WORKTIME_H
 
 class WorkTime{
-protected:
-    float payrate;
 public:
     virtual double WorkTime_Payment()=0;
 };

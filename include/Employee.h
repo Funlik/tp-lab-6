@@ -27,8 +27,6 @@ public:
     virtual void Payday();
     double getMoney();
     void setWorktime(int time);
-    //virtual void Add_to_Project(Project* tmp)=0;
-    //virtual void SetSub(int _Subordinates)=0;
     virtual double Calculate()=0;
 
 };

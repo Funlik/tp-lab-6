@@ -15,6 +15,10 @@ double Engineer::WorkTime_Payment(){
     return worktime * payrate;
 }
 
+void Engineer::Add_to_Project(Project* tmp){
+    curProject=tmp;
+}
+
 double Engineer::ProjectPayment() {
     if(curProject==NULL){
         cout<<"This worker does not belong to any project";
@@ -58,6 +62,11 @@ double TeamLeader::Calculate() {
     this->payment += WorkTime_Payment();
     this->payment += Heading_Payment();
     return payment;
+}
+
+void TeamLeader::SetSub(int _Subordinates){
+    Subordinates=_Subordinates;
+    return;
 }
 
 void Tester::Payday(){

@@ -13,8 +13,12 @@
 
 
 class Engineer : public Employee, public WorkTime, public Project_Payment{
-
+protected:
+    float payrate;
+    float BudgetProportion=0;
+    Project* curProject=nullptr;
 public:
+    void Add_to_Project(Project* tmp);
     Engineer(float _BudgetProportion,float _payrate,int _id, string _FIO, int _worktime,string _Prof);
     double WorkTime_Payment() override;
     double ProjectPayment() override;
@@ -35,11 +39,14 @@ public:
 };
 
 class TeamLeader : public Programmer, public Heading{
+protected:
+    int Subordinates;
+    float Manager_rate;
 public:
     TeamLeader(float _BudgetProportion,float _payrate,int _id, string _FIO, int _worktime,string _Prof, int _Sub, float MRate);
     double Heading_Payment() override;
     void Payday() override;
     double Calculate() override;
-
+    void SetSub(int _Subordinates);
 };
 #endif //LAB6_ENGINEER_H

@@ -21,7 +21,7 @@ double Driver::WorkTime_Payment(){
 
 void Driver::Payday(){
     Employee::Payday();
-    cout<<"|Money from WorkTime ="<<getMoney()<<"| bonus money = 350 |Driver| ";
+    cout<<"|Money from WorkTime ="<<getMoney()-350<<"| bonus money = 350 |Driver| ";
     cout<<"\n";
 }
 
