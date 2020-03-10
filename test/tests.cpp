@@ -17,7 +17,7 @@ TEST(lab6, task2)
 TEST(lab6, test3)
 {
 	Programmer programmer(4, "Сияница-Регина-Григоргиевна", 31, 25000, "Proj1", 0.12, 1000000);
-	EXPECT_EQ(prog.PAYMENT(), 895000.000000);
+	EXPECT_EQ(programmer.PAYMENT(), 895000.000000);
 }
 
 TEST(lab6, test4)
@@ -29,7 +29,7 @@ TEST(lab6, test4)
 TEST(lab6, test5)
 {
 	TeamLeader teamleader(2, "Васнецова-Марина-Мечиславовна", 50000, 100, "Proj1", 0.2, 1000000, 9, 1000);
-	EXPECT_EQ(prog.PAYMENT(), 1759000.000000);
+	EXPECT_EQ(teamleader.PAYMENT(), 1759000.000000);
 }
 
 TEST(lab6, test6)
@@ -47,7 +47,7 @@ TEST(lab6, test7)
 TEST(lab6, test8)
 {
 	SeniorManager seniormanager(18, "Яшенкина-Влада-Никоновна", 31, "ALLPROJECTS", 0.07, 3500000, 27, 1000);
-	EXPECT_EQ(mag.PAYMENT(), 202000.000000);
+	EXPECT_EQ(seniormanager.PAYMENT(), 202000.000000);
 }
 
 TEST(lab6, test9)
