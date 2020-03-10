@@ -15,10 +15,10 @@ TEST(Tests, firstTest){
     EXPECT_Q(driver->getPayment(), 15000);
 }
 
-TEST(Tests, secondTest){
-    SeniorManager *seniorManager = new SeniorManager(1, "Andrey Klenkov Dmitrievich", 40, 1000, 2, 3000);
-    EXPECT_Q(seniorManager->getPayment(), 52000);
-}
+//TEST(Tests, secondTest){
+//    SeniorManager *seniorManager = new SeniorManager(1, "Andrey Klenkov Dmitrievich", 40, 1000, 2, 3000);
+//    EXPECT_Q(seniorManager->getPayment(), 52000);
+//}
 
 TEST(Tests, thirdTest){
     TeamLeader *teamLeader = new TeamLeader(1, "Andrey Klenkov Dmitrievich", 35, 1500, "project", 50000, 0.4, 2, 6000);
