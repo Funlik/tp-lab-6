@@ -25,11 +25,37 @@
 	container.workerID = 1;
 	container.salary = 1000;
 	container.percent = 0;
-	container.worktime = 20;
+	container.worktime = 10;
 	Cleaner* cleaner = (Cleaner*)j->makeEmployee(container);
 	cleaner->calcPayment();
 	EXPECT_EQ(cleaner->getPayment(), 1000);  
 }
   
-
+TEST(CalculationTest, Test2) {	
+	Job* j = new Job();
+	jobContainer container;
+	container.id = 1;
+	container.name = "1";
+	container.workerID = 1;
+	container.salary = 10000;
+	container.percent = 0;
+	container.worktime = 10;
+	Driver* driver = (Driver*)j->makeEmployee(container);
+	driver->calcPayment();
+	EXPECT_EQ(driver->getPayment(), 1000);
+}
+TEST(CalculationTest, Test3) {
+	
+	Job* j = new Job();
+	jobContainer container;
+	container.id = 1;
+	container.name = "1";
+	container.workerID = 1;
+	container.salary = 10000;
+	container.percent = 0;
+	container.worktime = 10;
+	Programmer* cleaner = (Programmer*)j->makeEmployee(container);
+	cleaner->calcPayment(10,20000);
+	EXPECT_EQ(cleaner->getPayment(), 0);
+}
 
