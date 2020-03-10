@@ -77,8 +77,8 @@ Employee* CompanyCreator::createWorker(std::string &workerdata)
     }
     else if (worker_job == "Senior Manager")
     {
-        auto* projectManager = new SeniorManager(stoi(worker_id), worker_name, stoi(worker_worktime), stoi(worker_bonus), stoi(worker_baselead));
-        this->workers[worker_id] = projectManager;
+        auto* seniorManager = new SeniorManager(stoi(worker_id), worker_name, stoi(worker_worktime), stoi(worker_bonus), stoi(worker_baselead));
+        this->workers[worker_id] = seniorManager;
         return this->workers[worker_id];
     }
     else
