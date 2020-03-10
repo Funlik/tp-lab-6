@@ -1,0 +1,14 @@
+worker_id;worker_name;worker_job;worker_worktime;worker_base;worker_bonus;worker_lead
+101;Alex;Team Leader;40;10;10;20
+201;Mike;Programmer;40;20;10;0
+202;Nikkey;Programmer;20;20;10;0
+203;Andrew;Programmer;40;20;10;0
+301;Oleg;Tester;40;10;10;0;
+302;Barbara;Tester;40;10;10;0
+303;Kortney;Tester;20;20;10;0
+401;Mellisa;Project Manager;40;20;10;20;
+501;Ralf;Manager;20;10;10;0
+502;Peter;Manager;20;20;10;0
+503;Jack;Manager;40;20;10;0
+601;Robin;Cleaner;40;20;0;0
+701;Dexter;Driver;40;10;0;0

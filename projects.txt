@@ -1,0 +1,2 @@
+projects_name;project_budget;project_teamleader;project_programmers;project_testers;project_manager;project_managers
+NewsAggregator;2500;101;201,202,203;301,302,303;401;501,502,503
