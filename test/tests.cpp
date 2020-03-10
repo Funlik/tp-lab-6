@@ -32,7 +32,7 @@ TEST(lab6, test4)
 
 TEST(lab6, test5)
 {
-	TeamLeader teamleader(2, "Васнецова-Марина-Мечиславовна", 50000, 100, "Proj1", 0.2, 1000000, 9, 1000);
+	TeamLeader teamleader(2, "Васнецова-Марина-Мечиславовна", 31, 50000, "Proj1", 0.2, 1000000, 9, 1000);
 	teamleader.Calc();
 	EXPECT_EQ(teamleader.PAYMENT(), 1759000.000000);
 }
@@ -55,7 +55,7 @@ TEST(lab6, test8)
 {
 	SeniorManager seniormanager(18, "Яшенкина-Влада-Никоновна", 31, "ALLPROJECTS", 0.07, 3500000, 27, 1000);
 	seniormanager.Calc();
-	EXPECT_EQ(seniormanager.PAYMENT(), 202000.000000);
+	EXPECT_EQ(seniormanager.PAYMENT(), 272000.000000);
 }
 
 TEST(lab6, test9)
