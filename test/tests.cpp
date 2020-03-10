@@ -28,9 +28,7 @@
 	container.worktime = 20;
 	Cleaner* cleaner = (Cleaner*)j->makeEmployee(container);
 	cleaner->calcPayment();
-	EXPECT_EQ(cleaner.getPayment(), 0);
-
-  
+	EXPECT_EQ(cleaner->getPayment(), 0);  
 }
   
 
