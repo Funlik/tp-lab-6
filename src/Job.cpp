@@ -9,7 +9,7 @@ Job::Job()
 	this->pairID["TeamLeader"] = 4;
 	this->pairID["Tester"] = 5;
 	this->pairID["SeniorManager"] = 6;
-	this->pairID["ProgectManager"] = 7;
+	this->pairID["ProjectManager"] = 7;
 	this->pairID["Manager"] = 8;
 }
 

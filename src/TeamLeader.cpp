@@ -69,5 +69,5 @@ double TeamLeader::calculateChiefPayment(double chiefPayment)
 
 void TeamLeader::calculatePayment(double percent, double budget, double chiefPayment)
 {
-	this->payment = calcWorkTimePayment() + calculateChiefPayment(chiefPayment) + calcProgectPayment(percent, budget);
+	this->payment = calcWorkTimePayment() + calculateChiefPayment(chiefPayment) + calcProjectPayment(percent, budget);
 }

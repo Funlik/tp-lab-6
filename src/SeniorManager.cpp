@@ -19,12 +19,12 @@ void SeniorManager::onDeleteProjectManager(ProjectManager* person)
 	}
 }
 
-void SeniorManager::deleteProgectManagers()
+void SeniorManager::deleteProjectManagers()
 {
 	this->projectManagerList.clear();
 }
 
-std::vector<ProjectManager*> SeniorManager::getProgectManager()
+std::vector<ProjectManager*> SeniorManager::getProjectManager()
 {
 	std::vector<ProjectManager*> v(this->projectManagerList.size());
 	for (int i = 0; i < this->projectManagerList.size(); i++)

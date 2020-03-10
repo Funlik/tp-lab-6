@@ -6,7 +6,7 @@
 #include "Job.h"
 #include "Manager.h"
 #include "Personal.h"
-#include "Progect.h"
+#include "Project.h"
 #include "ProjectManager.h"
 #include "SeniorManager.h"
 #include "Programmer.h"

@@ -7,8 +7,8 @@ public:
 	SeniorManager(int id, std::string name, double worktime, double payment);
 	void addProjectManager(ProjectManager* person);	
 	void onDeleteProjectManager(ProjectManager* person);
-	void deleteProgectManagers();
+	void deleteProjectManagers();
 	double calculateChiefPayment(double chiefPayment) override;
-	std::vector<ProjectManager*> getProgectManager();
+	std::vector<ProjectManager*> getProjectManager();
 
 };

@@ -15,12 +15,12 @@ void Manager::setPercent(int p)
 	this->percent = p;
 }
 
-double Manager::calculateProgectPayment(double percent, double budget)
+double Manager::calculateProjectPayment(double percent, double budget)
 {
 	return percent * 0.01 * budget;
 }
 
 void Manager::calcPayment(double percent, double budget)
 {
-	this->payment = calculateProgectPayment(percent, budget);
+	this->payment = calculateProjectPayment(percent, budget);
 }

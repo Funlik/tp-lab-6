@@ -1,7 +1,7 @@
 #pragma once
 #include "WorkTime.h"
 #include "Employee.h"
-#include "Progect.h"
+#include "Project.h"
 
 class Engineer : public Employee
 {
@@ -10,6 +10,6 @@ protected:
 public:
 	Engineer(int id, std::string name, double worktime, double payment);
 	virtual double calcWorkTimePayment();
-	virtual double calcProgectPayment(double percent, double budget);
+	virtual double calcProjectPayment(double percent, double budget);
 	virtual void calcPayment(double percent, double budget);
 };

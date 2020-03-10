@@ -10,12 +10,12 @@ double Engineer::calcWorkTimePayment()
 	return this->worktime * this->payment;	
 }
 
-double Engineer::calcProgectPayment(double percent, double payment)
+double Engineer::calcProjectPayment(double percent, double payment)
 {
 	return percent * 0.01 * payment;
 }
 
 void Engineer::calcPayment(double percent, double payment)
 {
-	this->payment = calcWorkTimePayment() + calcProgectPayment(percent, payment);
+	this->payment = calcWorkTimePayment() + calcProjectPayment(percent, payment);
 }

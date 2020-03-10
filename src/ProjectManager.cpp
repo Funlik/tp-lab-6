@@ -41,5 +41,5 @@ double ProjectManager::calculateChiefPayment(double payment)
 
 void ProjectManager::calc(double percent, double budjet, double chiefPayment)
 {
-	this->payment = calculateProgectPayment(percent, budjet) + calculateChiefPayment(chiefPayment);
+	this->payment = calculateProjectPayment(percent, budjet) + calculateChiefPayment(chiefPayment);
 }
