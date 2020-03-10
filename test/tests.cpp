@@ -1,6 +1,6 @@
 #include "gtest/gtest.h"
 
-#include "Fabrika.h"
+#include "fabrika.h"
 
 TEST(Cleaner, calculate_payment)
 {
