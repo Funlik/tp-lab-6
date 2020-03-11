@@ -5,7 +5,7 @@
 #include "ProjectManager.h"
 #include "Heading.h"
 
-class SeniorManager : public ProjectManager, public Heading
+class SeniorManager : public ProjectManager/*, public Heading*/
 {
 protected:
 	std::vector <ProjectManager*> listProjectManagers;
