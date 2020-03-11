@@ -28,6 +28,7 @@ set(SRC_FILES1 ${PROJECT_SOURCE_DIR}/src/Personal.cpp
                ${PROJECT_SOURCE_DIR}/src/Driver.cpp
                ${PROJECT_SOURCE_DIR}/src/TeamLeader.cpp
                ${PROJECT_SOURCE_DIR}/src/Programmer.cpp
+               ${PROJECT_SOURCE_DIR}/src/main.cpp
                ${PROJECT_SOURCE_DIR}/src/Tester.cpp)
 
 set(CMAKE_CXX_STANDARD 11)
