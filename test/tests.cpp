@@ -16,5 +16,6 @@ TEST(task1, case_1) {
 
 TEST(task1, case_2) {
 	Cleaner* cleaner = new Cleaner(1, "Ivan", 40, 50);
+	cleaner->count_payment();
 	EXPECT_EQ(cleaner->get_payment(), 2000);
 }
