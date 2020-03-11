@@ -11,7 +11,7 @@
 
 TEST(task1, case_1) {
 	Cleaner* cleaner = new Cleaner(1, "Ivan", 40, 50);
-	EXPECT_EQ(cleaner->getID(), 1);
+	EXPECT_EQ(cleaner->get_id(), 1);
 }
 
 TEST(task1, case_2) {
