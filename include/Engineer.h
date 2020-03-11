@@ -8,12 +8,12 @@
 class Engineer : public Employee, public WorkTime, public Project
 {
 protected:
+	Engineer();
 	int base = 0;
 	double contribution = 0;
 	std::string project;
 	int budget = 0;
 public:
-	Engineer();
     int getPayment(int budget, double contribution) ;
     int getWorkTime(int worktime, int base) ;
 

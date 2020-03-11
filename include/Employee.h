@@ -5,14 +5,14 @@
 class Employee
 {
 protected:
+	Employee();
+	Employee(int id, const std::string &name, int worktime, int payment);
 	int id = 0;
 	std::string name;
 	int worktime = 0;
 	int payment = 0;
 public:
-	Employee();
 
-	Employee(int id, const std::string &name, int worktime, int payment);
 	virtual void setPayment() = 0;
 
 

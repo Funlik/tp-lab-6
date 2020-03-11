@@ -7,8 +7,8 @@ class Personal : public Employee, public WorkTime
 {
 protected:
 	int base = 0;
-public:
 	Personal();
+public:
 	void setBase(int base);
 	int getBase();
 };
