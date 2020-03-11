@@ -1,4 +1,4 @@
-#include "../headers/ProjectManager.h"
+#include "../include/ProjectManager.h"
 
 ProjectManager::ProjectManager(int _id, std::string _name, int _worktime)
                                 : Manager(_id, _name, _worktime) {

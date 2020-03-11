@@ -1,4 +1,4 @@
-#include "../headers/SeniorManager.h"
+#include "../include/SeniorManager.h"
 
 SeniorManager::SeniorManager(int _id, std::string _name, int _worktime)
                                 : ProjectManager(_id, _name, _worktime) {

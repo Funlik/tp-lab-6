@@ -1,4 +1,4 @@
-#include "../headers/TeamLeader.h"
+#include "../include/TeamLeader.h"
 
 TeamLeader::TeamLeader(int _id, std::string _name, int _worktime, double _payment)
                             : Programmer(_id, _name, _worktime, _payment) {

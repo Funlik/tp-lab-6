@@ -1,5 +1,5 @@
 #include <iostream>
-#include "../headers/Company.h"
+#include "../include/Company.h"
 
 int main() {
     Company *t1 = new Company("test");

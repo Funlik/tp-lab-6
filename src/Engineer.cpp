@@ -1,4 +1,4 @@
-#include "../headers/Engineer.h"
+#include "../include/Engineer.h"
 
 Engineer::Engineer(int _id, std::string _name, int _worktime, double _payment)
                         : Employee(_id, move(_name), _worktime, _payment) {
