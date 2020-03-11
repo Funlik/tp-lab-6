@@ -7,7 +7,7 @@
 
 class SeniorManager : public ProjectManager, public Heading
 {
-private:
+protected:
 	std::vector <ProjectManager*> listProjectManagers;
 public:
 	SeniorManager(int id, std::string name, int worktime, int percent);

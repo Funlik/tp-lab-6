@@ -46,4 +46,6 @@ int Employee::getRate()
 	return this->rate;
 }
 
-double Employee::calc() {}		// is needed?
+void Employee::calc() {
+	//return 0;
+}		// is needed?

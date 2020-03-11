@@ -21,7 +21,7 @@ public:
 	void setName(std::string name);
 	void setWorktime(int worktime);
 
-	virtual double calc() = 0;
+	virtual void calc() = 0;
 };
 
 

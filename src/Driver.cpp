@@ -4,7 +4,7 @@ Driver::Driver(int id, std::string name, int worktime, int base) : Personal(id, 
 {
 }
 
-double Driver::calc()
+void Driver::calc()
 {
 	this->rate = 1.2 * calculateWorktimePayment();	//as coef for rewrite function
 }

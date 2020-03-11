@@ -20,6 +20,6 @@ public:
 	void addProgrammer(Programmer* human);
 	
 	double calculateHeadingPayment(int leaderRate);
-	double calc(int budget, int percent, int leaderRate);
+	void calc(int budget, int percent, int leaderRate);
 };
 #endif

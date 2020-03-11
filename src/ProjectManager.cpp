@@ -39,7 +39,9 @@ double ProjectManager::calculateHeadingPayment(int leaderRate)
 	return leaderRate * (this->listManagers.size());
 }
 
-double ProjectManager::calc(int budget, int percent, int leaderBase)
+void ProjectManager::calc() {}
+
+void ProjectManager::calc(int budget, int percent, int leaderBase)
 {
 	this->rate = calculateProjectPayment(percent, budget) + calculateHeadingPayment(leaderBase);
 }

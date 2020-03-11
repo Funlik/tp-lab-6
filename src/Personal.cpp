@@ -10,9 +10,9 @@ int Personal::calculateWorktimePayment()
 	return this->worktime * this->baseRate;
 }
 
-double Personal::calc()
+void Personal::calc()
 {
-	this->rate = calculateWorktimePayment();
+	 this->rate = calculateWorktimePayment();
 }
 
 int Personal::getBaseRate()

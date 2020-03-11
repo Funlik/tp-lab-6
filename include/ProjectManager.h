@@ -16,7 +16,7 @@ public:
 
 	void addManager(Manager* human);
 
-	double calc();	// unuse
-	double calc(int budjet, int percent, int leaderRate);
+	void calc();	// unuse
+	void calc(int budjet, int percent, int leaderRate);
 };
 #endif

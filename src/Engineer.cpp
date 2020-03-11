@@ -15,9 +15,9 @@ double Engineer::calculateProjectPayment(int budget, int percent)
 	return percent * budget / 100;
 }
 
-double Engineer::calc() {}
+void Engineer::calc() {}
 
-double Engineer::calc(int budget, int percent)
+void Engineer::calc(int budget, int percent)
 {
 	this->rate = calculateWorktimePayment() + calculateProjectPayment(percent, budget);
 }

@@ -11,13 +11,13 @@ private:
 public:
 	Manager(int id, std::string name, int worktime, int percent);
 
-	int getPercent(int percent);
+	int getPercent();
 	void setPercent(int percent);
 
 	double calculateProjectPayment(int budjet, int percent);
 
-	double calc();	// unuse
-	double calc(int budjet, int percent);
+	void calc();	// unuse
+	void calc(int budjet, int percent);
 	//double calculateHeadngPayment(int leaderRate);
 };
 #endif

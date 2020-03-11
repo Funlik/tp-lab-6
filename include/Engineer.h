@@ -11,8 +11,8 @@ protected:
 	int baseRate;
 public:
 	Engineer(int id, std::string name, int worktime, int baseRate);
-	virtual double calc();
-	virtual double calc(int budjet, int percent);
+	virtual void calc();
+	virtual void calc(int budjet, int percent);
 	virtual double calculateProjectPayment(int budjet, int percent);
 	virtual int calculateWorktimePayment();
 };

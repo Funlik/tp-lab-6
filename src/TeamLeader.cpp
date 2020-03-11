@@ -43,7 +43,7 @@ double TeamLeader::calculateHeadingPayment(int leaderRate)
 	return baseRate* (this->listTesters.size() + this->listProgrammers.size());
 }
 
-double TeamLeader::calc(int percent, int budget, int leaderRate)
+void TeamLeader::calc(int percent, int budget, int leaderRate)
 {
 	this->rate = calculateWorktimePayment() + calculateProjectPayment(budget, percent) + calculateHeadingPayment(leaderRate);
 }

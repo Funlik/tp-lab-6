@@ -5,7 +5,7 @@ Manager::Manager(int id, std::string name, int worktime, int percent) : Employee
 	this->percent = percent;
 }
 
-int Manager::getPercent(int percent)
+int Manager::getPercent()
 {
 	return this->percent;
 }
@@ -20,9 +20,9 @@ double Manager::calculateProjectPayment(int budget, int percent)
 	return percent * budget / 100;
 }
 
-double Manager::calc() {}
+void Manager::calc() {}
 
-double Manager::calc(int budget, int percent)
+void Manager::calc(int budget, int percent)
 {
 	this->rate = calculateProjectPayment(budget, percent);
 }

@@ -5,6 +5,6 @@ class Project
 {
 public:
 	virtual double calculateProjectPayment(int budjet, int percent) = 0;
-}
+};
 
 #endif

@@ -15,7 +15,7 @@ public:
 	void setBaseRate(int baseRate);
 	int calculateWorktimePayment();
 
-	virtual double calc();
+	virtual void calc();
 };
 
 #endif
