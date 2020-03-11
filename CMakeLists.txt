@@ -20,7 +20,7 @@ file(GLOB TEST_SRC_FILES ${PROJECT_SOURCE_DIR}/test/*.cpp)
 
 set(SRC_FILES ${PROJECT_SOURCE_DIR}/src/personal.cpp
               ${PROJECT_SOURCE_DIR}/src/engineer.cpp
-              ${PROJECT_SOURCE_DIR}/src/manager.cpp)
+              ${PROJECT_SOURCE_DIR}/src/manager.cpp src/main.cpp src/personal.cpp src/engineer.cpp src/manager.cpp include/engineer.h include/manager.h include/personal.h src/employee.cpp include/employee.h include/work_time.h include/iproject.h include/iheading.h include/cleaner.h src/cleaner.cpp include/driver.h src/driver.cpp include/programmer.h src/programmer.cpp include/tester.h src/tester.cpp include/team_leader.h src/team_leader.cpp include/project_manager.h src/project_manager.cpp include/senior_manager.h src/senior_manager.cpp)
 
 set(CMAKE_CXX_STANDARD 11)
 
