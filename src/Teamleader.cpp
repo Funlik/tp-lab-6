@@ -4,7 +4,7 @@ TeamLeader::TeamLeader(int id, string name, int worktime, float rate, float perH
 	int t_project_budget, int juniors):
 	Programmer(id, name, worktime, rate, perHour, participation, t_project_budget)
 {
-	juniors = mJuniors;
+	mJuniors = juniors;
 }
 float TeamLeader::countByHeading()
 {

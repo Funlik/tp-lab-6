@@ -1,10 +1,10 @@
 #include "Engineer.h"
 
-Engineer::Engineer(int id, string name, int worktime, float rate, float perHour, float participation,
+Engineer::Engineer(int id, string name, int worktime, float mRate, float perHour, float participation,
 	int budget) :
 	Employee(id, name, worktime)
 {
-	rate = rate;
+	rate = mRate;
 	pay_in_hour = perHour;
 	mParticipation = participation;
 	mBudget = budget;
