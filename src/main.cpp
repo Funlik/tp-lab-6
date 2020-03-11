@@ -21,25 +21,25 @@ vector<string> split(const string& s, char delimiter)
 int main()
 {
 
-	WorkProject* project1 = new WorkProject("Kafka", 100000);
-	WorkProject* project2 = new WorkProject("SpringSh", 200000);
-	WorkProject* project3 = new WorkProject("AdudroidKun", 300000);
+	WorkProject* project1 = new WorkProject("Kafka", 15);
+	WorkProject* project2 = new WorkProject("SpringSh", 20);
+	WorkProject* project3 = new WorkProject("AdudroidKun", 10);
 
 	vector<WorkProject *> projects = {project1, project2, project3};
 
 	EmployeeFactory EF = EmployeeFactory(projects);
 
-	ifstream file("file.txt");
-	vector<Employee*> staff;
+	ifstream file("files.txt");
+	vector<Employee*> files;
 	while (!file.eof())
 	{
 		string buf;
 		getline(file, buf, '\n');
 		vector<string> data = split(buf, ' ');
-		staff.push_back(EF.create(data));
+		files.push_back(EF.create(data));
 	}
 
-	for (auto employee : staff)
+	for (auto employee : files)
 	{
 		employee->calculatePayment();
 		cout << "FIO: " << employee->getName() << "   PAYMENT: " << employee->getPayment() << endl;

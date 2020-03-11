@@ -9,7 +9,7 @@ class Engineer: public Employee, public WorkTime, public Project
 {
 protected:
 	float rate;
-	float pay_in_hour;
+	float payHour;
 	float mParticipation;
 	int mBudget;
 public:

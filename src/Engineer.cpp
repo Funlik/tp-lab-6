@@ -5,14 +5,14 @@ Engineer::Engineer(int id, string name, int worktime, float mRate, float perHour
 	Employee(id, name, worktime)
 {
 	rate = mRate;
-	pay_in_hour = perHour;
+	payHour = perHour;
 	mParticipation = participation;
 	mBudget = budget;
 }
 
 float Engineer::countByWorktime()
 {
-	return worktime * pay_in_hour;
+	return worktime * payHour;
 }
 
 float Engineer::countByProject()
