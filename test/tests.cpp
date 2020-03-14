@@ -25,9 +25,9 @@ TEST(lab6, engineer_check)
 TEST(lab5, manager_test)
 {
     ProjectManager* pm = new ProjectManager(1, "name", "team", 3, 3);
-    EXPECT_EQ(6, cl->paymentCount());
+    EXPECT_EQ(6, pm->paymentCount());
     pm->setWorkTime(2);
-    EXPECT_EQ(6, cl->paymentCount());
+    EXPECT_EQ(6, pm->paymentCount());
 }
 
 
