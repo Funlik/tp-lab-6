@@ -1,0 +1,12 @@
+0-ENGINEER(Name, ProjectName, Share, BaseRate, ProjectBudjet)
+1-PROGRAMMER(Name, ProjectName, Share, BaseRate, ProjectBudjet)
+2-TESTER(Name, ProjectName, Share, BaseRate, ProjectBudjet)
+3-TLEADER(Name, ProjectName, Share, BaseRate, ProjectBudjet, NumOfEmployees)
+4-MANAGER(Name, ProjectName, Share, ProjectBudjet )
+5-PMANAGER(Name, ProjectName, Share, ProjectBudjet, NumOfEmployees)
+6-SMANAGER(Name, ProjectName, Share, ProjectBudjet, NumOfEmployees)
+7-DRIVER(Name, BaseRate)
+8-CLEANER(Name, BaseRate)
+
+example ----- 
+1:Name:MobileApps:0.03:3800:10000
