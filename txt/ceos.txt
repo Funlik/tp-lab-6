@@ -1,0 +1,7 @@
+Senior Manager:12345:Vladimir Ivanov:10:0:0:Project1:10
+Project Manager:111:Andrey Ivanov:9:0:0:Project1:5
+Project Manager:222:Sergey Ivanov:8:0:0:Project2:5
+Project Manager:333:Ivan Ivanov:11:0:0:Project3:5
+Team Leader:1111:Petr Ivanov:11:3:0.5:Project1:5
+Team Leader:2222:Vlad Ivanov:11:3:0.5:Project2:5
+Team Leader:3333:Artem Ivanov:11:3:0.5:Project3:5
