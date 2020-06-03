@@ -1,0 +1,36 @@
+1 Boyd_John Driver 70
+2 Walsh_Roderick Driver 70
+3 Horton_Jeffery Driver 70
+4 Townsend_Christopher Driver 70
+5 Richards_Ralf Driver 70
+6 Hart_Matthew Cleaner 50
+7 Harris_Laurence Cleaner 50
+8 Kelley_Jack Cleaner 50
+9 Neal_George Cleaner 50
+10 Franklin_Brian SeniorManager 26 0.1
+11 Hutchinson_Mark ProjectManager Project1 7 0.1
+12 Gibbs_Stuart ProjectManager Project2 8 0.1
+13 Gardner_Henry ProjectManager Project3 8 0.1
+14 Goodman_Ferdinand Manager Project1 0.1
+15 Lawrence_Robert Manager Project1 0.1
+16 Mitchell_Donald Manager Project2 0.1
+17 Howard_William Manager Project2 0.1
+18 Lawson_James Manager Project3 0.1
+19 Harrison_Theodore Teamleader 100 Project2 5 0.1
+20 Rich_Preston Programmer 100 Project1 0.1
+21 Pitts_Joseph Programmer 100 Project1 0.1
+22 Warren_Michael Programmer 100 Project1 0.1
+23 Harper_Charles Manager Project3 0.1
+24 Harmon_Oliver Tester 100 Project1 0.1
+25 Blankenship_Robert Tester 100 Project2 0.1
+26 Roberts_Allen Tester 100 Project2 0.1
+27 Williamson_Duane Teamleader 100 Project1 4 0.1
+28 Doyle_Egbert Teamleader 100 Project3 5 0.1
+29 Walton_Bertram Programmer 100 Project2 0.1
+30 Jones_Matthew Programmer 100 Project2 0.1
+31 Dean_Alban Programmer 100 Project2 0.1
+32 Sullivan_Joseph Programmer 100 Project3 0.1
+33 Wright_John Programmer 100 Project3 0.1
+34 Underwood_Jeremy Programmer 100 Project3 0.1
+35 Sims_Lee Tester 100 Project3 0.1
+36 Poole_James Tester 100 Project3 0.1
