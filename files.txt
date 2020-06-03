@@ -1,0 +1,22 @@
+Amaakir1 1Krevan jdfshgkjsdhkjdfs Cleaner 100
+Talansea1 1Lames FGDFGDFGDFG Driver 150
+Talansea2 1Lames REfgfghfghf Manager 0.2 Kafka
+Zimmerman1 1SHIII gfhfghfgh Manager 0.1 SpringSh
+Amaakir2 1Krevan REfgfghfghfd Manager 0.3 Kafka
+Zimmerman3 1SHIII 54353453 PProgrammer 0.1 SpringSh 5
+Amaakir3 1Krevan 35345:ProjectManager 0.1 AdudroidKun 5
+Zimmerman6 1SHIII gfhfghgf Programmer .1 10000 200 AdudroidKun
+Talansea4 1Lames esrsadfs Programmer 0.2 10400 200 SpringSh
+Zimmerman66 S1HIII nmghjgfhjfg Programmer 0.2 10000 200 AdudroidKun
+Amaakir4 1Krevan ffdsgsdfgsd:Programmer 0.2 10030 250 SpringSh
+1Amaakir1 Krevan 1jdfshgkjsdhkjdfs Cleaner 100
+1Talansea1 Lames 1FGDFGDFGDFG Driver 150
+1Talansea2 Lames 1REfgfghfghf Manager 0.2 AdudroidKun
+1Zimmerman1 SHIII 1gfhfghfgh Manager 0.1 Kafka
+1Amaakir2 Krevan 1REfgfghfghfd Manager 0.3 SpringSh
+1Zimmerman3 SHIII 514353453 PProgrammer 0.1 Kafka1 5
+1Amaakir3 Krevan 135345:ProjectManager 0.1 AdudroidKun 5
+1Zimmerman6 SHIII g1fhfghgf:Programmer .1 104000 200 AdudroidKun
+1Talansea4 Lames e1srsadfs:Programmer 0.2 10044400 200 Kafka
+1Zimmerman66 SHIII n1mghjgfhjfg Programmer 0.2 10000 200 AdudroidKun
+1Amaakir4 Krevan f1fdsgsdfgsd Programmer 0.2 100200 250 AdudroidKun
