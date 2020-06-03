@@ -1,0 +1,5 @@
+Project_1;1000000;Programmer;4;20;Tester;2;30;TeamLeader;1;10;Manager;1;10;ProjectManager;20
+Project_2;2000000;Programmer;6;40;Tester;3;20;TeamLeader;1;10;Manager;3;10;ProjectManager;10
+Project_3;500000;Programmer;1;20;Tester;1;20;TeamLeader;1;20;Manager;1;20;ProjectManager;10
+Project_4;1500000;Programmer;5;30;Tester;2;20;TeamLeader;1;10;Manager;2;10;ProjectManager;20
+Project_5;300000;Programmer;1;40;Tester;1;30;Manager;1;10;ProjectManager;10
