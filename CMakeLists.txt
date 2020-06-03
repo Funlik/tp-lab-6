@@ -18,14 +18,27 @@ include_directories(${COMMON_INCLUDES})
 file(GLOB TEST_SRC_FILES ${PROJECT_SOURCE_DIR}/test/*.cpp)
 
 
-set(SRC_FILES ${PROJECT_SOURCE_DIR}/src/personal.cpp
-              ${PROJECT_SOURCE_DIR}/src/engineer.cpp
-              ${PROJECT_SOURCE_DIR}/src/manager.cpp)
+set(SRC_FILES ${PROJECT_SOURCE_DIR}/src/Personal.cpp
+              ${PROJECT_SOURCE_DIR}/src/Engineer.cpp
+              ${PROJECT_SOURCE_DIR}/src/Employee.cpp
+              ${PROJECT_SOURCE_DIR}/src/Programmer.cpp
+              ${PROJECT_SOURCE_DIR}/src/ProjectManager.cpp
+              ${PROJECT_SOURCE_DIR}/src/TeamLeader.cpp
+              ${PROJECT_SOURCE_DIR}/src/Tester.cpp
+              ${PROJECT_SOURCE_DIR}/src/Cleaner.cpp
+              ${PROJECT_SOURCE_DIR}/src/Driver.cpp
+              ${PROJECT_SOURCE_DIR}/src/Factory.cpp
+              ${PROJECT_SOURCE_DIR}/src/SeniorManager.cpp
+              ${PROJECT_SOURCE_DIR}/src/Project.cpp
+              ${PROJECT_SOURCE_DIR}/src/Interfaces/ProjectSalary.cpp
+              ${PROJECT_SOURCE_DIR}/src/Interfaces/Heading.cpp
+              ${PROJECT_SOURCE_DIR}/src/Interfaces/WorkTime.cpp
+              ${PROJECT_SOURCE_DIR}/src/Manager.cpp)
 
 set(CMAKE_CXX_STANDARD 11)
 
 add_library(task1_lib ${SRC_FILES})
-add_executable(task1 ${PROJECT_SOURCE_DIR}/src/main.cpp)
+add_executable(task1 ${PROJECT_SOURCE_DIR}/src/Main.cpp)
 
 target_link_libraries(task1 task1_lib)
 
