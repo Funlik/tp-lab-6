@@ -1,0 +1,3 @@
+Project1 8500
+Project2 10000
+Project3 4000
