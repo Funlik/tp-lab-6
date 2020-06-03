@@ -1,0 +1,10 @@
+id;name;position;workTime;base;% Project;base leader
+1;Игорь;cleaner;10;20;0;0
+2;Александра;driver;15;20;0;0
+3;Ирина;manager;20;0;25;0
+4;Владимир;project manager;17;0;10;20
+5;Харитон;manager;23;0;12;0
+6;Борис;programmer;20;23;5;0
+7;Анатолий;programmer;20;13;10;0
+8;Лена;programmer;40;23;7;0
+9;Бернард;team leader;40;27;30;2
