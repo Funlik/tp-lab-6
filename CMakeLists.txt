@@ -18,9 +18,15 @@ include_directories(${COMMON_INCLUDES})
 file(GLOB TEST_SRC_FILES ${PROJECT_SOURCE_DIR}/test/*.cpp)
 
 
-set(SRC_FILES ${PROJECT_SOURCE_DIR}/src/personal.cpp
-              ${PROJECT_SOURCE_DIR}/src/engineer.cpp
-              ${PROJECT_SOURCE_DIR}/src/manager.cpp)
+set(SRC_FILES ${PROJECT_SOURCE_DIR}/src/Employee.cpp
+              ${PROJECT_SOURCE_DIR}/src/Engineer.cpp
+              ${PROJECT_SOURCE_DIR}/src/Personal.cpp
+              ${PROJECT_SOURCE_DIR}/src/Manager.cpp
+              ${PROJECT_SOURCE_DIR}/src/ProjectManager.cpp
+              ${PROJECT_SOURCE_DIR}/src/TeamLeader.cpp
+              ${PROJECT_SOURCE_DIR}/src/Projects.cpp
+              ${PROJECT_SOURCE_DIR}/src/CompanyCreator.cpp
+              ${PROJECT_SOURCE_DIR}/src/main.cpp)
 
 set(CMAKE_CXX_STANDARD 11)
 
@@ -67,8 +73,8 @@ if (BUILD_TESTS)
     include(CodeCoverage)
     setup_target_for_coverage(${PROJECT_NAME}_coverage runUnitTests coverage)
 
-    SET(CMAKE_CXX_FLAGS "-g -O0 -fprofile-arcs -ftest-coverage")
-    SET(CMAKE_C_FLAGS "-g -O0 -fprofile-arcs -ftest-coverage")
+    SET(CMAKE_CXX_FLAGS "-g -O0 -fprofile-arcs -ftest-coverage -fno-delete-null-pointer-checks")
+    SET(CMAKE_C_FLAGS "-g -O0 -fprofile-arcs -ftest-coverage -fno-delete-null-pointer-checks")
   endif() #CMAKE_BUILD_TYPE STREQUAL "Coverage"
 
 endif()
