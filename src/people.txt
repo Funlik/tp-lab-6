@@ -1,0 +1,40 @@
+Andrews Imogene Programmer 1750 15 ProjectA
+Manning Carmel Programmer 2000 15 ProjectA
+Hood Myrtle Programmer 1600 15 ProjectA
+Snow Abigail Programmer 1800 10 ProjectB
+Sparks Ann Programmer 1900 10 ProjectB
+Hill Helen Programmer 1950 10 ProjectB
+Terry Catherine Programmer 1100 15 ProjectC
+Peters Olivia Programmer 1950 10 ProjectC
+Harmon Sabina Programmer 1750 5 ProjectC
+Beasley Grace Programmer 1600 5 ProjectD
+Riley Mary Programmer 1500 5 ProjectD
+Wade Linda Programmer 2300 20 ProjectD
+Richardson Shona Tester 1700 10 ProjectA
+Shelton Delilah Tester 1750 10 ProjectA
+May Julianaу Tester 1800 15 ProjectB
+Shields Sandra Tester 1850 15 ProjectB
+McBride Madlyn Tester 1900 15 ProjectC
+Phelps Melissa Tester 1725 10 ProjectD
+Anthony Clemence TeamLeader 1200 20 7500 5 ProjectA
+Stokes Carol TeamLeader 1000 15 7000 5 ProjectB
+Walsh Melinda TeamLeader 1500 20 5000 4 ProjectC
+Payne Susan TeamLeader 1700 25 4000 4 ProjectD
+Bell Easter ProjectManager 5 7000 7 ProjectA
+Lang Bethanie ProjectManager 10 7500 7 ProjectB
+Arnold Hopeу ProjectManager 15 4600 6 ProjectC
+Mills Linda ProjectManager 15 6040 6 ProjectD
+Griffith Sheryl SeniorManager 5 6000 39 AllProjects
+Bruce Juliaу Manager 5 ProjectA
+Sutton Jane Manager 10 ProjectB
+O’Connor’ Elfreda Manager 15 ProjectC
+Baker Juliaу Manager 15 ProjectD
+Knight Dorthy Cleaner 750 ProjectA
+McCormick Cecily Cleaner 700 ProjectA
+Foster Cynthia Cleaner 900 ProjectB
+Houston Edith Cleaner 800 ProjectC
+Harrington Carol Cleaner 750 ProjectD
+Dorsey Lorena Driver 1000 ProjectA
+Blake Bathsheba Driver 1200 ProjectB
+Jefferson Jane Driver 1050 ProjectC
+Morgan Rosalyn Driver 950 ProjectD
