@@ -1,17 +1,17 @@
 Microsoft Visual Studio Solution File, Format Version 8.00
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gtest-md", "gtest-md.vcproj", "{C8F6C172-56F2-4E76-B5FA-C3B423B31BE8}"
+ProjectSalary("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gtest-md", "gtest-md.vcproj", "{C8F6C172-56F2-4E76-B5FA-C3B423B31BE8}"
 	ProjectSection(ProjectDependencies) = postProject
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gtest_main-md", "gtest_main-md.vcproj", "{3AF54C8A-10BF-4332-9147-F68ED9862033}"
+ProjectSalary("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gtest_main-md", "gtest_main-md.vcproj", "{3AF54C8A-10BF-4332-9147-F68ED9862033}"
 	ProjectSection(ProjectDependencies) = postProject
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gtest_prod_test-md", "gtest_prod_test-md.vcproj", "{24848551-EF4F-47E8-9A9D-EA4D49BC3ECB}"
+ProjectSalary("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gtest_prod_test-md", "gtest_prod_test-md.vcproj", "{24848551-EF4F-47E8-9A9D-EA4D49BC3ECB}"
 	ProjectSection(ProjectDependencies) = postProject
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gtest_unittest-md", "gtest_unittest-md.vcproj", "{4D9FDFB5-986A-4139-823C-F4EE0ED481A2}"
+ProjectSalary("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gtest_unittest-md", "gtest_unittest-md.vcproj", "{4D9FDFB5-986A-4139-823C-F4EE0ED481A2}"
 	ProjectSection(ProjectDependencies) = postProject
 	EndProjectSection
 EndProject

@@ -45,28 +45,28 @@
 /* Begin PBXContainerItemProxy section */
 		3B07BDF00E3F3FAE00647869 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			containerPortal = 0867D690FE84028FC02AAC07 /* ProjectSalary object */;
 			proxyType = 1;
 			remoteGlobalIDString = 8D07F2BC0486CC7A007CD1D0;
 			remoteInfo = gTestExample;
 		};
 		4024D165113D7D3100C7059E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			containerPortal = 0867D690FE84028FC02AAC07 /* ProjectSalary object */;
 			proxyType = 1;
 			remoteGlobalIDString = 3B07BDE90E3F3F9E00647869;
 			remoteInfo = WidgetFrameworkTest;
 		};
 		4024D1EC113D840900C7059E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			containerPortal = 0867D690FE84028FC02AAC07 /* ProjectSalary object */;
 			proxyType = 1;
 			remoteGlobalIDString = 8D07F2BC0486CC7A007CD1D0;
 			remoteInfo = WidgetFramework;
 		};
 		4024D1EE113D840D00C7059E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			containerPortal = 0867D690FE84028FC02AAC07 /* ProjectSalary object */;
 			proxyType = 1;
 			remoteGlobalIDString = 4024D162113D7D2400C7059E;
 			remoteInfo = Test;
@@ -224,7 +224,7 @@
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		0867D690FE84028FC02AAC07 /* Project object */ = {
+		0867D690FE84028FC02AAC07 /* ProjectSalary object */ = {
 			isa = PBXProject;
 			buildConfigurationList = 4FADC24608B4156D00ABE55E /* Build configuration list for PBXProject "WidgetFramework" */;
 			compatibilityVersion = "Xcode 2.4";
@@ -453,5 +453,5 @@
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+	rootObject = 0867D690FE84028FC02AAC07 /* ProjectSalary object */;
 }

@@ -23,7 +23,7 @@ So let's go!
 _Note:_ We sometimes refer to Google C++ Testing Framework informally
 as _Google Test_.
 
-# Setting up a New Test Project #
+# Setting up a New Test ProjectSalary #
 
 To write a test program using Google Test, you need to compile Google
 Test into a library and link your test with it.  We provide build

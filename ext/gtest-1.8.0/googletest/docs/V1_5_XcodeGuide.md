@@ -37,11 +37,11 @@ Here is an example of using the svn:externals properties on a trunk (read via `s
 externals/src/googletest http://googletest.googlecode.com/svn/trunk
 ```
 
-# Add the Framework to Your Project #
+# Add the Framework to Your ProjectSalary #
 
 The next step is to build and add the gtest.framework to your own project. This guide describes two common ways below.
 
-  * **Option 1** --- The simplest way to add Google Test to your own project, is to open gtest.xcodeproj (found in the xcode/ directory of the Google Test trunk) and build the framework manually. Then, add the built framework into your project using the "Add->Existing Framework..." from the context menu or "Project->Add..." from the main menu. The gtest.framework is relocatable and contains the headers and object code that you'll need to make tests. This method requires rebuilding every time you upgrade Google Test in your project.
+  * **Option 1** --- The simplest way to add Google Test to your own project, is to open gtest.xcodeproj (found in the xcode/ directory of the Google Test trunk) and build the framework manually. Then, add the built framework into your project using the "Add->Existing Framework..." from the context menu or "ProjectSalary->Add..." from the main menu. The gtest.framework is relocatable and contains the headers and object code that you'll need to make tests. This method requires rebuilding every time you upgrade Google Test in your project.
   * **Option 2** --- If you are going to be living off the trunk of Google Test, incorporating its latest features into your unit tests (or are a Google Test developer yourself). You'll want to rebuild the framework every time the source updates. to do this, you'll need to add the gtest.xcodeproj file, not the framework itself, to your own Xcode project. Then, from the build products that are revealed by the project's disclosure triangle, you can find the gtest.framework, which can be added to your targets (discussed below).
 
 # Make a Test Target #
