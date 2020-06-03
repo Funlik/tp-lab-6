@@ -1,0 +1,35 @@
+1	Lloyd Bathsheba	0	100
+2	Fitzgeraldö Elfreda	0	100
+3	Gilmore Pauline	0	100
+4	Lyons Naomi	0	100
+5	Sherman Alice	0	100
+6	Eaton Wendy	0	100
+7	Anderson Mae	0	100
+8	Warren Alice	0	100
+9	Snow Elisabeth	1	120	300
+10	Thompson Shana	1	120	300
+11	McDowell Ilene	1	120	300
+12	Ball Imogen	1	120	300
+13	Perkins Theodora	1	120	300
+14	Rogers Ada	1	120	300
+15	Thornton Alexandrina	2	200	Savage Mode	10000	30
+16	Cunningham Adela	2	200	Savage Mode	10000	30
+17	Brown Sara	2	200	Savage Mode	10000	30
+18	Wilkinson Margaret	2	200	Savage Mode	10000	30
+19	Chambers Dorothy	3	170	Savage Mode	10000	20	500
+20	Richards Marlene	3	170	Savage Mode	10000	20	500
+21	Stephens Dorthy	3	170	Eternal Atake	12000	20	500
+22	Hill Octavia	2	200	Eternal Atake	12000	30
+23	Bryant Linda	3	170	Eternal Atake	12000	20	500
+24	Moore Beryl	4	220	Eternal Atake	12000	50	10	50
+25	McDonald Imogene	4	220	Savage Mode	10000	50	10	50
+26	Stokes Shanon	4	220	Savage Mode	10000	50	10	50
+27	Adams Margaret	5	Savage Mode	10000	70	10	60
+28	McLaughlin Amberlynn	5	Savage Mode	10000	70	10	60
+29	Willis Barbara	5	Astroworld	15000	70	10	60
+30	Nicholson Virginia	5	Astroworld	15000	70	10	60
+31	Bryan Adele	6	1	Astroworld	15000	90	10	70
+32	Cameron Beverley	6	2	Eternal Atake	12000	Astroworld	15000	90 	20	70
+33	Lucas Loren	6	2	Savage Mode	10000	Astroworld	15000	90	20	70
+34	Norman Lindsey	3	170	Astroworld	15000	20	500
+35	Haynes Gertrudeó	3	170	Astroworld	15000	20	500
