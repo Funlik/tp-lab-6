@@ -1,0 +1,31 @@
+0;Victor Alexander;Cleaner;150
+1;Liam Peterson;Project manager;ZennoPosterPro
+2;Wiley Cooper;Manager;ZennoPosterPro
+3;Will Long;Manager;ZennoPosterPro
+4;Adonis White;Team leader;500;ZennoPosterPro
+5;Omari Watson;Programmer;450;ZennoPosterPro
+6;Braxton Butler;Programmer;450;ZennoPosterPro
+7;Zachery Flores;Programmer;350;ZennoPosterPro
+8;Matteo Griffin;Programmer;350;ZennoPosterPro
+9;Ronin Kelly;Programmer;250;ZennoPosterPro
+10;Wes Rodriguez;Programmer;200;ZennoPosterPro
+11;Matteo White;Tester;400;ZennoPosterPro
+12;Paul Ward;Tester;400;ZennoPosterPro
+13;Yusef Cook;Tester;300;ZennoPosterPro
+14;Kian Bailey;Project manager;CapMonster2
+15;Anderson Howard;Manager;CapMonster2
+16;Jax Ward;Team leader;600;CapMonster2
+17;Ezekiel Hernandez;Programmer;500;CapMonster2
+18;Colby Miller;Programmer;500;CapMonster2
+19;Stanley Cook;Programmer;350;CapMonster2
+20;Yuri Patterson;Programmer;350;CapMonster2
+21;Rafael Green;Programmer;300;CapMonster2
+22;Abraham Hall;Tester;400;CapMonster2
+23;Terrance Ramirez;Tester;350;CapMonster2
+24;Caleb Young;Project manager;ZennoDroid
+25;Israel Martinez;Manager;ZennoDroid
+26;Oskar Foster;Team leader;500;ZennoDroid
+27;Zack Martin;Programmer;500;ZennoDroid
+28;Titus Bell;Programmer;450;ZennoDroid
+29;Percy Thomas;Tester;500;ZennoDroid
+30;Thomas Shelby;Senior manager
