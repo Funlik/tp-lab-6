@@ -18,9 +18,19 @@ include_directories(${COMMON_INCLUDES})
 file(GLOB TEST_SRC_FILES ${PROJECT_SOURCE_DIR}/test/*.cpp)
 
 
-set(SRC_FILES ${PROJECT_SOURCE_DIR}/src/personal.cpp
+set(SRC_FILES ${PROJECT_SOURCE_DIR}/src/cleaner.cpp
+              ${PROJECT_SOURCE_DIR}/src/driver.cpp
+              ${PROJECT_SOURCE_DIR}/src/employee.cpp
               ${PROJECT_SOURCE_DIR}/src/engineer.cpp
-              ${PROJECT_SOURCE_DIR}/src/manager.cpp)
+              ${PROJECT_SOURCE_DIR}/src/fabrika.cpp
+              ${PROJECT_SOURCE_DIR}/src/manager.cpp
+	      ${PROJECT_SOURCE_DIR}/src/personal.cpp
+              ${PROJECT_SOURCE_DIR}/src/programmer.cpp
+              ${PROJECT_SOURCE_DIR}/src/projectmanager.cpp
+	      ${PROJECT_SOURCE_DIR}/src/seniormanager.cpp
+	      ${PROJECT_SOURCE_DIR}/src/teamleader.cpp
+	      ${PROJECT_SOURCE_DIR}/src/tester.cpp
+	      ${PROJECT_SOURCE_DIR}/src/workproject.cpp)
 
 set(CMAKE_CXX_STANDARD 11)
 
