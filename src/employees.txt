@@ -1,0 +1,29 @@
+1 Белозёров Абрам Германнович Cleaner 150
+2 Дроздов Феликс Анатольевич Cleaner 150
+3 Орлов Емельян Дамирович Cleaner 150
+4 Терентьев Орест Демьянович Driver 200
+5 Шилов Исак Игнатьевич Driver 200
+6 Гусев Лаврентий Натанович Programmer 500 0.2 FirstProject
+7 Сидоров Агафон Авксентьевич Tester 350 0.1 FirstProject
+8 Комиссаров Панкратий Демьянович TeamLeader 500 0.2 FirstProject 1000 2
+9 Зуев Болеслав Якунович Manager 0.2 FirstProject 
+10 Романов Флор Глебович ProjectManager 0.2 FirstProject 1000 4
+11 Юдин Болеслав Георгьевич Programmer 500 0.2 SecondProject
+12 Капустин Болеслав Ростиславович Tester 350 0.1 SecondProject
+13 Сидоров Модест Альбертович TeamLeader 500 0.2 SecondProject 1000 2
+14 Игнатов Илларион Ильяович Manager 0.2 SecondProject
+15 Воробьёв Максим Иванович ProjectManager 0.2 SecondProject 1000 4
+16 Терентьева Изабелла Мэлоровна Programmer 500 0.2 ThirdProject
+17 Алексеева Береслава Платоновна Tester 350 0.1 ThirdProject
+18 Морозова Иоанна Федоровна TeamLeader 500 0.2 ThirdProject 1000 2
+19 Щербакова Санда Максимовна Manager 0.2 ThirdProject
+20 Суворова Стелла Якуновна ProjectManager 0.2 ThirdProject 1000 4
+21 Ситникова Вера Леонидовна Programmer 500 0.2 FourthProject
+22 Кудряшова Лина Станиславовна Tester 350 0.1 FourthProject
+23 Савельева Полина Владленовна TeamLeader 500 0.2 FourthProject 1000 2
+24 Федосеева Анжиолетта Федотовна Manager 0.2 FourthProject
+25 Ситникова Анжела Фроловна ProjectManager 0.2 FourthProject 1000 4
+27 Ширяева Диодора Богуславовна Driver 200
+28 Лыткина Руслана Ефимовна Cleaner 150
+29 Терентьева Эдилия Арсеньевна Cleaner 150
+30 Иванкова Сильвия Федосеевна SeniorManager 0.1 1000 29
