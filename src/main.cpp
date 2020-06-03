@@ -1,15 +1,14 @@
-#include "gtest/gtest.h"
+
 #include<iostream>
 #include <fstream>
 #include<string>
 #include<vector>
-#include "personal.h"
-#include "engineer.h"
-#include "manager.h"
-#include "employee.h"
+#include "personal.cpp"
+#include "engineer.cpp"
+#include "manager.cpp"
 using namespace std;
-
-vector<Employee*> main_action(const std::string& filename){
+int main()
+{
 	vector <Employee *> workers;
 	vector <string> projects;
 	vector <int> funds;
@@ -23,7 +22,7 @@ vector<Employee*> main_action(const std::string& filename){
 	int fund;
 	double part;
 	int people;
-	ifstream fin(filename);
+	ifstream fin("employees.txt");
 	ifstream proj("project.txt");
 	int i = 0;
 	while (!proj.eof()){	
@@ -118,53 +117,5 @@ vector<Employee*> main_action(const std::string& filename){
 	for (int j = 0; j < num; j++){
 		cout << workers[j]->getName() << "   " << workers[j]->getPayment() << endl;
 	}
-	
-	return workers;
-};
-
-TEST (file, read){
-	ofstream fin("test.txt");
-        fin << "103 Dorsey Programmer 150 300 SERIOS 0.1\n";
-        fin.close();
-	ofstream finpr("project.txt");
-        finpr << "SERIOS 30000\n";
-        finpr.close();
-        vector<Employee*> emp = main_action("test.txt");
-        string res= "Dorsey";
-        EXPECT_STREQ(emp[0]->getName().c_str(),res.c_str());
 }
 
-TEST (payment, personal){
-	ofstream fin("test.txt");
-        fin << "102 Shelton Driver 120 200 500\n";
-        fin.close();
-	ofstream finpr("project.txt");
-        finpr << "SERIOS 30000\n";
-        finpr.close();
-        vector<Employee*> emp = main_action("test.txt");
-        string res= "Dorsey";
-        EXPECT_EQ(emp[0]->getPayment(),24500);
-}
-
-TEST (payment, engineer){
-	ofstream fin("test.txt");
-	fin << "103 Dorsey Programmer 150 300 SERIOS 0.1\n";
-        fin.close();
-	ofstream finpr("project.txt");
-        finpr << "SERIOS 30000\n";
-        finpr.close();
-        vector<Employee*> emp = main_action("test.txt");
-        EXPECT_EQ(emp[0]->getPayment(),48000);
-}
-
-TEST (payment, manager){
-	ofstream fin("test.txt");
-	fin << "108 Skinner ProjectManager 150 FIGURE 0.3 2\n";
-        fin.close();
-	ofstream finpr("project.txt");
-        finpr << "FIGURE 20000\n";
-        finpr.close();
-        vector<Employee*> emp = main_action("test.txt");
-        string res= "Dorsey";
-        EXPECT_EQ(emp[0]->getPayment(),16400);
-}

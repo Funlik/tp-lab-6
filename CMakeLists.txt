@@ -13,12 +13,14 @@ set(CMAKE_CXX_FLAGS "-g -Wall")
 #----------------------------------------------------------------------------
 # Define project sources and includes
 #----------------------------------------------------------------------------
-set(COMMON_INCLUDES ${PROJECT_SOURCE_DIR}/include)
+set(COMMON_INCLUDES ${PROJECT_SOURCE_DIR}/include
+		    ${PROJECT_SoURCE_DIR}/src)
 include_directories(${COMMON_INCLUDES})
 file(GLOB TEST_SRC_FILES ${PROJECT_SOURCE_DIR}/test/*.cpp)
 
 
-set(SRC_FILES ${PROJECT_SOURCE_DIR}/src/personal.cpp
+set(SRC_FILES ${PROJECT_SOURCE_DIR}/src/employee.cpp
+	      ${PROJECT_SOURCE_DIR}/src/personal.cpp
               ${PROJECT_SOURCE_DIR}/src/engineer.cpp
               ${PROJECT_SOURCE_DIR}/src/manager.cpp)
 
